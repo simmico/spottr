@@ -825,7 +825,6 @@ body.page-escape .escape-controls {
   gap: var(--space-lg);
   padding: var(--space-2xl) var(--space-md);
   background: var(--color-sand);
-  overflow-x: hidden;
 }
 
 body.page-escape .escape-filters {
@@ -863,10 +862,10 @@ body.page-escape .escape-key-wrap {
 }
 
 body.page-escape .escape-key {
-  width: 96px;
-  height: 96px;
+  width: 76px;
+  height: 76px;
   background: var(--color-coral);
-  border-radius: 16px;
+  border-radius: 13px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -875,7 +874,7 @@ body.page-escape .escape-key {
   cursor: pointer;
   user-select: none;
   box-shadow:
-    0 8px 0 rgba(0, 0, 0, 0.35),
+    0 6px 0 rgba(0, 0, 0, 0.35),
     inset 0 2px 0 rgba(255, 255, 255, 0.25);
   transition: transform 120ms ease, box-shadow 120ms ease;
   border: none;
@@ -894,13 +893,13 @@ body.page-escape .escape-key::after {
 body.page-escape .escape-key:hover {
   transform: translateY(-3px);
   box-shadow:
-    0 11px 0 rgba(0, 0, 0, 0.35),
+    0 9px 0 rgba(0, 0, 0, 0.35),
     inset 0 2px 0 rgba(255, 255, 255, 0.25);
 }
 
 body.page-escape .escape-key:active,
 body.page-escape .escape-key.is-pressed {
-  transform: translateY(6px);
+  transform: translateY(4px);
   box-shadow:
     0 2px 0 rgba(0, 0, 0, 0.35),
     inset 0 2px 0 rgba(255, 255, 255, 0.15);
