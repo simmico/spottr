@@ -201,6 +201,10 @@ body.page-home .hero__escape-label {
     margin-left: auto;
     margin-right: auto;
   }
+
+  body.page-home .scroll-indicator {
+    bottom: calc(72px + env(safe-area-inset-bottom) + 16px);
+  }
 }
 
 /* ─── Featured Activities ─────────────────────────────────────────────────────── */
@@ -830,26 +834,28 @@ body.page-escape .escape-controls {
 body.page-escape .escape-filters {
   display: flex;
   flex-direction: column;
-  gap: var(--space-md);
-  align-items: center;
+  gap: var(--space-sm);
   width: 100%;
+  max-width: 600px;
 }
 
 body.page-escape .escape-filter-group {
   display: flex;
-  flex-direction: column;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
   align-items: center;
-  gap: 8px;
-  width: 100%;
 }
 
 body.page-escape .escape-filter-label {
   font-family: 'DM Sans', sans-serif;
   font-weight: 500;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--color-text-muted);
+  align-self: center;
+  min-width: 70px;
+  flex-shrink: 0;
 }
 
 
