@@ -3,16 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Spottr</title>
-  <meta name="description" content="Spottr is a free platform for discovering things to do across South African cities. A Simmico project built for South Africans.">
+  <title>Explore | Spottr</title>
+  <meta name="description" content="Browse all activities across Johannesburg, Cape Town, Durban and Pretoria. Filter by region, category and cost.">
   <meta name="theme-color" content="#0D1B2A">
   <link rel="manifest" href="/manifest.json">
   <link rel="icon" href="/icons/icon-192.svg" type="image/svg+xml">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="About | Spottr">
-  <meta property="og:description" content="Spottr is a free platform for discovering things to do across South African cities. A Simmico project.">
-  <meta property="og:url" content="https://spottr.simmico.co.za/about.html">
+  <meta property="og:title" content="Explore | Spottr">
+  <meta property="og:description" content="Browse activities across SA cities. Filter by region, category and cost.">
+  <meta property="og:url" content="https://spottr.simmico.co.za/explore.html">
   <meta property="og:type" content="website">
 
   <link rel="stylesheet" href="css/base.css">
@@ -21,7 +20,7 @@
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/pages.css">
 </head>
-<body class="page-about">
+<body class="page-explore">
 
   <!-- ── Navigation ─────────────────────────────────────────────────────────── -->
   <nav class="nav" id="main-nav" aria-label="Main navigation">
@@ -29,10 +28,10 @@
       <a href="index.html" class="nav__wordmark">Spottr</a>
       <ul class="nav__links" role="list">
         <li><a href="index.html" class="nav__link">Home</a></li>
-        <li><a href="explore.html" class="nav__link">Explore</a></li>
+        <li><a href="explore.html" class="nav__link nav__link--active">Explore</a></li>
         <li><a href="escape.html" class="nav__link">Escape</a></li>
         <li><a href="regions.html" class="nav__link">Regions</a></li>
-        <li><a href="about.html" class="nav__link nav__link--active">About</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
       </ul>
     </div>
   </nav>
@@ -46,74 +45,49 @@
 
   <main>
 
-    <!-- ── Hero ──────────────────────────────────────────────────────────────── -->
-    <section class="page-inner-hero" aria-label="About Spottr">
+    <!-- ── Inner Hero ────────────────────────────────────────────────────────── -->
+    <section class="page-inner-hero" aria-label="Explore activities">
       <div style="text-align:center">
-        <h1>About Spottr.</h1>
-        <p class="page-inner-hero__subtitle">Built in South Africa, for South Africans.</p>
+        <h1>Explore.</h1>
+        <p class="page-inner-hero__subtitle">Browse everything Spottr has on offer. Filter by city and category — no page reload needed.</p>
       </div>
     </section>
 
-    <!-- ── What Spottr Is ────────────────────────────────────────────────────── -->
-    <section class="section section--beige" aria-label="What Spottr is and why we built it">
+    <!-- ── Filter + Grid ──────────────────────────────────────────────────────── -->
+    <section class="section section--beige" aria-label="Activity feed">
       <div class="container">
-        <div class="about-what__grid">
 
-          <div class="about-col">
-            <h2>What Spottr is</h2>
-            <p>Spottr is a curated platform for discovering things to do across South African cities. Not a review site. Not a booking engine. A clean, honest resource for people who are tired of scrolling and want to actually do something.</p>
-            <p>We cover Johannesburg, Cape Town, Durban and Pretoria — outdoor activities, food experiences, arts and culture, family-friendly outings and the kind of hidden gems most people drive past without knowing they exist.</p>
-            <p>Everything on Spottr is free to use, with no ads and no affiliate links.</p>
+        <div class="explore-filters" role="group" aria-label="Filter activities">
+
+          <div class="explore-filters__row" role="group" aria-label="Filter by region">
+            <span class="explore-filters__label">City</span>
+            <div class="filter-bar" id="region-filter">
+              <button class="filter-btn filter-btn--active" data-region="all">All</button>
+              <button class="filter-btn" data-region="jhb">JHB</button>
+              <button class="filter-btn" data-region="cpt">CPT</button>
+              <button class="filter-btn" data-region="dbn">DBN</button>
+              <button class="filter-btn" data-region="pta">PTA</button>
+            </div>
           </div>
 
-          <div class="about-col">
-            <h2>Why we built it</h2>
-            <p>South Africans have incredible things on their doorstep and no good way to find them. Discovery apps are cluttered, travel blogs are optimised for tourism not locals, and social media sends you in circles.</p>
-            <p>Spottr is the alternative we wanted to exist — a simple, fast, no-nonsense list of activities worth doing. Browse by city and category, or hit the Escape button and let Spottr pick something for you at random.</p>
-            <p>Less scrolling, more doing.</p>
+          <div class="explore-filters__row" role="group" aria-label="Filter by category">
+            <span class="explore-filters__label">Category</span>
+            <div class="filter-bar" id="category-filter">
+              <button class="filter-btn filter-btn--active" data-category="all">All</button>
+              <button class="filter-btn" data-category="outdoor">Outdoor</button>
+              <button class="filter-btn" data-category="food">Food</button>
+              <button class="filter-btn" data-category="arts">Arts</button>
+              <button class="filter-btn" data-category="family">Family</button>
+              <button class="filter-btn" data-category="hidden-gem">Hidden Gem</button>
+            </div>
           </div>
 
         </div>
-      </div>
-    </section>
 
-    <!-- ── Simmico Projects ──────────────────────────────────────────────────── -->
-    <section class="section section--mid" aria-label="Who we are">
-      <div class="container">
-        <div class="about-who">
-          <h2>A Simmico project</h2>
-          <p>Spottr is built and maintained by Simmico, a South African IT and digital solutions company. We build things that solve real problems for real South Africans.</p>
-          <p style="margin-top:var(--space-sm)">Save with <a href="https://dealr.simmico.co.za" target="_blank" rel="noopener noreferrer" style="color:var(--color-coral);text-decoration:underline;text-underline-offset:2px;font-weight:500">Dealr</a>. Explore with Spottr.</p>
-          <a href="https://simmico.co.za" class="about-who__link" target="_blank" rel="noopener noreferrer">Visit simmico.co.za →</a>
-        </div>
-      </div>
-    </section>
+        <p class="results-info" id="results-info" aria-live="polite"></p>
 
-    <!-- ── Submit an Activity ─────────────────────────────────────────────────── -->
-    <section class="section section--beige" aria-label="Submit an activity">
-      <div class="container">
+        <div class="grid grid--3" id="activities-grid" aria-live="polite" aria-label="Activity cards"></div>
 
-        <div class="section__header" style="text-align:center;margin-bottom:var(--space-lg)">
-          <h2>Know a spot we missed?</h2>
-          <p class="section-subtitle" style="margin:var(--space-sm) auto 0">Spottr is built on community knowledge. If you know a place, trail, market or experience that belongs on here, send it in and we will check it out.</p>
-        </div>
-
-        <div class="about-contact">
-          <p class="about-contact__label">Send your suggestion to:</p>
-          <a href="mailto:spottr@simmico.co.za" class="about-contact__email">spottr@simmico.co.za</a>
-          <p class="about-contact__note">Include the name, location and a short description. We check every submission personally.</p>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ── Disclaimer ─────────────────────────────────────────────────────────── -->
-    <section class="section section--beige about-disclaimer-section" aria-label="Disclaimer">
-      <div class="container">
-        <div class="about-disclaimer">
-          <h3>Disclaimer</h3>
-          <p>All activity information on Spottr is sourced from publicly available sources and is provided for informational purposes only. Details including operating hours, access fees and availability may change. Always verify with the venue or organiser before visiting. Spottr is not responsible for any changes to activity details after publication.</p>
-        </div>
       </div>
     </section>
 
@@ -176,7 +150,7 @@
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
       <span>Home</span>
     </a>
-    <a href="explore.html" class="mobile-nav__tab">
+    <a href="explore.html" class="mobile-nav__tab mobile-nav__tab--active">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
       <span>Explore</span>
     </a>
@@ -190,7 +164,7 @@
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
       <span>Regions</span>
     </a>
-    <a href="about.html" class="mobile-nav__tab mobile-nav__tab--active">
+    <a href="about.html" class="mobile-nav__tab">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
       <span>About</span>
     </a>
@@ -203,6 +177,79 @@
     });
   }
 </script>
+
+  <script type="module">
+    import activities from './data/activities.js';
+    import { addAnimationClasses } from './js/utils.js';
+
+    const REGION_LABELS = { jhb: 'Johannesburg', cpt: 'Cape Town', dbn: 'Durban', pta: 'Pretoria' };
+    const CAT_LABELS = { outdoor: 'Outdoor', food: 'Food', arts: 'Arts', family: 'Family', 'hidden-gem': 'Hidden Gem' };
+
+    let activeRegion = 'all';
+    let activeCategory = 'all';
+
+    function buildCard(a) {
+      const region = REGION_LABELS[a.region] || a.region.toUpperCase();
+      const cat = CAT_LABELS[a.category] || a.category;
+      const costClass = `activity-card__cost-badge--${a.cost}`;
+      const costLabel = a.cost.charAt(0).toUpperCase() + a.cost.slice(1);
+      return `<article class="activity-card animate-ready">
+  <div class="activity-card__header">
+    <span class="activity-card__region">${region}</span>
+    <div class="activity-card__badges">
+      <span class="activity-card__cat-badge">${cat}</span>
+      <span class="activity-card__cost-badge ${costClass}">${costLabel}</span>
+    </div>
+  </div>
+  <h3 class="activity-card__name">${a.name}</h3>
+  <p class="activity-card__desc">${a.description}</p>
+  <div class="activity-card__meta">
+    <span class="activity-card__duration">${a.duration}</span>
+    <a href="${a.url}" class="activity-card__link" target="_blank" rel="noopener noreferrer">Find out more →</a>
+  </div>
+</article>`;
+    }
+
+    function render() {
+      const grid = document.getElementById('activities-grid');
+      const info = document.getElementById('results-info');
+      if (!grid) return;
+
+      const filtered = activities.filter(a => {
+        const regionMatch = activeRegion === 'all' || a.region === activeRegion;
+        const catMatch = activeCategory === 'all' || a.category === activeCategory;
+        return regionMatch && catMatch;
+      });
+
+      if (!filtered.length) {
+        grid.innerHTML = '<p class="no-results-msg">No activities match those filters. Try a different combination.</p>';
+        if (info) info.textContent = 'No results';
+        return;
+      }
+
+      grid.innerHTML = filtered.map(buildCard).join('');
+      if (info) info.textContent = `Showing ${filtered.length} activit${filtered.length !== 1 ? 'ies' : 'y'}`;
+      addAnimationClasses(grid.querySelectorAll('.animate-ready'));
+    }
+
+    function initFilterBar(barId, dataAttr, setter) {
+      const bar = document.getElementById(barId);
+      if (!bar) return;
+      bar.addEventListener('click', e => {
+        const btn = e.target.closest('.filter-btn');
+        if (!btn) return;
+        bar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('filter-btn--active'));
+        btn.classList.add('filter-btn--active');
+        setter(btn.dataset[dataAttr]);
+        render();
+      });
+    }
+
+    initFilterBar('region-filter', 'region', v => { activeRegion = v; });
+    initFilterBar('category-filter', 'category', v => { activeCategory = v; });
+    render();
+  </script>
+
   <script type="module" src="js/scroll.js"></script>
   <script type="module" src="js/bot.js"></script>
 

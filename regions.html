@@ -3,16 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Spottr</title>
-  <meta name="description" content="Spottr is a free platform for discovering things to do across South African cities. A Simmico project built for South Africans.">
+  <title>Regions | Spottr</title>
+  <meta name="description" content="Explore activities by South African city — Johannesburg, Cape Town, Durban and Pretoria.">
   <meta name="theme-color" content="#0D1B2A">
   <link rel="manifest" href="/manifest.json">
   <link rel="icon" href="/icons/icon-192.svg" type="image/svg+xml">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="About | Spottr">
-  <meta property="og:description" content="Spottr is a free platform for discovering things to do across South African cities. A Simmico project.">
-  <meta property="og:url" content="https://spottr.simmico.co.za/about.html">
+  <meta property="og:title" content="Regions | Spottr">
+  <meta property="og:description" content="Explore activities by city across South Africa.">
+  <meta property="og:url" content="https://spottr.simmico.co.za/regions.html">
   <meta property="og:type" content="website">
 
   <link rel="stylesheet" href="css/base.css">
@@ -21,7 +20,7 @@
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/pages.css">
 </head>
-<body class="page-about">
+<body class="page-regions">
 
   <!-- ── Navigation ─────────────────────────────────────────────────────────── -->
   <nav class="nav" id="main-nav" aria-label="Main navigation">
@@ -31,8 +30,8 @@
         <li><a href="index.html" class="nav__link">Home</a></li>
         <li><a href="explore.html" class="nav__link">Explore</a></li>
         <li><a href="escape.html" class="nav__link">Escape</a></li>
-        <li><a href="regions.html" class="nav__link">Regions</a></li>
-        <li><a href="about.html" class="nav__link nav__link--active">About</a></li>
+        <li><a href="regions.html" class="nav__link nav__link--active">Regions</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
       </ul>
     </div>
   </nav>
@@ -46,74 +45,83 @@
 
   <main>
 
-    <!-- ── Hero ──────────────────────────────────────────────────────────────── -->
-    <section class="page-inner-hero" aria-label="About Spottr">
+    <!-- ── Inner Hero ────────────────────────────────────────────────────────── -->
+    <section class="page-inner-hero" aria-label="Explore by region">
       <div style="text-align:center">
-        <h1>About Spottr.</h1>
-        <p class="page-inner-hero__subtitle">Built in South Africa, for South Africans.</p>
+        <h1>Regions.</h1>
+        <p class="page-inner-hero__subtitle">Pick a city and see what Spottr has found there.</p>
       </div>
     </section>
 
-    <!-- ── What Spottr Is ────────────────────────────────────────────────────── -->
-    <section class="section section--beige" aria-label="What Spottr is and why we built it">
+    <!-- ── City Overview Cards ──────────────────────────────────────────────── -->
+    <section class="section section--mid" aria-label="City overview">
       <div class="container">
-        <div class="about-what__grid">
-
-          <div class="about-col">
-            <h2>What Spottr is</h2>
-            <p>Spottr is a curated platform for discovering things to do across South African cities. Not a review site. Not a booking engine. A clean, honest resource for people who are tired of scrolling and want to actually do something.</p>
-            <p>We cover Johannesburg, Cape Town, Durban and Pretoria — outdoor activities, food experiences, arts and culture, family-friendly outings and the kind of hidden gems most people drive past without knowing they exist.</p>
-            <p>Everything on Spottr is free to use, with no ads and no affiliate links.</p>
+        <div class="regions-hero-grid" id="city-cards">
+          <div class="region-hero-card">
+            <div class="region-hero-card__city">Johannesburg</div>
+            <p class="region-hero-card__desc">The City of Gold doesn't slow down. Markets, galleries, nature reserves inside the city limits and an arts scene that refuses to be ignored. More going on than most Joburgers realise.</p>
+            <a href="#jhb" class="btn btn--primary" style="margin-top:auto;align-self:flex-start">View JHB activities</a>
           </div>
-
-          <div class="about-col">
-            <h2>Why we built it</h2>
-            <p>South Africans have incredible things on their doorstep and no good way to find them. Discovery apps are cluttered, travel blogs are optimised for tourism not locals, and social media sends you in circles.</p>
-            <p>Spottr is the alternative we wanted to exist — a simple, fast, no-nonsense list of activities worth doing. Browse by city and category, or hit the Escape button and let Spottr pick something for you at random.</p>
-            <p>Less scrolling, more doing.</p>
+          <div class="region-hero-card">
+            <div class="region-hero-card__city">Cape Town</div>
+            <p class="region-hero-card__desc">Where the mountain meets the ocean and the food matches both. Hikes with views, beaches without the tourist premium, and a food and craft scene that keeps levelling up.</p>
+            <a href="#cpt" class="btn btn--primary" style="margin-top:auto;align-self:flex-start">View CPT activities</a>
           </div>
-
+          <div class="region-hero-card">
+            <div class="region-hero-card__city">Durban</div>
+            <p class="region-hero-card__desc">The warmest city in the country with the most underrated food scene in Africa. Indian Ocean sunsets, coastal nature reserves and a harbour front that's finally getting the recognition it deserves.</p>
+            <a href="#dbn" class="btn btn--primary" style="margin-top:auto;align-self:flex-start">View DBN activities</a>
+          </div>
+          <div class="region-hero-card">
+            <div class="region-hero-card__city">Pretoria</div>
+            <p class="region-hero-card__desc">The administrative capital with a surprisingly rich cultural scene. Botanical gardens, heritage sites, weekend markets and a diamond mine day trip that most South Africans have never done.</p>
+            <a href="#pta" class="btn btn--primary" style="margin-top:auto;align-self:flex-start">View PTA activities</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ── Simmico Projects ──────────────────────────────────────────────────── -->
-    <section class="section section--mid" aria-label="Who we are">
+    <!-- ── JHB Section ────────────────────────────────────────────────────────── -->
+    <section class="section section--beige region-section" id="jhb" aria-label="Johannesburg activities">
       <div class="container">
-        <div class="about-who">
-          <h2>A Simmico project</h2>
-          <p>Spottr is built and maintained by Simmico, a South African IT and digital solutions company. We build things that solve real problems for real South Africans.</p>
-          <p style="margin-top:var(--space-sm)">Save with <a href="https://dealr.simmico.co.za" target="_blank" rel="noopener noreferrer" style="color:var(--color-coral);text-decoration:underline;text-underline-offset:2px;font-weight:500">Dealr</a>. Explore with Spottr.</p>
-          <a href="https://simmico.co.za" class="about-who__link" target="_blank" rel="noopener noreferrer">Visit simmico.co.za →</a>
+        <div class="region-section__header">
+          <h2 class="region-section__title">Johannesburg</h2>
+          <span class="region-section__count" id="jhb-count"></span>
         </div>
+        <div class="grid grid--3" id="jhb-grid" aria-label="Johannesburg activity cards"></div>
       </div>
     </section>
 
-    <!-- ── Submit an Activity ─────────────────────────────────────────────────── -->
-    <section class="section section--beige" aria-label="Submit an activity">
+    <!-- ── CPT Section ────────────────────────────────────────────────────────── -->
+    <section class="section section--mid region-section" id="cpt" aria-label="Cape Town activities">
       <div class="container">
-
-        <div class="section__header" style="text-align:center;margin-bottom:var(--space-lg)">
-          <h2>Know a spot we missed?</h2>
-          <p class="section-subtitle" style="margin:var(--space-sm) auto 0">Spottr is built on community knowledge. If you know a place, trail, market or experience that belongs on here, send it in and we will check it out.</p>
+        <div class="region-section__header">
+          <h2 class="region-section__title">Cape Town</h2>
+          <span class="region-section__count" id="cpt-count"></span>
         </div>
-
-        <div class="about-contact">
-          <p class="about-contact__label">Send your suggestion to:</p>
-          <a href="mailto:spottr@simmico.co.za" class="about-contact__email">spottr@simmico.co.za</a>
-          <p class="about-contact__note">Include the name, location and a short description. We check every submission personally.</p>
-        </div>
-
+        <div class="grid grid--3" id="cpt-grid" aria-label="Cape Town activity cards"></div>
       </div>
     </section>
 
-    <!-- ── Disclaimer ─────────────────────────────────────────────────────────── -->
-    <section class="section section--beige about-disclaimer-section" aria-label="Disclaimer">
+    <!-- ── DBN Section ────────────────────────────────────────────────────────── -->
+    <section class="section section--beige region-section" id="dbn" aria-label="Durban activities">
       <div class="container">
-        <div class="about-disclaimer">
-          <h3>Disclaimer</h3>
-          <p>All activity information on Spottr is sourced from publicly available sources and is provided for informational purposes only. Details including operating hours, access fees and availability may change. Always verify with the venue or organiser before visiting. Spottr is not responsible for any changes to activity details after publication.</p>
+        <div class="region-section__header">
+          <h2 class="region-section__title">Durban</h2>
+          <span class="region-section__count" id="dbn-count"></span>
         </div>
+        <div class="grid grid--3" id="dbn-grid" aria-label="Durban activity cards"></div>
+      </div>
+    </section>
+
+    <!-- ── PTA Section ────────────────────────────────────────────────────────── -->
+    <section class="section section--mid region-section" id="pta" aria-label="Pretoria activities">
+      <div class="container">
+        <div class="region-section__header">
+          <h2 class="region-section__title">Pretoria</h2>
+          <span class="region-section__count" id="pta-count"></span>
+        </div>
+        <div class="grid grid--3" id="pta-grid" aria-label="Pretoria activity cards"></div>
       </div>
     </section>
 
@@ -186,11 +194,11 @@
       </span>
       <span>Escape</span>
     </a>
-    <a href="regions.html" class="mobile-nav__tab">
+    <a href="regions.html" class="mobile-nav__tab mobile-nav__tab--active">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
       <span>Regions</span>
     </a>
-    <a href="about.html" class="mobile-nav__tab mobile-nav__tab--active">
+    <a href="about.html" class="mobile-nav__tab">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
       <span>About</span>
     </a>
@@ -203,6 +211,47 @@
     });
   }
 </script>
+
+  <script type="module">
+    import activities from './data/activities.js';
+    import { addAnimationClasses } from './js/utils.js';
+
+    const REGION_LABELS = { jhb: 'Johannesburg', cpt: 'Cape Town', dbn: 'Durban', pta: 'Pretoria' };
+    const CAT_LABELS = { outdoor: 'Outdoor', food: 'Food', arts: 'Arts', family: 'Family', 'hidden-gem': 'Hidden Gem' };
+
+    function buildCard(a) {
+      const cat = CAT_LABELS[a.category] || a.category;
+      const costClass = `activity-card__cost-badge--${a.cost}`;
+      const costLabel = a.cost.charAt(0).toUpperCase() + a.cost.slice(1);
+      return `<article class="activity-card animate-ready">
+  <div class="activity-card__header">
+    <span class="activity-card__region">${cat}</span>
+    <div class="activity-card__badges">
+      <span class="activity-card__cost-badge ${costClass}">${costLabel}</span>
+    </div>
+  </div>
+  <h3 class="activity-card__name">${a.name}</h3>
+  <p class="activity-card__desc">${a.description}</p>
+  <div class="activity-card__meta">
+    <span class="activity-card__duration">${a.duration}</span>
+    <a href="${a.url}" class="activity-card__link" target="_blank" rel="noopener noreferrer">Find out more →</a>
+  </div>
+</article>`;
+    }
+
+    function renderRegion(region) {
+      const grid = document.getElementById(`${region}-grid`);
+      const count = document.getElementById(`${region}-count`);
+      if (!grid) return;
+      const list = activities.filter(a => a.region === region);
+      grid.innerHTML = list.map(buildCard).join('');
+      if (count) count.textContent = `${list.length} activit${list.length !== 1 ? 'ies' : 'y'}`;
+      addAnimationClasses(grid.querySelectorAll('.animate-ready'));
+    }
+
+    ['jhb', 'cpt', 'dbn', 'pta'].forEach(renderRegion);
+  </script>
+
   <script type="module" src="js/scroll.js"></script>
   <script type="module" src="js/bot.js"></script>
 

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escape | Spottr</title>
+  <meta name="description" content="You have been staring at this screen long enough. Hit Escape — Spottr picks an activity for you.">
+  <meta name="theme-color" content="#0D1B2A">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/icons/icon-192.svg" type="image/svg+xml">
+
+  <meta property="og:title" content="Escape | Spottr">
+  <meta property="og:description" content="You have been staring at this screen long enough. Hit Escape.">
+  <meta property="og:url" content="https://spottr.simmico.co.za/escape.html">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="page-escape">
+
+  <!-- ── Navigation ─────────────────────────────────────────────────────────── -->
+  <nav class="nav" id="main-nav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__wordmark">Spottr</a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="explore.html" class="nav__link">Explore</a></li>
+        <li><a href="escape.html" class="nav__link nav__link--active">Escape</a></li>
+        <li><a href="regions.html" class="nav__link">Regions</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── Coral Thread ───────────────────────────────────────────────────────── -->
+  <div class="gold-thread" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" width="2" height="100%">
+      <line x1="1" y1="15%" x2="1" y2="85%" stroke="#E8603A" stroke-width="1" opacity="0.35"/>
+    </svg>
+  </div>
+
+  <!-- ── Confetti container ─────────────────────────────────────────────────── -->
+  <div class="confetti-container" id="confetti-container" aria-hidden="true"></div>
+
+  <main>
+
+    <!-- ── Hero ──────────────────────────────────────────────────────────────── -->
+    <section class="escape-hero" aria-label="The Escape Button">
+      <div class="escape-hero__content">
+        <span class="escape-hero__eyebrow">The antidote to doomscrolling</span>
+        <h1 class="escape-hero__h1">You have been staring at this screen long enough.</h1>
+        <p class="escape-hero__sub">Hit Escape. Spottr picks something for you to go and do. No algorithm, no ads — just a random activity worth having.</p>
+      </div>
+    </section>
+
+    <!-- ── Controls & Key ─────────────────────────────────────────────────────── -->
+    <section class="escape-controls" aria-label="Escape controls">
+
+      <!-- Filters -->
+      <div class="escape-filters" role="group" aria-label="Filter the escape pool">
+        <div class="escape-filter-group">
+          <label class="escape-filter-label" for="escape-region">City</label>
+          <select class="escape-filter-select" id="escape-region" name="region">
+            <option value="all">All cities</option>
+            <option value="jhb">Johannesburg</option>
+            <option value="cpt">Cape Town</option>
+            <option value="dbn">Durban</option>
+            <option value="pta">Pretoria</option>
+          </select>
+        </div>
+        <div class="escape-filter-group">
+          <label class="escape-filter-label" for="escape-category">Category</label>
+          <select class="escape-filter-select" id="escape-category" name="category">
+            <option value="all">All categories</option>
+            <option value="outdoor">Outdoor</option>
+            <option value="food">Food</option>
+            <option value="arts">Arts</option>
+            <option value="family">Family</option>
+            <option value="hidden-gem">Hidden Gem</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- The Escape Key -->
+      <div class="escape-key-wrap">
+        <button class="escape-key" id="escape-btn" aria-label="Press to get a random activity">
+          <svg class="escape-key__icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="9 10 4 15 9 20"/>
+            <path d="M20 4v7a4 4 0 0 1-4 4H4"/>
+          </svg>
+          <span class="escape-key__label">Escape</span>
+        </button>
+        <p class="escape-key-hint">Press the key above, or press <kbd style="font-family:'DM Sans',sans-serif;font-size:0.75rem;background:var(--color-mid);color:var(--color-light);padding:2px 6px;border-radius:4px;border:1px solid rgba(58,110,168,0.3)">Esc</kbd> on your keyboard</p>
+      </div>
+
+      <!-- Animation stage -->
+      <div class="escape-stage" id="escape-stage" aria-live="polite" aria-label="Selected activity"></div>
+
+    </section>
+
+    <!-- ── Post-reveal actions ────────────────────────────────────────────────── -->
+    <div class="escape-actions" id="escape-actions">
+      <button class="btn btn--outline" id="escape-again-btn">Still glued to your screen? Hit Escape again</button>
+      <a href="explore.html" class="btn btn--primary">Explore everything →</a>
+    </div>
+
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────────────────────────── -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="footer__grid">
+      <div>
+        <span class="footer__wordmark">Spottr</span>
+        <p class="footer__tagline">Less scrolling, more doing.</p>
+        <p class="footer__tagline" style="margin-top:8px">Save with <a href="https://dealr.simmico.co.za" target="_blank" rel="noopener noreferrer" style="color:var(--color-coral);text-decoration:underline;text-underline-offset:2px">Dealr</a>. Explore with Spottr.</p>
+      </div>
+      <div>
+        <span class="footer__links-label">Explore</span>
+        <ul class="footer__links" role="list">
+          <li><a href="explore.html">Browse Activities</a></li>
+          <li><a href="escape.html">Escape Button</a></li>
+          <li><a href="regions.html">Regions</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__meta">A Simmico project</p>
+        <a href="https://simmico.co.za" class="footer__meta" target="_blank" rel="noopener noreferrer">simmico.co.za</a>
+        <p class="footer__meta" style="margin-top:8px">Built for South Africans</p>
+        <a href="mailto:spottr@simmico.co.za" class="footer__meta">spottr@simmico.co.za</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 Spottr · A Simmico project · spottr.simmico.co.za</p>
+    </div>
+  </footer>
+
+  <!-- ── Bot Widget ───────────────────────────────────────────────────────────── -->
+  <div class="bot-container" id="bot-container">
+    <button class="bot-trigger bot-trigger--pulse" id="bot-trigger" aria-label="Open Spottr Assistant" aria-expanded="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" fill="var(--color-dark)"/>
+      </svg>
+    </button>
+    <div class="bot-panel" id="bot-panel" aria-hidden="true" role="dialog" aria-label="Spottr Assistant">
+      <div class="bot-header">
+        <div class="bot-header__left">
+          <div class="bot-header__icon" aria-hidden="true"></div>
+          <div>
+            <div class="bot-header__name">Spottr Assistant</div>
+            <div class="bot-header__sub">Ask me what to do in any SA city</div>
+          </div>
+        </div>
+        <button class="bot-close" id="bot-close" aria-label="Close assistant">×</button>
+      </div>
+      <div class="bot-body" id="bot-body"></div>
+    </div>
+  </div>
+
+  <!-- ── Mobile Bottom Nav ─────────────────────────────────────────────────── -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html" class="mobile-nav__tab">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <span>Home</span>
+    </a>
+    <a href="explore.html" class="mobile-nav__tab">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+      <span>Explore</span>
+    </a>
+    <a href="escape.html" class="mobile-nav__tab mobile-nav__tab--escape mobile-nav__tab--active">
+      <span class="mobile-nav__escape-btn" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="13" rx="2"/><path d="M6 6V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"/><line x1="12" y1="10" x2="12" y2="15"/><polyline points="9 13 12 10 15 13"/></svg>
+      </span>
+      <span>Escape</span>
+    </a>
+    <a href="regions.html" class="mobile-nav__tab">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <span>Regions</span>
+    </a>
+    <a href="about.html" class="mobile-nav__tab">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      <span>About</span>
+    </a>
+  </nav>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then(regs => {
+      regs.forEach(reg => reg.unregister());
+    });
+  }
+</script>
+
+  <script type="module">
+    import activities from './data/activities.js';
+
+    const REGION_LABELS = { jhb: 'Johannesburg', cpt: 'Cape Town', dbn: 'Durban', pta: 'Pretoria' };
+    const CAT_LABELS = { outdoor: 'Outdoor', food: 'Food', arts: 'Arts', family: 'Family', 'hidden-gem': 'Hidden Gem' };
+    const CONFETTI_COLORS = ['#E8603A', '#F08060', '#3A6EA8', '#1E3A5F', '#F5EDD8', '#EAE0C8'];
+
+    const escapeBtn = document.getElementById('escape-btn');
+    const againBtn  = document.getElementById('escape-again-btn');
+    const stage     = document.getElementById('escape-stage');
+    const actions   = document.getElementById('escape-actions');
+    const regionSel = document.getElementById('escape-region');
+    const catSel    = document.getElementById('escape-category');
+
+    let isRunning = false;
+
+    function getPool() {
+      const region = regionSel.value;
+      const cat = catSel.value;
+      return activities.filter(a => {
+        return (region === 'all' || a.region === region) &&
+               (cat === 'all' || a.category === cat);
+      });
+    }
+
+    function buildResultCard(a) {
+      const region = REGION_LABELS[a.region] || a.region.toUpperCase();
+      const cat = CAT_LABELS[a.category] || a.category;
+      const costClass = `activity-card__cost-badge--${a.cost}`;
+      const costLabel = a.cost.charAt(0).toUpperCase() + a.cost.slice(1);
+      return `<div class="escape-shuffle-card is-revealing">
+  <div class="activity-card__header" style="margin-bottom:10px">
+    <span class="activity-card__region">${region}</span>
+    <div class="activity-card__badges">
+      <span class="activity-card__cat-badge">${cat}</span>
+      <span class="activity-card__cost-badge ${costClass}">${costLabel}</span>
+    </div>
+  </div>
+  <div class="escape-result-name">${a.name}</div>
+  <p class="escape-result-desc">${a.description}</p>
+  <div class="escape-result-meta">
+    <span class="activity-card__duration" style="font-family:'DM Sans',sans-serif;font-size:0.8rem;color:var(--color-text-muted)">${a.duration}</span>
+    ${a.address ? `<span style="font-family:'DM Sans',sans-serif;font-size:0.8rem;color:var(--color-text-muted)">${a.address}</span>` : ''}
+  </div>
+  <a href="${a.url}" class="escape-result-link" target="_blank" rel="noopener noreferrer">
+    Find out more →
+  </a>
+</div>`;
+    }
+
+    function buildShuffleCard(a) {
+      return `<div class="escape-shuffle-card is-shuffling">
+  <div style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:1.25rem;color:var(--color-text-light);margin-bottom:6px">${a.name}</div>
+  <div style="font-family:'DM Sans',sans-serif;font-size:0.8rem;color:var(--color-text-muted)">${REGION_LABELS[a.region] || a.region}</div>
+</div>`;
+    }
+
+    function spawnConfetti() {
+      const container = document.getElementById('confetti-container');
+      if (!container) return;
+      container.innerHTML = '';
+      const count = 60;
+      for (let i = 0; i < count; i++) {
+        const piece = document.createElement('div');
+        piece.className = 'confetti-piece';
+        const color = CONFETTI_COLORS[Math.floor(Math.random() * CONFETTI_COLORS.length)];
+        const left = Math.random() * 100;
+        const delay = Math.random() * 0.8;
+        const duration = 1.8 + Math.random() * 1.6;
+        const size = 6 + Math.random() * 8;
+        const rotate = Math.random() * 360;
+        piece.style.cssText = `left:${left}%;width:${size}px;height:${size}px;background:${color};animation-duration:${duration}s;animation-delay:${delay}s;transform:rotate(${rotate}deg)`;
+        container.appendChild(piece);
+      }
+      setTimeout(() => { container.innerHTML = ''; }, 3500);
+    }
+
+    function runEscape() {
+      if (isRunning) return;
+      const pool = getPool();
+
+      if (!pool.length) {
+        stage.innerHTML = `<div class="escape-no-match"><p>No activities match those filters. Try broadening your search.</p></div>`;
+        actions.classList.remove('is-visible');
+        return;
+      }
+
+      isRunning = true;
+      actions.classList.remove('is-visible');
+      escapeBtn.classList.add('is-pressed');
+      setTimeout(() => escapeBtn.classList.remove('is-pressed'), 200);
+
+      // Shuffle phase — cycle rapidly for 2s
+      let shuffleCount = 0;
+      const shuffleInterval = 100;
+      const shuffleDuration = 2000;
+      const slowdownDuration = 1000;
+      const totalShuffleSteps = shuffleDuration / shuffleInterval;
+      const chosen = pool[Math.floor(Math.random() * pool.length)];
+
+      function pickRandom() {
+        return pool[Math.floor(Math.random() * pool.length)];
+      }
+
+      const shuffleTimer = setInterval(() => {
+        shuffleCount++;
+        stage.innerHTML = buildShuffleCard(pickRandom());
+
+        if (shuffleCount >= totalShuffleSteps) {
+          clearInterval(shuffleTimer);
+
+          // Slowdown phase
+          let slowCount = 0;
+          const slowSteps = 8;
+          let slowDelay = shuffleInterval;
+
+          function slowStep() {
+            slowCount++;
+            slowDelay = Math.min(slowDelay * 1.35, 500);
+            stage.innerHTML = buildShuffleCard(slowCount < slowSteps ? pickRandom() : chosen);
+            if (slowCount < slowSteps) {
+              setTimeout(slowStep, slowDelay);
+            } else {
+              // Land & reveal
+              setTimeout(() => {
+                stage.innerHTML = buildResultCard(chosen);
+                spawnConfetti();
+                actions.classList.add('is-visible');
+                isRunning = false;
+              }, 300);
+            }
+          }
+          setTimeout(slowStep, slowDelay);
+        }
+      }, shuffleInterval);
+    }
+
+    escapeBtn.addEventListener('click', runEscape);
+    againBtn.addEventListener('click', runEscape);
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && !isRunning) {
+        e.preventDefault();
+        runEscape();
+      }
+    });
+  </script>
+
+  <script type="module" src="js/scroll.js"></script>
+  <script type="module" src="js/bot.js"></script>
+
+</body>
+</html>

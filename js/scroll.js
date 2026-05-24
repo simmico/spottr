@@ -187,7 +187,7 @@ function initAddToHomescreen() {
   if (isIOS) {
     setTimeout(() => {
       const banner = buildBanner(
-        'Add Dealr to your home screen.',
+        'Add Spottr to your home screen.',
         'Tap the Share icon below, then select "Add to Home Screen".',
         null
       );
@@ -202,7 +202,7 @@ function initAddToHomescreen() {
     e.preventDefault();
     deferredPrompt = e;
     setTimeout(() => {
-      const banner = buildBanner('Add Dealr to your home screen for quick access.', null, 'Add');
+      const banner = buildBanner('Add Spottr to your home screen for quick access.', null, 'Add');
       document.body.appendChild(banner);
       document.getElementById('ath-action').addEventListener('click', async () => {
         if (!deferredPrompt) return;

@@ -1,13 +1,13 @@
 {
-  "name": "Dealr",
-  "short_name": "Dealr",
-  "description": "South Africa's smartest deals platform",
+  "name": "Spottr",
+  "short_name": "Spottr",
+  "description": "Less scrolling, more doing.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#081B1B",
-  "theme_color": "#081B1B",
+  "background_color": "#0D1B2A",
+  "theme_color": "#0D1B2A",
   "orientation": "portrait-primary",
-  "categories": ["shopping", "finance"],
+  "categories": ["lifestyle", "travel"],
   "icons": [
     {
       "src": "/icons/icon-192.svg",
