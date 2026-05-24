@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dealr.simmico.co.za/sitemap.xml

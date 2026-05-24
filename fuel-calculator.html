@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuel Rewards Calculator 2026 | Dealr</title>
+  <meta name="description" content="Calculate exactly what you earn at BP, Shell, Engen, or Astron Energy. Compare eBucks, BP Rewards, V+, UCount, and Discovery Vitality Drive cashback per fill.">
+  <meta name="theme-color" content="#081B1B">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/icons/icon-192.svg" type="image/svg+xml">
+
+  <meta property="og:title" content="Fuel Rewards Calculator 2026 | Dealr">
+  <meta property="og:description" content="See exactly what you earn at the pump — BP, Shell, Engen, or Astron Energy.">
+  <meta property="og:url" content="https://dealr.simmico.co.za/fuel-calculator.html">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="page-fuel-calculator">
+
+  <!-- ── Navigation ─────────────────────────────────────────────────────────── -->
+  <nav class="nav" id="main-nav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__wordmark">Dealr</a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="deals.html" class="nav__link">Deals</a></li>
+        <li class="nav__item--has-dropdown">
+          <a href="restaurants.html" class="nav__link">Restaurants</a>
+          <ul class="nav__dropdown" role="list">
+            <li><a href="restaurants-fastfood.html" class="nav__dropdown-link">Fast Food</a></li>
+            <li><a href="restaurants-casual.html" class="nav__dropdown-link">Casual Dining</a></li>
+            <li><a href="restaurants-datenight.html" class="nav__dropdown-link">Date Night</a></li>
+          </ul>
+        </li>
+        <li class="nav__item--has-dropdown">
+          <a href="fuel.html" class="nav__link nav__link--active">Fuel</a>
+          <ul class="nav__dropdown" role="list">
+            <li><a href="fuel-calculator.html" class="nav__dropdown-link">Fuel Calculator</a></li>
+            <li><a href="fuel-bp.html" class="nav__dropdown-link">BP Rewards</a></li>
+            <li><a href="fuel-shell.html" class="nav__dropdown-link">Shell V+</a></li>
+            <li><a href="fuel-engen.html" class="nav__dropdown-link">Engen eBucks</a></li>
+            <li><a href="fuel-astron.html" class="nav__dropdown-link">Astron Energy</a></li>
+            <li><a href="fuel-sasol.html" class="nav__dropdown-link">Sasol</a></li>
+            <li><a href="fuel-total.html" class="nav__dropdown-link">Total Energy</a></li>
+          </ul>
+        </li>
+        <li class="nav__item--has-dropdown">
+          <a href="discovery.html" class="nav__link">Discovery</a>
+          <ul class="nav__dropdown" role="list">
+            <li><a href="discovery-miles-calculator.html" class="nav__dropdown-link">Miles Calculator</a></li>
+            <li><a href="vitality-core-guide.html" class="nav__dropdown-link">Core Guide</a></li>
+            <li><a href="healthyfood-benefit-guide.html" class="nav__dropdown-link">HealthyFood</a></li>
+            <li><a href="vitality-gym-benefit.html" class="nav__dropdown-link">Gym Benefit</a></li>
+            <li><a href="ster-kinekor-movie-benefit.html" class="nav__dropdown-link">Movies</a></li>
+            <li><a href="active-rewards-apple-watch.html" class="nav__dropdown-link">Apple Watch</a></li>
+            <li><a href="healthyfood-studio-classes.html" class="nav__dropdown-link">Cooking Studio</a></li>
+          </ul>
+        </li>
+        <li class="nav__item--has-dropdown">
+          <a href="banking.html" class="nav__link">Banking</a>
+          <ul class="nav__dropdown" role="list">
+            <li><a href="banking-ebucks.html" class="nav__dropdown-link">FNB eBucks</a></li>
+            <li><a href="banking-greenbacks.html" class="nav__dropdown-link">Nedbank Greenbacks</a></li>
+            <li><a href="banking-capitec.html" class="nav__dropdown-link">Capitec Live Better</a></li>
+            <li><a href="banking-ucount.html" class="nav__dropdown-link">Standard Bank UCount</a></li>
+            <li><a href="card-privileges.html" class="nav__dropdown-link">Card Privileges</a></li>
+          </ul>
+        </li>
+        <li class="nav__item--has-dropdown">
+          <a href="subscriptions.html" class="nav__link">Subscriptions</a>
+          <ul class="nav__dropdown" role="list">
+            <li><a href="subscriptions-streaming.html" class="nav__dropdown-link">Streaming</a></li>
+            <li><a href="subscriptions-data.html" class="nav__dropdown-link">Data &amp; SIM</a></li>
+            <li><a href="subscriptions-apps.html" class="nav__dropdown-link">Apps &amp; Services</a></li>
+          </ul>
+        </li>
+        <li><a href="birthdays.html" class="nav__link">Birthdays</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── Gold Thread ────────────────────────────────────────────────────────── -->
+  <div class="gold-thread" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" width="2" height="100%">
+      <line x1="1" y1="15%" x2="1" y2="85%" stroke="#C18D52" stroke-width="1" opacity="0.35"/>
+    </svg>
+  </div>
+
+  <main>
+
+    <!-- ── Hero ───────────────────────────────────────────────────────────────── -->
+    <section class="page-inner-hero" aria-label="Fuel Rewards Calculator">
+      <div>
+        <h1>Fuel Rewards Calculator.</h1>
+        <p class="page-inner-hero__subtitle">Select your station, enter your litres, choose your programmes — see exactly what you earn at the pump.</p>
+      </div>
+    </section>
+
+    <!-- ── Calculator ─────────────────────────────────────────────────────────── -->
+    <section class="section section--dark" aria-label="Fuel rewards calculator">
+      <div class="container">
+
+        <!-- Fuel price reference -->
+        <div style="background:rgba(193,141,82,0.1);border:1px solid rgba(193,141,82,0.3);border-radius:12px;padding:16px 20px;margin-bottom:32px;max-width:720px;margin-left:auto;margin-right:auto">
+          <p style="font-family:'DM Sans',sans-serif;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--color-gold);margin-bottom:8px">Approximate inland fuel prices — May 2026</p>
+          <div style="display:flex;flex-wrap:wrap;gap:16px;align-items:center">
+            <span style="font-family:'DM Serif Display',serif;font-size:1.25rem;color:var(--color-text-light)">Petrol 95: R22.87/l</span>
+            <span style="font-family:'DM Sans',sans-serif;font-size:0.85rem;color:var(--color-text-muted)">Petrol 93: R22.62/l</span>
+            <span style="font-family:'DM Sans',sans-serif;font-size:0.85rem;color:var(--color-text-muted)">Diesel 50ppm: R22.15/l</span>
+            <span style="font-family:'DM Sans',sans-serif;font-size:0.85rem;color:var(--color-text-muted)">Diesel 500ppm: R21.95/l</span>
+          </div>
+          <p style="font-family:'DM Sans',sans-serif;font-size:0.75rem;color:var(--color-text-muted);margin-top:8px">Approximate inland prices. Exact prices differ by region and change monthly — this is a rough guide only. <a href="https://www.energy.gov.za/petroleum/fuel-prices" target="_blank" rel="noopener noreferrer" style="color:var(--color-gold)">Check DMRE for official current prices →</a></p>
+        </div>
+
+        <!-- Tabs -->
+        <div style="max-width:720px;margin:0 auto">
+          <div id="calc-tabs" style="display:flex;border-bottom:1px solid rgba(150,205,176,0.2);margin-bottom:28px;overflow-x:auto" role="tablist" aria-label="Select fuel station">
+            <button id="tab-bp"     role="tab" aria-selected="true"  aria-controls="panel-bp"     onclick="switchTab('bp')"     style="cursor:pointer;padding:12px 20px;border:none;background:transparent;font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:500;border-bottom:2px solid #C18D52;color:#C18D52;white-space:nowrap">BP</button>
+            <button id="tab-shell"  role="tab" aria-selected="false" aria-controls="panel-shell"  onclick="switchTab('shell')"  style="cursor:pointer;padding:12px 20px;border:none;background:transparent;font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:500;border-bottom:2px solid transparent;color:var(--color-text-muted);white-space:nowrap">Shell</button>
+            <button id="tab-engen"  role="tab" aria-selected="false" aria-controls="panel-engen"  onclick="switchTab('engen')"  style="cursor:pointer;padding:12px 20px;border:none;background:transparent;font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:500;border-bottom:2px solid transparent;color:var(--color-text-muted);white-space:nowrap">Engen</button>
+            <button id="tab-astron" role="tab" aria-selected="false" aria-controls="panel-astron" onclick="switchTab('astron')" style="cursor:pointer;padding:12px 20px;border:none;background:transparent;font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:500;border-bottom:2px solid transparent;color:var(--color-text-muted);white-space:nowrap">Astron Energy</button>
+          </div>
+
+          <!-- ── BP Panel ────────────────────────────────────────────────────── -->
+          <div id="panel-bp" role="tabpanel" aria-labelledby="tab-bp">
+
+            <div class="miles-calc__input-row" style="margin-bottom:24px">
+              <label class="miles-calc__input-label" for="bp-litres">Litres to fill</label>
+              <div class="miles-calc__price-wrap">
+                <input class="miles-price-input" id="bp-litres" type="number" min="0" step="1" placeholder="50" oninput="sanitise(this);calcBP()" aria-label="Litres to fill at BP" style="padding-left:16px">
+              </div>
+            </div>
+
+            <p class="miles-calc__input-label" style="margin-bottom:12px">Which programmes do you have?</p>
+            <div class="miles-calc__toggles" style="flex-direction:column;gap:10px;margin-bottom:20px">
+              <button class="miles-toggle" id="bp-tog-base" onclick="toggleBP('base')" aria-pressed="false">
+                <div class="miles-toggle__dot" id="bp-dot-base"></div>
+                <div class="miles-toggle__info"><span class="miles-toggle__label">BP Rewards card</span><span class="miles-toggle__pct">20c/l base cashback</span></div>
+              </button>
+              <button class="miles-toggle" id="bp-tog-pnp" onclick="toggleBP('pnp')" aria-pressed="false">
+                <div class="miles-toggle__dot" id="bp-dot-pnp"></div>
+                <div class="miles-toggle__info"><span class="miles-toggle__label">PnP Smart Shopper card</span><span class="miles-toggle__pct">10 pts/l — stacks with BP Rewards</span></div>
+              </button>
+              <button class="miles-toggle" id="bp-tog-nedbank" onclick="toggleBP('nedbank')" aria-pressed="false">
+                <div class="miles-toggle__dot" id="bp-dot-nedbank"></div>
+                <div class="miles-toggle__info"><span class="miles-toggle__label">Nedbank Greenbacks card</span><span class="miles-toggle__pct">25c/l bonus on top of BP Rewards</span></div>
+              </button>
+              <button class="miles-toggle" id="bp-tog-vitality" onclick="toggleBP('vitality')" aria-pressed="false">
+                <div class="miles-toggle__dot" id="bp-dot-vitality"></div>
+                <div class="miles-toggle__info"><span class="miles-toggle__label">Discovery Insure Vitality Drive</span><span class="miles-toggle__pct">Up to 50% of monthly fuel spend back</span></div>
+              </button>
+              <button class="miles-toggle" id="bp-tog-vmiles" onclick="toggleBP('vmiles')" aria-pressed="false">
+                <div class="miles-toggle__dot" id="bp-dot-vmiles"></div>
+                <div class="miles-toggle__info"><span class="miles-toggle__label">Discovery Bank Vitality Money</span><span class="miles-toggle__pct">Up to 20% back in Discovery Miles on fuel spend</span></div>
+              </button>
+            </div>
+
+            <!-- Vitality status selector (BP) -->
+            <div id="bp-vitality-row" style="display:none;margin-bottom:20px">
+              <p class="miles-calc__input-label" style="margin-bottom:10px">Your Vitality Drive status</p>
+              <div style="display:flex;flex-wrap:wrap;gap:8px">
+                <button class="miles-toggle" id="bp-vd-blue"    onclick="setBPVitality(5,'blue')"    style="flex:1;min-width:80px" aria-pressed="false"><div class="miles-toggle__info"><span class="miles-toggle__label">Blue</span><span class="miles-toggle__pct">5%</span></div></button>
+                <button class="miles-toggle" id="bp-vd-bronze"  onclick="setBPVitality(10,'bronze')"  style="flex:1;min-width:80px" aria-pressed="false"><div class="miles-toggle__info"><span class="miles-toggle__label">Bronze</span><span class="miles-toggle__pct">10%</span></div></button>
+                <button class="miles-toggle" id="bp-vd-silver"  onclick="setBPVitality(20,'silver')"  style="flex:1;min-width:80px" aria-pressed="false"><div class="miles-toggle__info"><span class="miles-toggle__label">Silver</span><span class="miles-toggle__pct">20%</span></div></button>
+                <button class="miles-toggle" id="bp-vd-gold"    onclick="setBPVitality(25,'gold')"    style="flex:1;min-width:80px" aria-pressed="false"><div class="miles-toggle__info"><span class="miles-toggle__label">Gold</span><span class="miles-toggle__pct">25%</span></div></button>
+                <button class="miles-toggle" id="bp-vd-diamond" onclick="setBPVitality(50,'diamond')" style="flex:1;min-width:80px" aria-pressed="false"><div class="miles-toggle__info"><span class="miles-toggle__label">Diamond</span><span class="miles-toggle__pct">50%</span></div></button>
+              </div>
+            </div>
+
+            <!-- Results BP -->
+            <div id="bp-results" style="display:none">
+              <div style="border-top:1px solid rgba(150,205,176,0.2);padding-top:24px;margin-top:8px">
+                <p style="font-family:'DM Sans',sans-serif;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--color-text-muted);margin-bottom:16px">Your rewards breakdown</p>
+                <div id="bp-results-list" style="display:flex;flex-direction:column;gap:12px"></div>
+                <div class="miles-savings" id="bp-total-bar" style="margin-top:20px">
+                  <span class="miles-savings__label">Total estimated rewards this fill</span>
+                  <div class="miles-savings__numbers">
+                    <span class="miles-savings__big" id="bp-total-val">R0.00</span>
+                    <span class="miles-savings__sub" id="bp-total-sub">in combined rewards</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="bp-prompt" style="text-align:center;padding:32px 0;font-family:'DM Sans',sans-serif;font-size:0.9rem;color:var(--color-text-muted)">Enter your litres and select the programmes you have to see your rewards.</div>
+          </div>
+
+          <!-- ── Shell Panel ─────────────────────────────────────────────────── -->
+          <div id="panel-shell" role="tabpanel" aria-labelledby="tab-shell" style="display:none">
+
+            <div class="miles-calc__input-row" style="margin-bottom:24px">
+              <label class="miles-calc__input-label" for="shell-litres">Litres to fill</label>
+              <div class="miles-calc__price-wrap">
+                <input class="miles-price-input" id="shell-litres" type="number" min="0" step="1" placeholder="50" oninput="sanitise(this);calcShell()" aria-label="Litres to fill at Shell" style="padding-left:16px">
+              </div>
+            </div>
+
+            <p class="miles-calc__input-label" style="margin-bottom:12px">Which programmes do you have?</p>
+            <div class="miles-calc__toggles" style="flex-direction:column;gap:10px;margin-bottom:20px">
+              <button class="miles-toggle" id="shell-tog-vplus" onclick="toggleShell('vplus')" aria-pressed="false">
+                <div class="miles-toggle__dot" id="shell-dot-vplus"></div>
+                <div class="miles-toggle__info"><span class="miles-toggle__label">Shell V+ Rewards card</span><span class="miles-toggle__pct">20c/l cashback — free to join</span></div>
+              </button>
+              <button class="miles-toggle" id="shell-tog-vitality" onclick="toggleShell('vitality')" aria-pressed="false">
+                <div class="miles-toggle__dot" id="shell-dot-vitality"></div>
+                <div class="miles-toggle__info"><span class="miles-toggle__label">Discovery Insure Vitality Drive</span><span class="miles-toggle__pct">Up to 50% of monthly fuel spend back</span></div>
+              </button>
+            </div>
+
+            <!-- Vitality status selector (Shell) -->
+            <div id="shell-vitality-row" style="display:none;margin-bottom:20px">
+              <p class="miles-calc__input-label" style="margin-bottom:10px">Your Vitality Drive status</p>
+              <div style="display:flex;flex-wrap:wrap;gap:8px">
+                <button class="miles-toggle" id="shell-vd-blue"    onclick="setShellVitality(5,'blue')"    style="flex:1;min-width:80px" aria-pressed="false"><div class="miles-toggle__info"><span class="miles-toggle__label">Blue</span><span class="miles-toggle__pct">5%</span></div></button>
+                <button class="miles-toggle" id="shell-vd-bronze"  onclick="setShellVitality(10,'bronze')"  style="flex:1;min-width:80px" aria-pressed="false"><div class="miles-toggle__info"><span class="miles-toggle__label">Bronze</span><span class="miles-toggle__pct">10%</span></div></button>
+                <button class="miles-toggle" id="shell-vd-silver"  onclick="setShellVitality(20,'silver')"  style="flex:1;min-width:80px" aria-pressed="false"><div class="miles-toggle__info"><span class="miles-toggle__label">Silver</span><span class="miles-toggle__pct">20%</span></div></button>
+                <button class="miles-toggle" id="shell-vd-gold"    onclick="setShellVitality(25,'gold')"    style="flex:1;min-width:80px" aria-pressed="false"><div class="miles-toggle__info"><span class="miles-toggle__label">Gold</span><span class="miles-toggle__pct">25%</span></div></button>
+                <button class="miles-toggle" id="shell-vd-diamond" onclick="setShellVitality(50,'diamond')" style="flex:1;min-width:80px" aria-pressed="false"><div class="miles-toggle__info"><span class="miles-toggle__label">Diamond</span><span class="miles-toggle__pct">50%</span></div></button>
+              </div>
+            </div>
+
+            <!-- Results Shell -->
+            <div id="shell-results" style="display:none">
+              <div style="border-top:1px solid rgba(150,205,176,0.2);padding-top:24px;margin-top:8px">
+                <p style="font-family:'DM Sans',sans-serif;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--color-text-muted);margin-bottom:16px">Your rewards breakdown</p>
+                <div id="shell-results-list" style="display:flex;flex-direction:column;gap:12px"></div>
+                <div class="miles-savings" id="shell-total-bar" style="margin-top:20px">
+                  <span class="miles-savings__label">Total estimated rewards this fill</span>
+                  <div class="miles-savings__numbers">
+                    <span class="miles-savings__big" id="shell-total-val">R0.00</span>
+                    <span class="miles-savings__sub" id="shell-total-sub">in combined rewards</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="shell-prompt" style="text-align:center;padding:32px 0;font-family:'DM Sans',sans-serif;font-size:0.9rem;color:var(--color-text-muted)">Enter your litres and select the programmes you have to see your rewards.</div>
+          </div>
+
+          <!-- ── Engen Panel ─────────────────────────────────────────────────── -->
+          <div id="panel-engen" role="tabpanel" aria-labelledby="tab-engen" style="display:none">
+
+            <div class="miles-calc__input-row" style="margin-bottom:24px">
+              <label class="miles-calc__input-label" for="engen-litres">Litres to fill</label>
+              <div class="miles-calc__price-wrap">
+                <input class="miles-price-input" id="engen-litres" type="number" min="0" step="1" placeholder="50" oninput="sanitise(this);calcEngen()" aria-label="Litres to fill at Engen" style="padding-left:16px">
+              </div>
+            </div>
+
+            <p class="miles-calc__input-label" style="margin-bottom:12px">Which programmes do you have?</p>
+            <div class="miles-calc__toggles" style="flex-direction:column;gap:10px;margin-bottom:20px">
+              <button class="miles-toggle" id="engen-tog-ebucks" onclick="toggleEngen('ebucks')" aria-pressed="false">
+                <div class="miles-toggle__dot" id="engen-dot-ebucks"></div>
+                <div class="miles-toggle__info"><span class="miles-toggle__label">FNB eBucks card</span><span class="miles-toggle__pct">Up to R8/l at Level 5</span></div>
+              </button>
+              <button class="miles-toggle" id="engen-tog-clicks" onclick="toggleEngen('clicks')" aria-pressed="false">
+                <div class="miles-toggle__dot" id="engen-dot-clicks"></div>
+                <div class="miles-toggle__info"><span class="miles-toggle__label">Clicks Clubcard</span><span class="miles-toggle__pct">1 pt/l — converts to cashback on 20th</span></div>
+              </button>
+            </div>
+
+            <!-- eBucks level selector -->
+            <div id="engen-ebucks-row" style="display:none;margin-bottom:20px">
+              <p class="miles-calc__input-label" style="margin-bottom:10px">Your FNB Reward Level</p>
+              <div style="display:flex;flex-wrap:wrap;gap:8px">
+                <button class="miles-toggle" id="engen-eb-l1" onclick="setEngenLevel(1)" style="flex:1;min-width:70px" aria-pressed="false"><div class="miles-toggle__info"><span class="miles-toggle__label">L1</span><span class="miles-toggle__pct">R0.50/l</span></div></button>
+                <button class="miles-toggle" id="engen-eb-l2" onclick="setEngenLevel(2)" style="flex:1;min-width:70px" aria-pressed="false"><div class="miles-toggle__info"><span class="miles-toggle__label">L2</span><span class="miles-toggle__pct">R1.00/l</span></div></button>
+                <button class="miles-toggle" id="engen-eb-l3" onclick="setEngenLevel(3)" style="flex:1;min-width:70px" aria-pressed="false"><div class="miles-toggle__info"><span class="miles-toggle__label">L3</span><span class="miles-toggle__pct">R2.00/l</span></div></button>
+                <button class="miles-toggle" id="engen-eb-l4" onclick="setEngenLevel(4)" style="flex:1;min-width:70px" aria-pressed="false"><div class="miles-toggle__info"><span class="miles-toggle__label">L4</span><span class="miles-toggle__pct">R4.00/l</span></div></button>
+                <button class="miles-toggle" id="engen-eb-l5" onclick="setEngenLevel(5)" style="flex:1;min-width:70px" aria-pressed="false"><div class="miles-toggle__info"><span class="miles-toggle__label">L5</span><span class="miles-toggle__pct">R8.00/l</span></div></button>
+              </div>
+            </div>
+
+            <!-- Results Engen -->
+            <div id="engen-results" style="display:none">
+              <div style="border-top:1px solid rgba(150,205,176,0.2);padding-top:24px;margin-top:8px">
+                <p style="font-family:'DM Sans',sans-serif;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--color-text-muted);margin-bottom:16px">Your rewards breakdown</p>
+                <div id="engen-results-list" style="display:flex;flex-direction:column;gap:12px"></div>
+                <div class="miles-savings" id="engen-total-bar" style="margin-top:20px">
+                  <span class="miles-savings__label">Total estimated rewards this fill</span>
+                  <div class="miles-savings__numbers">
+                    <span class="miles-savings__big" id="engen-total-val">R0.00</span>
+                    <span class="miles-savings__sub" id="engen-total-sub">in combined rewards</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="engen-prompt" style="text-align:center;padding:32px 0;font-family:'DM Sans',sans-serif;font-size:0.9rem;color:var(--color-text-muted)">Enter your litres and select the programmes you have to see your rewards.</div>
+          </div>
+
+          <!-- ── Astron Panel ────────────────────────────────────────────────── -->
+          <div id="panel-astron" role="tabpanel" aria-labelledby="tab-astron" style="display:none">
+
+            <div class="miles-calc__input-row" style="margin-bottom:24px">
+              <label class="miles-calc__input-label" for="astron-litres">Litres to fill</label>
+              <div class="miles-calc__price-wrap">
+                <input class="miles-price-input" id="astron-litres" type="number" min="0" step="1" placeholder="50" oninput="sanitise(this);calcAstron()" aria-label="Litres to fill at Astron Energy" style="padding-left:16px">
+              </div>
+            </div>
+
+            <!-- UCount card type -->
+            <p class="miles-calc__input-label" style="margin-bottom:10px">Standard Bank card type</p>
+            <div style="display:flex;gap:8px;margin-bottom:20px">
+              <button class="miles-toggle active" id="astron-card-credit" onclick="setAstronCard('credit')" style="flex:1" aria-pressed="true">
+                <div class="miles-toggle__info"><span class="miles-toggle__label">Credit Card</span><span class="miles-toggle__pct">Higher earn rate</span></div>
+              </button>
+              <button class="miles-toggle" id="astron-card-debit" onclick="setAstronCard('debit')" style="flex:1" aria-pressed="false">
+                <div class="miles-toggle__info"><span class="miles-toggle__label">Debit Card</span><span class="miles-toggle__pct">Lower earn rate</span></div>
+              </button>
+            </div>
+
+            <!-- UCount tier -->
+            <p class="miles-calc__input-label" style="margin-bottom:10px">Your UCount Tier</p>
+            <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px">
+              <button class="miles-toggle" id="astron-t1" onclick="setAstronTier(1)" style="flex:1;min-width:60px" aria-pressed="false"><div class="miles-toggle__info"><span class="miles-toggle__label">T1</span><span class="miles-toggle__pct" id="astron-t1-rate">30c/l</span></div></button>
+              <button class="miles-toggle" id="astron-t2" onclick="setAstronTier(2)" style="flex:1;min-width:60px" aria-pressed="false"><div class="miles-toggle__info"><span class="miles-toggle__label">T2</span><span class="miles-toggle__pct" id="astron-t2-rate">45c/l</span></div></button>
+              <button class="miles-toggle" id="astron-t3" onclick="setAstronTier(3)" style="flex:1;min-width:60px" aria-pressed="false"><div class="miles-toggle__info"><span class="miles-toggle__label">T3</span><span class="miles-toggle__pct" id="astron-t3-rate">90c/l</span></div></button>
+              <button class="miles-toggle" id="astron-t4" onclick="setAstronTier(4)" style="flex:1;min-width:60px" aria-pressed="false"><div class="miles-toggle__info"><span class="miles-toggle__label">T4</span><span class="miles-toggle__pct" id="astron-t4-rate">R1.50/l</span></div></button>
+              <button class="miles-toggle" id="astron-t5" onclick="setAstronTier(5)" style="flex:1;min-width:60px" aria-pressed="false"><div class="miles-toggle__info"><span class="miles-toggle__label">T5</span><span class="miles-toggle__pct" id="astron-t5-rate">R5.00/l</span></div></button>
+            </div>
+
+            <!-- Double rewards toggle (credit only) -->
+            <div id="astron-double-row" style="margin-bottom:20px">
+              <button class="miles-toggle" id="astron-tog-double" onclick="toggleAstronDouble()" aria-pressed="false">
+                <div class="miles-toggle__dot" id="astron-dot-double"></div>
+                <div class="miles-toggle__info"><span class="miles-toggle__label">Double Fuel Rewards (credit only)</span><span class="miles-toggle__pct">Requires all 5 qualifying conditions — doubles your per-litre earn</span></div>
+              </button>
+            </div>
+
+            <!-- Results Astron -->
+            <div id="astron-results" style="display:none">
+              <div style="border-top:1px solid rgba(150,205,176,0.2);padding-top:24px;margin-top:8px">
+                <p style="font-family:'DM Sans',sans-serif;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--color-text-muted);margin-bottom:16px">Your rewards breakdown</p>
+                <div id="astron-results-list" style="display:flex;flex-direction:column;gap:12px"></div>
+                <div class="miles-savings" id="astron-total-bar" style="margin-top:20px">
+                  <span class="miles-savings__label">Total estimated rewards this fill</span>
+                  <div class="miles-savings__numbers">
+                    <span class="miles-savings__big" id="astron-total-val">R0.00</span>
+                    <span class="miles-savings__sub" id="astron-total-sub">in combined rewards</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="astron-prompt" style="text-align:center;padding:32px 0;font-family:'DM Sans',sans-serif;font-size:0.9rem;color:var(--color-text-muted)">Enter your litres and select your tier to see your rewards.</div>
+          </div>
+
+          <!-- Disclaimer -->
+          <p style="font-family:'DM Sans',sans-serif;font-size:0.78rem;color:var(--color-text-muted);text-align:center;margin-top:32px;max-width:600px;margin-left:auto;margin-right:auto;line-height:1.6">Reward rates are approximate and subject to change. This calculator is a rough guide only — always verify current rates with your bank or loyalty programme before making financial decisions.</p>
+
+          <!-- Back links -->
+          <div style="text-align:center;margin-top:24px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+            <a href="fuel.html" class="btn btn--outline">← Back to Fuel Hub</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────────────────────────── -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="footer__grid">
+      <div><span class="footer__wordmark">Dealr</span><p class="footer__tagline">South Africa's smartest deals platform</p></div>
+      <div><span class="footer__links-label">Explore</span><ul class="footer__links" role="list"><li><a href="deals.html">Deals</a></li><li><a href="restaurants.html">Restaurants</a></li><li><a href="birthdays.html">Birthdays</a></li><li><a href="subscriptions.html">Subscriptions</a></li><li><a href="banking.html">Banking</a></li><li><a href="about.html">About</a></li></ul></div>
+      <div><p class="footer__meta">A Simmico project</p><a href="https://simmico.co.za" class="footer__meta" target="_blank" rel="noopener noreferrer">simmico.co.za</a><p class="footer__meta">Built for South Africans</p><a href="mailto:dealr@simmico.co.za" class="footer__meta">dealr@simmico.co.za</a></div>
+    </div>
+    <div class="footer__bottom"><p>© 2026 Dealr · A Simmico project · dealr.simmico.co.za</p></div>
+  </footer>
+
+  <!-- ── Bot Widget ─────────────────────────────────────────────────────────── -->
+  <div class="bot-container" id="bot-container">
+    <button class="bot-trigger bot-trigger--pulse" id="bot-trigger" aria-label="Open Dealr Assistant" aria-expanded="false"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" fill="var(--color-dark)"/></svg></button>
+    <div class="bot-panel" id="bot-panel" aria-hidden="true" role="dialog" aria-label="Dealr Assistant">
+      <div class="bot-header"><div class="bot-header__left"><div class="bot-header__icon" aria-hidden="true"></div><div><div class="bot-header__name">Dealr Assistant</div><div class="bot-header__sub">Ask me about deals and benefits</div></div></div><button class="bot-close" id="bot-close" aria-label="Close assistant">×</button></div>
+      <div class="bot-body" id="bot-body"></div>
+    </div>
+  </div>
+
+  <!-- ── Mobile Bottom Nav ─────────────────────────────────────────────────── -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html" class="mobile-nav__tab"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span>Home</span></a>
+    <a href="deals.html" class="mobile-nav__tab"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg><span>Deals</span></a>
+    <a href="restaurants.html" class="mobile-nav__tab"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg><span>Eat</span></a>
+    <a href="fuel.html" class="mobile-nav__tab mobile-nav__tab--active"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 22V6a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v16"/><path d="M3 10h12"/><path d="M17 5l3 2.5V20"/><path d="M20 7h1a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-1"/><line x1="1" y1="22" x2="23" y2="22"/></svg><span>Fuel</span></a>
+    <a href="banking.html" class="mobile-nav__tab"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="22" x2="21" y2="22"/><line x1="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg><span>Banking</span></a>
+    <button class="mobile-nav__tab" id="more-btn" aria-label="More pages" aria-expanded="false" aria-controls="more-drawer"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg><span>More</span></button>
+  </nav>
+
+  <div class="more-overlay" id="more-overlay" aria-hidden="true"></div>
+  <div class="more-drawer" id="more-drawer" aria-hidden="true" role="dialog" aria-label="More pages">
+    <div class="more-drawer__handle" aria-hidden="true"></div>
+    <nav class="more-drawer__nav" aria-label="Additional pages">
+      <a href="discovery.html" class="more-drawer__row"><span>Discovery</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></a>
+      <a href="subscriptions.html" class="more-drawer__row"><span>Subscriptions</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></a>
+      <a href="birthdays.html" class="more-drawer__row"><span>Birthdays</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></a>
+      <a href="about.html" class="more-drawer__row"><span>About</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></a>
+    </nav>
+    <button class="more-drawer__close" id="more-close">Close</button>
+  </div>
+
+  <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.getRegistrations().then(regs => { regs.forEach(reg => reg.unregister()); }); }</script>
+  <script type="module" src="js/scroll.js"></script>
+  <script type="module" src="js/bot.js"></script>
+  <script>(function(){var btn=document.getElementById('more-btn'),drawer=document.getElementById('more-drawer'),overlay=document.getElementById('more-overlay'),closeBtn=document.getElementById('more-close');if(!btn)return;function open(){drawer.classList.add('is-open');overlay.classList.add('is-open');drawer.setAttribute('aria-hidden','false');btn.setAttribute('aria-expanded','true');}function close(){drawer.classList.remove('is-open');overlay.classList.remove('is-open');drawer.setAttribute('aria-hidden','true');btn.setAttribute('aria-expanded','false');}btn.addEventListener('click',open);overlay.addEventListener('click',close);closeBtn.addEventListener('click',close);})();</script>
+
+  <script>
+    // ── Calculator state ────────────────────────────────────────────────────
+    const VITALITY_PRICE = 22.87; // used for Vitality Drive spend calculation
+
+    const EBUCKS_RATES  = [0, 0.50, 1.00, 2.00, 4.00, 8.00];
+    const UCOUNT_CREDIT = [0, 0.30, 0.45, 0.90, 1.50, 5.00];
+    const UCOUNT_DEBIT  = [0, 0.10, 0.15, 0.30, 0.50, 1.00];
+    const UCOUNT_DOUBLE = [0, 0.60, 0.90, 1.80, 3.00, 10.00];
+
+    // BP state
+    const bp = { base:false, pnp:false, nedbank:false, vitality:false, vmiles:false, vitalityPct:0 };
+    // Shell state
+    const sh = { vplus:false, vitality:false, vitalityPct:0 };
+    // Engen state
+    const en = { ebucks:false, clicks:false, level:0 };
+    // Astron state
+    const as = { cardType:'credit', tier:0, double:false };
+
+    function sanitise(el) {
+      const v = parseFloat(el.value);
+      if (isNaN(v) || v < 0) el.value = '';
+    }
+
+    function fmtR(v) {
+      return 'R' + Math.max(0,v).toLocaleString('en-ZA',{minimumFractionDigits:2,maximumFractionDigits:2});
+    }
+
+    function resultRow(label, value, note, link) {
+      return `<div style="background:rgba(150,205,176,0.06);border:1px solid rgba(150,205,176,0.15);border-radius:10px;padding:14px 16px">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;flex-wrap:wrap">
+          <span style="font-family:'DM Sans',sans-serif;font-weight:500;font-size:0.9rem;color:var(--color-text-light)">${label}</span>
+          <span style="font-family:'DM Serif Display',serif;font-size:1.1rem;color:var(--color-gold);white-space:nowrap">${value}</span>
+        </div>
+        <p style="font-family:'DM Sans',sans-serif;font-size:0.78rem;color:rgba(150,205,176,0.7);margin-top:6px;line-height:1.5">${note}${link ? ' <a href="'+link+'" target="_blank" rel="noopener noreferrer" style="color:var(--color-gold)">More info →</a>' : ''}</p>
+      </div>`;
+    }
+
+    function showResults(prefix, rows, total, litres) {
+      const hasRows = rows.length > 0;
+      document.getElementById(prefix+'-results').style.display = hasRows ? 'block' : 'none';
+      document.getElementById(prefix+'-prompt').style.display  = hasRows ? 'none' : 'block';
+      if (!hasRows) return;
+      document.getElementById(prefix+'-results-list').innerHTML = rows.join('');
+      document.getElementById(prefix+'-total-val').textContent = fmtR(total);
+      document.getElementById(prefix+'-total-sub').textContent = litres > 0 ? 'for ' + Math.round(litres) + ' litres' : 'in combined rewards';
+      document.getElementById(prefix+'-total-bar').classList.toggle('miles-savings--zero', total <= 0);
+    }
+
+    // ── Tab switching — clears all state ───────────────────────────────────
+    let activeTab = 'bp';
+    function switchTab(tab) {
+      activeTab = tab;
+      ['bp','shell','engen','astron'].forEach(t => {
+        const tabEl = document.getElementById('tab-'+t);
+        const panelEl = document.getElementById('panel-'+t);
+        const isActive = t === tab;
+        tabEl.setAttribute('aria-selected', isActive);
+        tabEl.style.borderBottom = isActive ? '2px solid #C18D52' : '2px solid transparent';
+        tabEl.style.color = isActive ? '#C18D52' : 'var(--color-text-muted)';
+        panelEl.style.display = isActive ? 'block' : 'none';
+      });
+      // Reset all state and UI on tab switch
+      resetAll();
+    }
+
+    function resetAll() {
+      // BP
+      bp.base = bp.pnp = bp.nedbank = bp.vitality = bp.vmiles = false;
+      bp.vitalityPct = 0;
+      ['base','pnp','nedbank','vitality','vmiles'].forEach(k => setToggle('bp-tog-'+k, false));
+      document.getElementById('bp-vitality-row').style.display = 'none';
+      ['blue','bronze','silver','gold','diamond'].forEach(k => setToggle('bp-vd-'+k, false));
+      const bpL = document.getElementById('bp-litres'); if(bpL) bpL.value = '';
+      document.getElementById('bp-results').style.display = 'none';
+      document.getElementById('bp-prompt').style.display = 'block';
+
+      // Shell
+      sh.vplus = sh.vitality = false;
+      sh.vitalityPct = 0;
+      ['vplus','vitality'].forEach(k => setToggle('shell-tog-'+k, false));
+      document.getElementById('shell-vitality-row').style.display = 'none';
+      ['blue','bronze','silver','gold','diamond'].forEach(k => setToggle('shell-vd-'+k, false));
+      const shL = document.getElementById('shell-litres'); if(shL) shL.value = '';
+      document.getElementById('shell-results').style.display = 'none';
+      document.getElementById('shell-prompt').style.display = 'block';
+
+      // Engen
+      en.ebucks = en.clicks = false;
+      en.level = 0;
+      ['ebucks','clicks'].forEach(k => setToggle('engen-tog-'+k, false));
+      document.getElementById('engen-ebucks-row').style.display = 'none';
+      [1,2,3,4,5].forEach(l => setToggle('engen-eb-l'+l, false));
+      const enL = document.getElementById('engen-litres'); if(enL) enL.value = '';
+      document.getElementById('engen-results').style.display = 'none';
+      document.getElementById('engen-prompt').style.display = 'block';
+
+      // Astron
+      as.cardType = 'credit'; as.tier = 0; as.double = false;
+      setToggle('astron-card-credit', true); setToggle('astron-card-debit', false);
+      [1,2,3,4,5].forEach(t => setToggle('astron-t'+t, false));
+      setToggle('astron-tog-double', false);
+      updateAstronRateLabels();
+      const asL = document.getElementById('astron-litres'); if(asL) asL.value = '';
+      document.getElementById('astron-results').style.display = 'none';
+      document.getElementById('astron-prompt').style.display = 'block';
+    }
+
+    function setToggle(id, active) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      el.classList.toggle('active', active);
+      el.setAttribute('aria-pressed', active);
+    }
+
+    // ── BP ─────────────────────────────────────────────────────────────────
+    function toggleBP(key) {
+      bp[key] = !bp[key];
+      setToggle('bp-tog-'+key, bp[key]);
+      document.getElementById('bp-vitality-row').style.display = (bp.vitality || bp.vmiles) ? 'flex' : 'none';
+      document.getElementById('bp-vitality-row').style.flexWrap = 'wrap';
+      calcBP();
+    }
+
+    function setBPVitality(pct, name) {
+      bp.vitalityPct = pct;
+      ['blue','bronze','silver','gold','diamond'].forEach(k => setToggle('bp-vd-'+k, false));
+      setToggle('bp-vd-'+name, true);
+      calcBP();
+    }
+
+    function calcBP() {
+      const litres = Math.max(0, parseFloat(document.getElementById('bp-litres').value) || 0);
+      if (litres <= 0) { document.getElementById('bp-results').style.display='none'; document.getElementById('bp-prompt').style.display='block'; return; }
+      const spend = litres * VITALITY_PRICE;
+      const rows = [];
+      let total = 0;
+      if (bp.base) {
+        const val = litres * 0.20;
+        total += val;
+        rows.push(resultRow('BP Rewards cashback', fmtR(val), 'This will add '+fmtR(val)+' to your BP rewards balance. Redeemable at BP pump or bp Express (min R20 balance).', 'https://www.bprewards.co.za'));
+      }
+      if (bp.pnp) {
+        const pts = Math.round(litres * 10);
+        const val = pts * 0.01;
+        total += val;
+        rows.push(resultRow('PnP Smart Shopper', pts + ' pts ≈ ' + fmtR(val), pts+' pts ≈ '+fmtR(val)+' — redeem at PnP tills or put R20+ toward fuel at participating BP stations.', null));
+      }
+      if (bp.nedbank) {
+        const val = litres * 0.25;
+        total += val;
+        rows.push(resultRow('Nedbank Greenbacks', fmtR(val), fmtR(val)+' added to your Nedbank Greenbacks balance. Requires eligible Nedbank card.', 'https://greenbacks.nedbank.co.za'));
+      }
+      if (bp.vitality) {
+        const val = spend * (bp.vitalityPct / 100);
+        total += val;
+        rows.push(resultRow('Discovery Vitality Drive', fmtR(val) + ' (' + bp.vitalityPct + '% of spend)', fmtR(val)+' cashback ('+bp.vitalityPct+'% of fuel spend). Based on your Vitality Drive status — drive well to earn more.', 'https://www.discovery.co.za/insure/vitality-drive'));
+      }
+      if (bp.vmiles) {
+        const miles = Math.round(spend * 0.20 * 10);
+        const val = miles / 10;
+        total += val;
+        rows.push(resultRow('Discovery Miles (Vitality Money)', miles.toLocaleString('en-ZA') + ' Miles ≈ ' + fmtR(val), miles.toLocaleString('en-ZA')+' Discovery Miles (≈ '+fmtR(val)+'). Best redeemed on D-Day (15th) at Takealot, Superbalist, and more.', 'https://www.discovery.co.za/bank/vitality-money'));
+      }
+      if (rows.length === 0) { document.getElementById('bp-results').style.display='none'; document.getElementById('bp-prompt').style.display='block'; return; }
+      showResults('bp', rows, total, litres);
+    }
+
+    // ── Shell ──────────────────────────────────────────────────────────────
+    function toggleShell(key) {
+      sh[key] = !sh[key];
+      setToggle('shell-tog-'+key, sh[key]);
+      document.getElementById('shell-vitality-row').style.display = sh.vitality ? 'block' : 'none';
+      calcShell();
+    }
+
+    function setShellVitality(pct, name) {
+      sh.vitalityPct = pct;
+      ['blue','bronze','silver','gold','diamond'].forEach(k => setToggle('shell-vd-'+k, false));
+      setToggle('shell-vd-'+name, true);
+      calcShell();
+    }
+
+    function calcShell() {
+      const litres = Math.max(0, parseFloat(document.getElementById('shell-litres').value) || 0);
+      if (litres <= 0) { document.getElementById('shell-results').style.display='none'; document.getElementById('shell-prompt').style.display='block'; return; }
+      const spend = litres * VITALITY_PRICE;
+      const rows = [];
+      let total = 0;
+      if (sh.vplus) {
+        const val = litres * 0.20;
+        total += val;
+        rows.push(resultRow('Shell V+ Rewards', fmtR(val), 'This will add '+fmtR(val)+' to your Shell V+ balance. Redeem via V+ PIN at Shell pump or shop.', 'https://www.shell.co.za'));
+      }
+      if (sh.vitality) {
+        const val = spend * (sh.vitalityPct / 100);
+        total += val;
+        rows.push(resultRow('Discovery Vitality Drive', fmtR(val) + ' (' + sh.vitalityPct + '% of spend)', fmtR(val)+' cashback ('+sh.vitalityPct+'% of fuel spend). Based on your Vitality Drive status.', 'https://www.discovery.co.za/insure/vitality-drive'));
+      }
+      if (rows.length === 0) { document.getElementById('shell-results').style.display='none'; document.getElementById('shell-prompt').style.display='block'; return; }
+      showResults('shell', rows, total, litres);
+    }
+
+    // ── Engen ──────────────────────────────────────────────────────────────
+    function toggleEngen(key) {
+      en[key] = !en[key];
+      setToggle('engen-tog-'+key, en[key]);
+      document.getElementById('engen-ebucks-row').style.display = en.ebucks ? 'block' : 'none';
+      calcEngen();
+    }
+
+    function setEngenLevel(level) {
+      en.level = level;
+      [1,2,3,4,5].forEach(l => setToggle('engen-eb-l'+l, l === level));
+      calcEngen();
+    }
+
+    function calcEngen() {
+      const litres = Math.max(0, parseFloat(document.getElementById('engen-litres').value) || 0);
+      if (litres <= 0) { document.getElementById('engen-results').style.display='none'; document.getElementById('engen-prompt').style.display='block'; return; }
+      const rows = [];
+      let total = 0;
+      if (en.ebucks) {
+        const rate = EBUCKS_RATES[en.level] || 0;
+        const val = litres * rate;
+        total += val;
+        rows.push(resultRow('FNB eBucks at Engen (Level '+en.level+')', fmtR(val), fmtR(val)+' in eBucks earned. Swipe eBucks card at pump or Pay in eBucks via FNB App.', 'https://www.ebucks.com/web/eBucks/partners/engen.jsp'));
+      }
+      if (en.clicks) {
+        const pts = Math.round(litres);
+        const val = pts * 0.01;
+        total += val;
+        rows.push(resultRow('Clicks Clubcard (1 pt/l)', pts + ' pts ≈ ' + fmtR(val), pts+' Clicks pts ≈ '+fmtR(val)+'. Converts to cashback at Clicks on the 20th.', null));
+      }
+      if (rows.length === 0) { document.getElementById('engen-results').style.display='none'; document.getElementById('engen-prompt').style.display='block'; return; }
+      showResults('engen', rows, total, litres);
+    }
+
+    // ── Astron ─────────────────────────────────────────────────────────────
+    function setAstronCard(type) {
+      as.cardType = type;
+      setToggle('astron-card-credit', type === 'credit');
+      setToggle('astron-card-debit',  type === 'debit');
+      // Hide double rewards if debit
+      if (type === 'debit') { as.double = false; setToggle('astron-tog-double', false); }
+      document.getElementById('astron-double-row').style.display = type === 'credit' ? 'block' : 'none';
+      updateAstronRateLabels();
+      calcAstron();
+    }
+
+    function setAstronTier(tier) {
+      as.tier = tier;
+      [1,2,3,4,5].forEach(t => setToggle('astron-t'+t, t === tier));
+      calcAstron();
+    }
+
+    function toggleAstronDouble() {
+      if (as.cardType !== 'credit') return;
+      as.double = !as.double;
+      setToggle('astron-tog-double', as.double);
+      updateAstronRateLabels();
+      calcAstron();
+    }
+
+    function updateAstronRateLabels() {
+      const rates = as.double ? UCOUNT_DOUBLE : (as.cardType === 'credit' ? UCOUNT_CREDIT : UCOUNT_DEBIT);
+      [1,2,3,4,5].forEach(t => {
+        const el = document.getElementById('astron-t'+t+'-rate');
+        if (!el) return;
+        const r = rates[t];
+        el.textContent = r >= 1 ? 'R'+r.toFixed(2)+'/l' : Math.round(r*100)+'c/l';
+      });
+    }
+
+    function calcAstron() {
+      const litres = Math.max(0, parseFloat(document.getElementById('astron-litres').value) || 0);
+      if (litres <= 0 || as.tier === 0) { document.getElementById('astron-results').style.display='none'; document.getElementById('astron-prompt').style.display='block'; return; }
+      const rates = as.double ? UCOUNT_DOUBLE : (as.cardType === 'credit' ? UCOUNT_CREDIT : UCOUNT_DEBIT);
+      const rate = rates[as.tier];
+      const val = litres * rate;
+      const label = 'UCount Rewards (Tier '+as.tier+', '+(as.cardType==='credit'?'credit':'debit')+(as.double?' — double rewards':'')+')';
+      const note = fmtR(val)+' added to your UCount Rewards balance. Redeem at Astron Energy pump, Checkers, Shoprite, or invest into your TFSA.';
+      showResults('astron', [resultRow(label, fmtR(val), note, 'https://ucount.standardbank.co.za')], val, litres);
+    }
+
+    // Initialise Astron double row visibility and rate labels
+    document.getElementById('astron-double-row').style.display = 'block';
+    updateAstronRateLabels();
+  </script>
+
+</body>
+</html>

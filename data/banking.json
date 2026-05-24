@@ -1,0 +1,544 @@
+{
+  "note": "Data accurate as at May 2026. Always verify fees and benefits on the bank's official website.",
+  "banks": [
+    {
+      "id": "fnb",
+      "name": "FNB",
+      "logo_initial": "F",
+      "colour": "#00ADEF",
+      "tiers": [
+        {
+          "id": "fnb-easy",
+          "name": "Easy Account",
+          "monthly_fee": "R0–R5.95",
+          "monthly_fee_from": 0,
+          "income_min": 0,
+          "income_max": 7999,
+          "rewards": "eBucks",
+          "entertainer": false,
+          "vitality_partner": false,
+          "key_benefit": "Free digital banking with eBucks rewards",
+          "benefits": [
+            "eBucks rewards on qualifying spend",
+            "Free FNB app and online banking",
+            "Free Geo Payments",
+            "Reduced ATM withdrawal fees",
+            "Cellphone banking at no charge"
+          ],
+          "fuel_benefit": false,
+          "grocery_benefit": true,
+          "travel_benefit": false,
+          "gym_benefit": false
+        },
+        {
+          "id": "fnb-gold",
+          "name": "Gold Account",
+          "monthly_fee": "R109",
+          "monthly_fee_from": 109,
+          "income_min": 8000,
+          "income_max": 24999,
+          "rewards": "eBucks",
+          "entertainer": true,
+          "vitality_partner": false,
+          "key_benefit": "Free Entertainer app plus eBucks tier 3 rewards",
+          "benefits": [
+            "Free Entertainer app (worth R600/year)",
+            "eBucks tier 3 on qualifying spend",
+            "Free cash withdrawals at FNB ATMs",
+            "Fuel cashback via eBucks",
+            "Grocery cashback at Pick n Pay and Shoprite"
+          ],
+          "fuel_benefit": true,
+          "grocery_benefit": true,
+          "travel_benefit": false,
+          "gym_benefit": false
+        },
+        {
+          "id": "fnb-premier",
+          "name": "Premier Account",
+          "monthly_fee": "R265",
+          "monthly_fee_from": 265,
+          "income_min": 25000,
+          "income_max": 59999,
+          "rewards": "eBucks",
+          "entertainer": true,
+          "vitality_partner": false,
+          "key_benefit": "eBucks tier 4, free Entertainer, airport lounge access",
+          "benefits": [
+            "eBucks tier 4 with enhanced earning",
+            "Free Entertainer app included",
+            "4 complimentary airport lounge visits per year",
+            "Free international travel insurance",
+            "Fuel cashback and grocery rewards via eBucks"
+          ],
+          "fuel_benefit": true,
+          "grocery_benefit": true,
+          "travel_benefit": true,
+          "gym_benefit": false
+        },
+        {
+          "id": "fnb-private-clients",
+          "name": "Private Clients Account",
+          "monthly_fee": "R445",
+          "monthly_fee_from": 445,
+          "income_min": 60000,
+          "income_max": 499999,
+          "rewards": "eBucks",
+          "entertainer": true,
+          "vitality_partner": false,
+          "key_benefit": "eBucks tier 5, unlimited lounge visits, dedicated private banker",
+          "benefits": [
+            "eBucks tier 5 — maximum earning rate",
+            "Unlimited airport lounge access worldwide",
+            "Dedicated private banker",
+            "Free Entertainer app included",
+            "Comprehensive travel insurance and forex benefits"
+          ],
+          "fuel_benefit": true,
+          "grocery_benefit": true,
+          "travel_benefit": true,
+          "gym_benefit": false
+        },
+        {
+          "id": "fnb-private-wealth",
+          "name": "Private Wealth Account",
+          "monthly_fee": "R730",
+          "monthly_fee_from": 730,
+          "income_min": 500000,
+          "income_max": 999999,
+          "rewards": "eBucks",
+          "entertainer": true,
+          "vitality_partner": false,
+          "key_benefit": "eBucks tier 5+, concierge service, global travel and lifestyle benefits",
+          "benefits": [
+            "eBucks tier 5+ with highest earning rate",
+            "24/7 concierge service",
+            "Unlimited global airport lounge access",
+            "Priority Private and FNB Private Wealth banking suite",
+            "Comprehensive forex, estate, and investment services"
+          ],
+          "fuel_benefit": true,
+          "grocery_benefit": true,
+          "travel_benefit": true,
+          "gym_benefit": false
+        }
+      ]
+    },
+    {
+      "id": "absa",
+      "name": "Absa",
+      "logo_initial": "A",
+      "colour": "#DC0037",
+      "tiers": [
+        {
+          "id": "absa-transact",
+          "name": "Transact Account",
+          "monthly_fee": "R5.95",
+          "monthly_fee_from": 5.95,
+          "income_min": 0,
+          "income_max": 7999,
+          "rewards": "Absa Rewards",
+          "entertainer": false,
+          "vitality_partner": false,
+          "key_benefit": "Affordable transactional account with Absa Rewards cashback",
+          "benefits": [
+            "Absa Rewards cashback on qualifying purchases",
+            "Free Absa Banking app",
+            "Pay@Absa functionality",
+            "Affordable monthly admin fee",
+            "Send money via Absa Pay"
+          ],
+          "fuel_benefit": false,
+          "grocery_benefit": true,
+          "travel_benefit": false,
+          "gym_benefit": false
+        },
+        {
+          "id": "absa-gold",
+          "name": "Gold Value Bundle",
+          "monthly_fee": "R109",
+          "monthly_fee_from": 109,
+          "income_min": 8000,
+          "income_max": 24999,
+          "rewards": "Absa Rewards",
+          "entertainer": false,
+          "vitality_partner": false,
+          "key_benefit": "Value bundle with cashback on everyday spend including fuel",
+          "benefits": [
+            "Absa Rewards cashback at partner retailers",
+            "Fuel cashback at Sasol and Caltex",
+            "Grocery cashback at Shoprite and Checkers",
+            "Free card swipes and online transfers",
+            "Basic travel insurance included"
+          ],
+          "fuel_benefit": true,
+          "grocery_benefit": true,
+          "travel_benefit": false,
+          "gym_benefit": false
+        },
+        {
+          "id": "absa-premium",
+          "name": "Premium Banking",
+          "monthly_fee": "R265",
+          "monthly_fee_from": 265,
+          "income_min": 25000,
+          "income_max": 59999,
+          "rewards": "Absa Rewards",
+          "entertainer": false,
+          "vitality_partner": false,
+          "key_benefit": "Premium cashback rates, travel insurance, and lounge access",
+          "benefits": [
+            "Enhanced Absa Rewards earning rate",
+            "4 airport lounge visits per year",
+            "Comprehensive travel insurance",
+            "Fuel and grocery cashback",
+            "Dedicated relationship banker"
+          ],
+          "fuel_benefit": true,
+          "grocery_benefit": true,
+          "travel_benefit": true,
+          "gym_benefit": false
+        },
+        {
+          "id": "absa-private",
+          "name": "Private Banking",
+          "monthly_fee": "R395",
+          "monthly_fee_from": 395,
+          "income_min": 60000,
+          "income_max": 999999,
+          "rewards": "Absa Rewards",
+          "entertainer": false,
+          "vitality_partner": false,
+          "key_benefit": "Private banker, unlimited lounge access, and top-tier rewards",
+          "benefits": [
+            "Dedicated private banker",
+            "Unlimited airport lounge access worldwide",
+            "Highest Absa Rewards earning tier",
+            "Full travel, legal, and medical insurance suite",
+            "Absa Private Bank investment and lending services"
+          ],
+          "fuel_benefit": true,
+          "grocery_benefit": true,
+          "travel_benefit": true,
+          "gym_benefit": false
+        }
+      ]
+    },
+    {
+      "id": "nedbank",
+      "name": "Nedbank",
+      "logo_initial": "N",
+      "colour": "#009639",
+      "tiers": [
+        {
+          "id": "nedbank-payg",
+          "name": "Pay-As-You-Use",
+          "monthly_fee": "R0 + fees",
+          "monthly_fee_from": 0,
+          "income_min": 0,
+          "income_max": 7999,
+          "rewards": "Greenbacks",
+          "entertainer": false,
+          "vitality_partner": false,
+          "key_benefit": "Pay only for what you use — no monthly admin fee",
+          "benefits": [
+            "No monthly administration fee",
+            "Greenbacks on qualifying spend",
+            "Free Nedbank Money app",
+            "Pay@Nedbank with no monthly charge",
+            "Competitive transaction-based pricing"
+          ],
+          "fuel_benefit": false,
+          "grocery_benefit": false,
+          "travel_benefit": false,
+          "gym_benefit": false
+        },
+        {
+          "id": "nedbank-savvy",
+          "name": "Savvy Bundle",
+          "monthly_fee": "R115",
+          "monthly_fee_from": 115,
+          "income_min": 8000,
+          "income_max": 24999,
+          "rewards": "Greenbacks",
+          "entertainer": false,
+          "vitality_partner": false,
+          "key_benefit": "Unlimited transactions plus Greenbacks on partner spend",
+          "benefits": [
+            "Unlimited card swipes and app transactions",
+            "Greenbacks cashback at Edgars, Pick n Pay, and partners",
+            "Fuel cashback at Engen service stations",
+            "Free Stop Order and debit order processing",
+            "Grocery benefits via Greenbacks programme"
+          ],
+          "fuel_benefit": true,
+          "grocery_benefit": true,
+          "travel_benefit": false,
+          "gym_benefit": false
+        },
+        {
+          "id": "nedbank-professional",
+          "name": "Professional Banking",
+          "monthly_fee": "R245",
+          "monthly_fee_from": 245,
+          "income_min": 25000,
+          "income_max": 999999,
+          "rewards": "Greenbacks",
+          "entertainer": false,
+          "vitality_partner": false,
+          "key_benefit": "Full professional suite with premium Greenbacks and travel benefits",
+          "benefits": [
+            "Premium Greenbacks earning at all partners",
+            "Airport lounge access included",
+            "Comprehensive travel insurance",
+            "Dedicated professional banking support",
+            "Fuel and grocery cashback via Greenbacks"
+          ],
+          "fuel_benefit": true,
+          "grocery_benefit": true,
+          "travel_benefit": true,
+          "gym_benefit": false
+        }
+      ]
+    },
+    {
+      "id": "standardbank",
+      "name": "Standard Bank",
+      "logo_initial": "S",
+      "colour": "#1E3A5F",
+      "tiers": [
+        {
+          "id": "sb-mymo",
+          "name": "MyMo Account",
+          "monthly_fee": "R5.95",
+          "monthly_fee_from": 5.95,
+          "income_min": 0,
+          "income_max": 7999,
+          "rewards": "UCount",
+          "entertainer": false,
+          "vitality_partner": false,
+          "key_benefit": "Simple affordable banking with UCount Rewards",
+          "benefits": [
+            "UCount Rewards on qualifying spend",
+            "Standard Bank app and internet banking",
+            "Grocery cashback at Pick n Pay via UCount",
+            "Discounted transaction fees",
+            "Airtime and data purchases via app"
+          ],
+          "fuel_benefit": false,
+          "grocery_benefit": true,
+          "travel_benefit": false,
+          "gym_benefit": false
+        },
+        {
+          "id": "sb-elite",
+          "name": "Elite Account",
+          "monthly_fee": "R155",
+          "monthly_fee_from": 155,
+          "income_min": 8000,
+          "income_max": 24999,
+          "rewards": "UCount",
+          "entertainer": false,
+          "vitality_partner": false,
+          "key_benefit": "Enhanced UCount rewards with fuel discounts and travel benefits",
+          "benefits": [
+            "UCount Rewards at elevated earning rate",
+            "Fuel discounts at Engen via UCount",
+            "Grocery cashback at Pick n Pay",
+            "Travel insurance and basic lounge access",
+            "Unlimited card swipes and online transactions"
+          ],
+          "fuel_benefit": true,
+          "grocery_benefit": true,
+          "travel_benefit": true,
+          "gym_benefit": false
+        },
+        {
+          "id": "sb-professional",
+          "name": "Professional Account",
+          "monthly_fee": "R270",
+          "monthly_fee_from": 270,
+          "income_min": 25000,
+          "income_max": 999999,
+          "rewards": "UCount",
+          "entertainer": false,
+          "vitality_partner": false,
+          "key_benefit": "Premium UCount, lounge access, concierge, and gym benefit",
+          "benefits": [
+            "Premium UCount earning across all categories",
+            "Airport lounge access included",
+            "Gym benefit via Virgin Active or Planet Fitness",
+            "Comprehensive travel and medical insurance",
+            "24/7 concierge and dedicated relationship manager"
+          ],
+          "fuel_benefit": true,
+          "grocery_benefit": true,
+          "travel_benefit": true,
+          "gym_benefit": true
+        }
+      ]
+    },
+    {
+      "id": "capitec",
+      "name": "Capitec",
+      "logo_initial": "C",
+      "colour": "#0074D9",
+      "tiers": [
+        {
+          "id": "capitec-global-one",
+          "name": "Global One Account",
+          "monthly_fee": "R7",
+          "monthly_fee_from": 7,
+          "income_min": 0,
+          "income_max": 999999,
+          "rewards": "Interest on savings",
+          "entertainer": false,
+          "vitality_partner": false,
+          "key_benefit": "High-interest savings integrated with everyday banking — a different model",
+          "benefits": [
+            "Up to 5.5% interest on savings pockets",
+            "Low flat R7/month fee regardless of income",
+            "Top-rated banking app in South Africa",
+            "Free card swipes and app transactions",
+            "Flexible credit facility if needed"
+          ],
+          "fuel_benefit": false,
+          "grocery_benefit": false,
+          "travel_benefit": false,
+          "gym_benefit": false
+        }
+      ]
+    },
+    {
+      "id": "discovery",
+      "name": "Discovery Bank",
+      "logo_initial": "D",
+      "colour": "#004F9F",
+      "tiers": [
+        {
+          "id": "discovery-gold",
+          "name": "Gold Account",
+          "monthly_fee": "R109",
+          "monthly_fee_from": 109,
+          "income_min": 8000,
+          "income_max": 24999,
+          "rewards": "Vitality Money",
+          "entertainer": false,
+          "vitality_partner": true,
+          "key_benefit": "Vitality integration with dynamic interest rates linked to your health",
+          "benefits": [
+            "Vitality Money rewards linked to healthy behaviour",
+            "Dynamic interest rates — earn more by being healthy",
+            "HealthyFood cashback at Woolworths and Pick n Pay",
+            "Fuel cashback at BP",
+            "Full Discovery Vitality integration"
+          ],
+          "fuel_benefit": true,
+          "grocery_benefit": true,
+          "travel_benefit": false,
+          "gym_benefit": false
+        },
+        {
+          "id": "discovery-platinum",
+          "name": "Platinum Account",
+          "monthly_fee": "R209",
+          "monthly_fee_from": 209,
+          "income_min": 25000,
+          "income_max": 59999,
+          "rewards": "Vitality Money",
+          "entertainer": false,
+          "vitality_partner": true,
+          "key_benefit": "Enhanced Vitality benefits including gym subsidy and travel cover",
+          "benefits": [
+            "Vitality Money with enhanced earning rates",
+            "Gym benefit at Virgin Active, Planet Fitness, or Biokinetics",
+            "Airport lounge access for Vitality Active Rewards",
+            "HealthyFood cashback at Woolworths and Pick n Pay",
+            "Travel insurance included"
+          ],
+          "fuel_benefit": true,
+          "grocery_benefit": true,
+          "travel_benefit": true,
+          "gym_benefit": true
+        },
+        {
+          "id": "discovery-black",
+          "name": "Black Account",
+          "monthly_fee": "R349",
+          "monthly_fee_from": 349,
+          "income_min": 60000,
+          "income_max": 499999,
+          "rewards": "Vitality Money",
+          "entertainer": false,
+          "vitality_partner": true,
+          "key_benefit": "Top-tier Vitality benefits with comprehensive travel and concierge",
+          "benefits": [
+            "Highest Vitality Money earning tier",
+            "Full gym benefit at any major gym",
+            "Unlimited lounge access via Vitality Active Rewards",
+            "Comprehensive travel, medical, and legal insurance",
+            "24/7 lifestyle concierge"
+          ],
+          "fuel_benefit": true,
+          "grocery_benefit": true,
+          "travel_benefit": true,
+          "gym_benefit": true
+        },
+        {
+          "id": "discovery-purple",
+          "name": "Purple Account",
+          "monthly_fee": "R999",
+          "monthly_fee_from": 999,
+          "income_min": 500000,
+          "income_max": 999999,
+          "rewards": "Vitality Money",
+          "entertainer": false,
+          "vitality_partner": true,
+          "key_benefit": "Ultra-premium private banking with the full Discovery Vitality suite",
+          "benefits": [
+            "Ultra-premium Vitality Money earning across all categories",
+            "Private banker and concierge on demand",
+            "Full Vitality suite including gym, travel, health, and drive",
+            "Unlimited global lounge access",
+            "Discovery Invest and Insure bundled benefits"
+          ],
+          "fuel_benefit": true,
+          "grocery_benefit": true,
+          "travel_benefit": true,
+          "gym_benefit": true
+        }
+      ]
+    },
+    {
+      "id": "tymebank",
+      "name": "TymeBank",
+      "logo_initial": "T",
+      "colour": "#6B28A0",
+      "tiers": [
+        {
+          "id": "tymebank-gosave",
+          "name": "GoSave Account",
+          "monthly_fee": "R0",
+          "monthly_fee_from": 0,
+          "income_min": 0,
+          "income_max": 999999,
+          "rewards": "PicknPay Smart Shopper + GoalSave interest",
+          "entertainer": false,
+          "vitality_partner": false,
+          "key_benefit": "Truly zero fees with high-interest GoalSave pockets — a different model",
+          "benefits": [
+            "Zero monthly fees, ever",
+            "Up to 10% interest on GoalSave pockets",
+            "Smart Shopper points at Pick n Pay",
+            "MoreTyme buy-now-pay-later at partner stores",
+            "Free card and app transactions"
+          ],
+          "fuel_benefit": false,
+          "grocery_benefit": true,
+          "travel_benefit": false,
+          "gym_benefit": false
+        }
+      ]
+    }
+  ]
+}

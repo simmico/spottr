@@ -1,0 +1,74 @@
+[
+  {
+    "name": "KFC",
+    "deal": "Streetwise 2 with Chips — 2 pieces of chicken with chips for R40",
+    "days": "Monday–Sunday",
+    "howToClaim": "Order at any KFC counter, drive-thru, or via the KFC app. Order direct from the KFC app rather than Uber Eats to avoid the delivery markup.",
+    "badge": "Everyday Value",
+    "link": "https://order.kfc.co.za/menu/streetwise/streetwisetwo-chips",
+    "active": true
+  },
+  {
+    "name": "McDonald's",
+    "deal": "Nazo Small Meal — value meal for R30",
+    "days": "Monday–Sunday",
+    "howToClaim": "Order at the counter or via the McDonald's app. No direct link available — order in store or on the McDonald's SA app.",
+    "badge": "Budget Meal",
+    "link": null,
+    "active": true
+  },
+  {
+    "name": "Debonairs Pizza",
+    "deal": "Pizza Wrap — from R25",
+    "days": "Monday–Sunday",
+    "howToClaim": "Order online, on the app, or at any Debonairs counter.",
+    "badge": "From R25",
+    "link": "https://debonairspizza.co.za/pizza-specials/pizzawrap/",
+    "active": true
+  },
+  {
+    "name": "Debonairs Pizza",
+    "deal": "Real Deal Bundle — Real Deal pizza with Cheesegrillers for R59",
+    "days": "Monday–Sunday",
+    "howToClaim": "Order the Real Deal Bundle online, on the Debonairs app, or at the counter.",
+    "badge": "Bundle Deal",
+    "link": "https://debonairspizza.co.za/pizza-specials/real-deal-bundle/",
+    "active": true
+  },
+  {
+    "name": "Pedros",
+    "deal": "Strips and Rice — chicken strips with rice for R30. Look under Single Meals on the menu.",
+    "days": "Monday–Sunday",
+    "howToClaim": "Visit any Pedros branch and order from the Single Meals section of the menu.",
+    "badge": "Everyday Value",
+    "link": "https://pedroschicken.co.za/menu/",
+    "active": true
+  },
+  {
+    "name": "Chicken Licken",
+    "deal": "Easy Bucks Menu — everything on the Easy Bucks menu for R30",
+    "days": "Monday–Sunday",
+    "howToClaim": "Order from the Easy Bucks menu at any Chicken Licken branch.",
+    "badge": "Budget Menu",
+    "link": "https://chickenlicken.co.za/products?cId=9#EASY",
+    "active": true
+  },
+  {
+    "name": "Romans Pizza",
+    "deal": "Sava Flava and Drink — R38. Price may vary slightly by branch.",
+    "days": "Monday–Sunday",
+    "howToClaim": "Go to the Romans Pizza website, select your nearest branch to confirm the Sava Flava pricing at that location.",
+    "badge": "Everyday Value",
+    "link": "https://romanspizza.co.za/",
+    "active": true
+  },
+  {
+    "name": "Fishaways",
+    "deal": "Hake, Rice and Chips — R49",
+    "days": "Monday–Sunday",
+    "howToClaim": "Order in-store at any Fishaways branch or check the promo page for current offers.",
+    "badge": "Everyday Value",
+    "link": "https://fishaways.co.za/promo/",
+    "active": true
+  }
+]

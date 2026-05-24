@@ -1,0 +1,518 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discovery Miles D-Day Calculator | Dealr</title>
+  <meta name="description" content="See exactly how many Discovery Miles you need to buy anything  -  and how much you save by spending on the 15th (Miles D-Day).">
+  <meta name="theme-color" content="#081B1B">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/icons/icon-192.svg" type="image/svg+xml">
+
+  <meta property="og:title" content="Discovery Miles D-Day Calculator | Dealr">
+  <meta property="og:description" content="Know exactly when to spend your Discovery Miles. The 15th doubles your discount.">
+  <meta property="og:url" content="https://dealr.simmico.co.za/discovery-miles-calculator.html">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="page-miles-calculator">
+
+  <!-- ── Navigation ─────────────────────────────────────────────────────────── -->
+  <nav class="nav" id="main-nav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__wordmark">Dealr</a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="deals.html" class="nav__link">Deals</a></li>
+        <li class="nav__item--has-dropdown">
+          <a href="restaurants.html" class="nav__link">Restaurants</a>
+          <ul class="nav__dropdown" role="list">
+            <li><a href="restaurants-fastfood.html" class="nav__dropdown-link">Fast Food</a></li>
+            <li><a href="restaurants-casual.html" class="nav__dropdown-link">Casual Dining</a></li>
+            <li><a href="restaurants-datenight.html" class="nav__dropdown-link">Date Night</a></li>
+          </ul>
+        </li>
+        <li class="nav__item--has-dropdown">
+          <a href="fuel.html" class="nav__link">Fuel</a>
+          <ul class="nav__dropdown" role="list">
+            <li><a href="fuel-calculator.html" class="nav__dropdown-link">Fuel Calculator</a></li>
+            <li><a href="fuel-bp.html" class="nav__dropdown-link">BP Rewards</a></li>
+            <li><a href="fuel-shell.html" class="nav__dropdown-link">Shell V+</a></li>
+            <li><a href="fuel-engen.html" class="nav__dropdown-link">Engen eBucks</a></li>
+            <li><a href="fuel-astron.html" class="nav__dropdown-link">Astron Energy</a></li>
+            <li><a href="fuel-sasol.html" class="nav__dropdown-link">Sasol</a></li>
+            <li><a href="fuel-total.html" class="nav__dropdown-link">Total Energy</a></li>
+          </ul>
+        </li>
+        <li class="nav__item--has-dropdown">
+          <a href="discovery.html" class="nav__link nav__link--active">Discovery</a>
+          <ul class="nav__dropdown" role="list">
+            <li><a href="discovery-miles-calculator.html" class="nav__dropdown-link">Miles Calculator</a></li>
+            <li><a href="vitality-core-guide.html" class="nav__dropdown-link">Core Guide</a></li>
+            <li><a href="healthyfood-benefit-guide.html" class="nav__dropdown-link">HealthyFood</a></li>
+            <li><a href="vitality-gym-benefit.html" class="nav__dropdown-link">Gym Benefit</a></li>
+            <li><a href="ster-kinekor-movie-benefit.html" class="nav__dropdown-link">Movies</a></li>
+            <li><a href="active-rewards-apple-watch.html" class="nav__dropdown-link">Apple Watch</a></li>
+            <li><a href="healthyfood-studio-classes.html" class="nav__dropdown-link">Cooking Studio</a></li>
+          </ul>
+        </li>
+        <li class="nav__item--has-dropdown">
+          <a href="banking.html" class="nav__link">Banking</a>
+          <ul class="nav__dropdown" role="list">
+            <li><a href="banking-ebucks.html" class="nav__dropdown-link">FNB eBucks</a></li>
+            <li><a href="banking-greenbacks.html" class="nav__dropdown-link">Nedbank Greenbacks</a></li>
+            <li><a href="banking-capitec.html" class="nav__dropdown-link">Capitec Live Better</a></li>
+            <li><a href="banking-ucount.html" class="nav__dropdown-link">Standard Bank UCount</a></li>
+            <li><a href="card-privileges.html" class="nav__dropdown-link">Card Privileges</a></li>
+          </ul>
+        </li>
+        <li class="nav__item--has-dropdown">
+          <a href="subscriptions.html" class="nav__link">Subscriptions</a>
+          <ul class="nav__dropdown" role="list">
+            <li><a href="subscriptions-streaming.html" class="nav__dropdown-link">Streaming</a></li>
+            <li><a href="subscriptions-data.html" class="nav__dropdown-link">Data &amp; SIM</a></li>
+            <li><a href="subscriptions-apps.html" class="nav__dropdown-link">Apps &amp; Services</a></li>
+          </ul>
+        </li>
+        <li><a href="birthdays.html" class="nav__link">Birthdays</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── Gold Thread ────────────────────────────────────────────────────────── -->
+  <div class="gold-thread" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" width="2" height="100%">
+      <line x1="1" y1="15%" x2="1" y2="85%" stroke="#C18D52" stroke-width="1" opacity="0.35"/>
+    </svg>
+  </div>
+
+  <main>
+
+    <!-- ── Hero ───────────────────────────────────────────────────────────────── -->
+    <section class="page-inner-hero" aria-label="Miles D-Day Calculator">
+      <div>
+        <h1>Miles D-Day Calculator.</h1>
+        <p class="page-inner-hero__subtitle">Know exactly how many miles you need  -  and how much you save by waiting for the 15th.</p>
+      </div>
+    </section>
+
+    <!-- ── How It Works ───────────────────────────────────────────────────────── -->
+    <section class="section section--beige" aria-label="How Discovery Miles work">
+      <div class="container">
+        <div class="miles-explainer">
+          <header class="section-header">
+            <span class="section-eyebrow">The Basics</span>
+            <h2>Three rules that matter</h2>
+          </header>
+          <div class="miles-rule-cards">
+            <div class="miles-rule-card">
+              <div class="miles-rule-card__number">10:1</div>
+              <div class="miles-rule-card__title">The Exchange Rate</div>
+              <div class="miles-rule-card__desc">10 Discovery Miles always equals R1.00. A R1,000 item is always 10,000 Miles at baseline  -  before any discounts.</div>
+            </div>
+            <div class="miles-rule-card">
+              <div class="miles-rule-card__number">+5%</div>
+              <div class="miles-rule-card__title">Per Product, Every Day</div>
+              <div class="miles-rule-card__desc">Each qualifying Discovery product you hold (Vitality Health, Discovery Bank, Discovery Insure) adds a flat 5% discount. Three products = 15% off any day.</div>
+            </div>
+            <div class="miles-rule-card">
+              <div class="miles-rule-card__number">15th</div>
+              <div class="miles-rule-card__title">D-Day Doubles It</div>
+              <div class="miles-rule-card__desc">On the 15th of every month, your total discount automatically doubles for 24 hours. Three products becomes 30% off  -  the maximum cap.</div>
+            </div>
+          </div>
+
+          <div style="text-align:center;margin-top:40px;">
+            <p style="font-family:'DM Sans',sans-serif;font-size:0.9rem;color:var(--color-text-muted);margin-bottom:10px;">Try it yourself  -  the calculator is just below</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C18D52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="animation:bounce 1.8s ease-in-out infinite;display:inline-block;"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Calculator ─────────────────────────────────────────────────────────── -->
+    <section class="section section--dark" aria-label="Miles Calculator">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <span class="section-eyebrow section-eyebrow--gold">Interactive Tool</span>
+          <h2>Your Miles Calculator</h2>
+        </header>
+
+        <div class="miles-calc">
+
+          <!-- Product Toggles -->
+          <p style="font-family:'DM Sans',sans-serif;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--color-text-muted);margin-bottom:12px;">Which Discovery products do you have?</p>
+          <div class="miles-calc__toggles">
+            <button class="miles-toggle" id="toggle-vitality" aria-pressed="false" onclick="toggleProduct('vitality')">
+              <div class="miles-toggle__dot" id="dot-vitality"></div>
+              <div class="miles-toggle__info">
+                <span class="miles-toggle__label">Vitality Health</span>
+                <span class="miles-toggle__pct">+5% discount</span>
+              </div>
+            </button>
+            <button class="miles-toggle" id="toggle-bank" aria-pressed="false" onclick="toggleProduct('bank')">
+              <div class="miles-toggle__dot" id="dot-bank"></div>
+              <div class="miles-toggle__info">
+                <span class="miles-toggle__label">Discovery Bank</span>
+                <span class="miles-toggle__pct">+5% discount</span>
+              </div>
+            </button>
+            <button class="miles-toggle" id="toggle-insure" aria-pressed="false" onclick="toggleProduct('insure')">
+              <div class="miles-toggle__dot" id="dot-insure"></div>
+              <div class="miles-toggle__info">
+                <span class="miles-toggle__label">Discovery Insure</span>
+                <span class="miles-toggle__pct">+5% discount</span>
+              </div>
+            </button>
+          </div>
+
+          <!-- Price Input -->
+          <div class="miles-calc__input-row">
+            <label class="miles-calc__input-label" for="item-price">Item retail price</label>
+            <div class="miles-calc__price-wrap">
+              <span class="miles-price-prefix">R</span>
+              <input
+                class="miles-price-input"
+                id="item-price"
+                type="number"
+                min="0"
+                step="1"
+                placeholder="0"
+                oninput="sanitiseInput(this); updateCalc()"
+                aria-label="Item retail price in Rand"
+              >
+            </div>
+          </div>
+
+          <!-- Miles Input -->
+          <div class="miles-calc__input-row" style="margin-bottom:var(--space-lg)">
+            <label class="miles-calc__input-label" for="user-miles">How many Discovery Miles do you have?</label>
+            <div class="miles-calc__price-wrap">
+              <input
+                class="miles-price-input"
+                id="user-miles"
+                type="number"
+                min="0"
+                step="100"
+                placeholder="0"
+                oninput="sanitiseInput(this); updateCalc()"
+                aria-label="Your available Discovery Miles"
+                style="padding-left:16px"
+              >
+            </div>
+          </div>
+
+          <!-- Results -->
+          <div class="miles-calc__results">
+            <div class="miles-result">
+              <span class="miles-result__label">Any normal day</span>
+              <span class="miles-result__discount" id="everyday-discount">—</span>
+              <div class="miles-result__miles-block">
+                <span class="miles-result__miles-val" id="everyday-miles-used">— Miles used</span>
+                <span class="miles-result__miles-rval" id="everyday-miles-rval">R- value</span>
+              </div>
+              <div class="miles-result__formula">
+                <div class="miles-result__formula-row">
+                  <span class="miles-result__formula-lbl">Item cost</span>
+                  <span class="miles-result__formula-num" id="everyday-item-cost">R-</span>
+                </div>
+                <div class="miles-result__formula-row miles-result__formula-row--deduct">
+                  <span class="miles-result__formula-lbl">Miles cover</span>
+                  <span class="miles-result__formula-num" id="everyday-formula-miles">-R-</span>
+                </div>
+                <div class="miles-result__formula-divider"></div>
+                <div class="miles-result__formula-row miles-result__formula-row--total">
+                  <span class="miles-result__cash-label">Out of pocket</span>
+                  <span class="miles-result__cash" id="everyday-cash">R-</span>
+                </div>
+              </div>
+            </div>
+            <div class="miles-result miles-result--dday">
+              <div class="miles-dday-badge">D-Day · 15th</div>
+              <span class="miles-result__label">Miles D-Day (the 15th)</span>
+              <span class="miles-result__discount" id="dday-discount">—</span>
+              <div class="miles-result__miles-block">
+                <span class="miles-result__miles-val" id="dday-miles-used">— Miles used</span>
+                <span class="miles-result__miles-rval" id="dday-miles-rval">R- value</span>
+              </div>
+              <div class="miles-result__formula">
+                <div class="miles-result__formula-row">
+                  <span class="miles-result__formula-lbl">Item cost</span>
+                  <span class="miles-result__formula-num" id="dday-item-cost">R-</span>
+                </div>
+                <div class="miles-result__formula-row miles-result__formula-row--deduct">
+                  <span class="miles-result__formula-lbl">Miles cover</span>
+                  <span class="miles-result__formula-num" id="dday-formula-miles">-R-</span>
+                </div>
+                <div class="miles-result__formula-divider"></div>
+                <div class="miles-result__formula-row miles-result__formula-row--total">
+                  <span class="miles-result__cash-label">Out of pocket</span>
+                  <span class="miles-result__cash" id="dday-cash">R-</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Savings Bar -->
+          <div class="miles-savings miles-savings--zero" id="savings-bar">
+            <span class="miles-savings__label">Wait for D-Day and save</span>
+            <div class="miles-savings__numbers">
+              <span class="miles-savings__big" id="savings-cash">R0.00</span>
+              <span class="miles-savings__sub">in out-of-pocket cost</span>
+            </div>
+          </div>
+
+        </div>
+
+        <p style="font-family:'DM Sans',sans-serif;font-size:0.8rem;color:var(--color-text-muted);text-align:center;margin-top:24px;max-width:560px;margin-left:auto;margin-right:auto;">Miles can only be spent at official partner stores (Takealot, Superbalist, Yuppiechef, NetFlorist, and others). Check the Discovery portal for the full list.</p>
+      </div>
+    </section>
+
+    <!-- ── How to Get MORE Miles ───────────────────────────────────────────────── -->
+    <section class="section section--beige" aria-label="How to earn more Discovery Miles">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">Earn More</span>
+          <h2>How to get MORE Miles</h2>
+        </header>
+
+        <div class="miles-rule-cards">
+
+          <div class="miles-rule-card">
+            <div class="miles-rule-card__number">Credit Card</div>
+            <div class="miles-rule-card__title">Get a Discovery Credit Card</div>
+            <div class="miles-rule-card__desc">A Discovery Bank credit card earns significantly more miles per rand than a standard debit card. Depending on your tier, you can earn more per transaction - making D-Day far more valuable the more products you hold.</div>
+          </div>
+
+          <div class="miles-rule-card">
+            <div class="miles-rule-card__number">Virtual Card</div>
+            <div class="miles-rule-card__title">Use Your Virtual Card Online</div>
+            <div class="miles-rule-card__desc">Your Discovery Bank virtual card (available in the app) earns bonus miles on eligible online purchases. Use it specifically at D-Day partner stores - Takealot, Superbalist, Yuppiechef - to stack your earning rate with your discount tier.</div>
+          </div>
+
+          <div class="miles-rule-card">
+            <div class="miles-rule-card__number">1:100</div>
+            <div class="miles-rule-card__title">Know Your Rate and Cap</div>
+            <div class="miles-rule-card__desc">Physical transactional cards earn 1 mile per R100 spent (Flat Rate). Virtual cards earn more per rand. There is also a monthly miles cap - any spending above your cap earns at the flat rate. Check your Discovery portal for your specific cap before planning a large purchase on the 15th.</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Portal Links ───────────────────────────────────────────────────────── -->
+    <section class="section section--mid" aria-label="Discovery portal links">
+      <div class="container" style="text-align:center;">
+        <header class="section-header section-header--center">
+          <span class="section-eyebrow section-eyebrow--mint">Go there now</span>
+          <h2 style="color:var(--color-text-light);">Check your balance &amp; partners</h2>
+        </header>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center;margin-top:8px;">
+          <a href="https://www.discovery.co.za/portal/logged-in/bank/miles-dashboard" class="btn btn--primary" target="_blank" rel="noopener">View Miles Balance</a>
+          <a href="https://www.discovery.co.za/portal/logged-in/vitality/miles-partners" class="btn btn--outline" target="_blank" rel="noopener">See All D-Day Partners</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ────────────────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__wordmark">Dealr</a>
+          <p class="footer__tagline">The smartest way to navigate the South African consumer landscape.</p>
+        </div>
+        <div class="footer__grid">
+          <div class="footer__col">
+            <h4 class="footer__heading">Explore</h4>
+            <ul class="footer__links" role="list">
+              <li><a href="deals.html">Deals</a></li>
+              <li><a href="restaurants.html">Restaurants</a></li>
+              <li><a href="banking.html">Banking</a></li>
+              <li><a href="discovery.html">Discovery</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__heading">Company</h4>
+            <ul class="footer__links" role="list">
+              <li><a href="about.html">About</a></li>
+              <li><a href="birthdays.html">Birthdays</a></li>
+              <li><a href="about.html#disclaimer">Disclaimer</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Dealr. Built for South Africans.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── Mobile Navigation ─────────────────────────────────────────────────── -->
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html" class="mobile-nav__tab">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <span>Home</span>
+    </a>
+    <a href="deals.html" class="mobile-nav__tab">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+      <span>Deals</span>
+    </a>
+    <a href="restaurants.html" class="mobile-nav__tab">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+      <span>Eat</span>
+    </a>
+    <a href="fuel.html" class="mobile-nav__tab"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 22V6a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v16"/><path d="M3 10h12"/><path d="M17 5l3 2.5V20"/><path d="M20 7h1a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-1"/><line x1="1" y1="22" x2="23" y2="22"/></svg><span>Fuel</span></a>
+    <a href="banking.html" class="mobile-nav__tab"">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="22" x2="21" y2="22"/><line x1="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg>
+      <span>Banking</span>
+    </a>
+    <button class="mobile-nav__tab" id="more-btn" aria-label="More pages" aria-expanded="false" aria-controls="more-drawer">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+      <span>More</span>
+    </button>
+  </nav>
+
+  <!-- ── More Drawer Overlay ──────────────────────────────────────────────── -->
+  <div class="more-overlay" id="more-overlay" aria-hidden="true"></div>
+
+  <!-- ── More Drawer ──────────────────────────────────────────────────────── -->
+  <div class="more-drawer" id="more-drawer" aria-hidden="true" role="dialog" aria-label="More pages">
+    <div class="more-drawer__handle" aria-hidden="true"></div>
+    <nav class="more-drawer__nav" aria-label="Additional pages">
+      <a href="discovery.html" class="more-drawer__row more-drawer__row--active">
+        <span>Discovery</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+      </a>
+      <a href="subscriptions.html" class="more-drawer__row">
+        <span>Subscriptions</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+      </a>
+      <a href="birthdays.html" class="more-drawer__row">
+        <span>Birthdays</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+      </a>
+      <a href="about.html" class="more-drawer__row">
+        <span>About</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+      </a>
+    </nav>
+    <button class="more-drawer__close" id="more-close">Close</button>
+  </div>
+
+  <script type="module" src="js/scroll.js"></script>
+  <script type="module" src="js/bot.js"></script>
+
+  <!-- ── Calculator Logic ──────────────────────────────────────────────────── -->
+  <script>
+    const RATE = 10; // 10 Miles = R1
+
+    const state = { vitality: false, bank: false, insure: false };
+
+    function sanitiseInput(el) {
+      const v = parseFloat(el.value);
+      if (isNaN(v) || v < 0) el.value = '';
+    }
+
+    function toggleProduct(key) {
+      state[key] = !state[key];
+      const btn = document.getElementById('toggle-' + key);
+      btn.classList.toggle('active', state[key]);
+      btn.setAttribute('aria-pressed', state[key]);
+      updateCalc();
+    }
+
+    function updateCalc() {
+      const price     = Math.max(0, parseFloat(document.getElementById('item-price').value) || 0);
+      const userMiles = Math.max(0, parseFloat(document.getElementById('user-miles').value) || 0);
+      const count     = [state.vitality, state.bank, state.insure].filter(Boolean).length;
+
+      const everydayDisc = count * 0.05;
+      const ddayDisc     = Math.min(everydayDisc * 2, 0.30);
+
+      // Discount reduces the miles needed to cover the full item price.
+      // With 10% discount you need 10% fewer miles — each mile covers more rand value.
+      const everydayMilesNeeded = price * RATE * (1 - everydayDisc);
+      const ddayMilesNeeded     = price * RATE * (1 - ddayDisc);
+
+      // Actual miles spent (can't exceed what's needed or what user has)
+      const everydayMilesUsed = Math.min(userMiles, everydayMilesNeeded);
+      const ddayMilesUsed     = Math.min(userMiles, ddayMilesNeeded);
+
+      // Rand value those miles cover (proportional share of item price)
+      const everydayMilesValue = everydayMilesNeeded > 0 ? (everydayMilesUsed / everydayMilesNeeded) * price : 0;
+      const ddayMilesValue     = ddayMilesNeeded > 0     ? (ddayMilesUsed / ddayMilesNeeded) * price         : 0;
+
+      // Out of pocket
+      const everydayCash = Math.max(0, price - everydayMilesValue);
+      const ddayCash     = Math.max(0, price - ddayMilesValue);
+      const cashSaved    = Math.max(0, everydayCash - ddayCash);
+
+      const hasPrice = price > 0;
+
+      // Everyday column
+      document.getElementById('everyday-discount').textContent      = hasPrice ? (everydayDisc * 100).toFixed(0) + '% off miles' : '—';
+      document.getElementById('everyday-miles-used').textContent    = hasPrice ? formatMiles(Math.round(everydayMilesUsed)) + ' used' : '— Miles used';
+      document.getElementById('everyday-miles-rval').textContent    = hasPrice ? formatRand(everydayMilesValue) + ' value' : 'R— value';
+      document.getElementById('everyday-item-cost').textContent     = hasPrice ? formatRand(price) : 'R—';
+      document.getElementById('everyday-formula-miles').textContent = hasPrice ? '−' + formatRand(everydayMilesValue) : '−R—';
+      document.getElementById('everyday-cash').textContent          = hasPrice ? formatRand(everydayCash) : 'R—';
+
+      // D-Day column
+      document.getElementById('dday-discount').textContent      = hasPrice ? (ddayDisc * 100).toFixed(0) + '% off miles' : '—';
+      document.getElementById('dday-miles-used').textContent    = hasPrice ? formatMiles(Math.round(ddayMilesUsed)) + ' used' : '— Miles used';
+      document.getElementById('dday-miles-rval').textContent    = hasPrice ? formatRand(ddayMilesValue) + ' value' : 'R— value';
+      document.getElementById('dday-item-cost').textContent     = hasPrice ? formatRand(price) : 'R—';
+      document.getElementById('dday-formula-miles').textContent = hasPrice ? '−' + formatRand(ddayMilesValue) : '−R—';
+      document.getElementById('dday-cash').textContent          = hasPrice ? formatRand(ddayCash) : 'R—';
+
+      // Savings bar
+      const bar = document.getElementById('savings-bar');
+      if (hasPrice && cashSaved > 0.005) {
+        bar.classList.remove('miles-savings--zero');
+        document.getElementById('savings-cash').textContent = formatRand(cashSaved);
+      } else {
+        bar.classList.add('miles-savings--zero');
+        document.getElementById('savings-cash').textContent = 'R0.00';
+      }
+    }
+
+    function formatRand(v) {
+      return 'R' + v.toLocaleString('en-ZA', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    }
+
+    function formatMiles(v) {
+      return v.toLocaleString('en-ZA') + ' Miles';
+    }
+
+    // Mobile drawer
+    (function () {
+      var btn = document.getElementById('more-btn');
+      var drawer = document.getElementById('more-drawer');
+      var overlay = document.getElementById('more-overlay');
+      var closeBtn = document.getElementById('more-close');
+      if (!btn) return;
+      function openDrawer() {
+        drawer.classList.add('is-open'); overlay.classList.add('is-open');
+        drawer.setAttribute('aria-hidden', 'false'); btn.setAttribute('aria-expanded', 'true');
+      }
+      function closeDrawer() {
+        drawer.classList.remove('is-open'); overlay.classList.remove('is-open');
+        drawer.setAttribute('aria-hidden', 'true'); btn.setAttribute('aria-expanded', 'false');
+      }
+      btn.addEventListener('click', openDrawer);
+      overlay.addEventListener('click', closeDrawer);
+      closeBtn.addEventListener('click', closeDrawer);
+    })();
+  </script>
+
+</body>
+</html>

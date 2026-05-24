@@ -1,0 +1,32 @@
+[
+  {
+    "name": "The Tasting Room",
+    "deal": "Date Night — Spaghetti and Meatballs for two with a glass of wine each for R215 per couple. All day.",
+    "days": "Monday–Tuesday",
+    "howToClaim": "Visit any Tasting Room branch on a Monday or Tuesday and ask for the Date Night special. See page 4 of the menu PDF for all promos.",
+    "badge": "Date Night",
+    "phone": "087 821 7708",
+    "link": "https://api.thetastingroom.co.za/site_images/20260504195450.pdf",
+    "active": true
+  },
+  {
+    "name": "Hussar Grill",
+    "deal": "Date Night Set Menu — 2 courses for R499 per couple or 3 courses for R599 per couple. Includes a bottle of wine or two soft drinks.",
+    "days": "Monday–Sunday",
+    "howToClaim": "Call to book your table. Ask to be transferred to your nearest branch as there are multiple locations.",
+    "badge": "Set Menu",
+    "phone": "011 568 4517",
+    "link": "https://hussargrill.co.za/menu/date-night",
+    "active": true
+  },
+  {
+    "name": "Kream (Montecasino)",
+    "deal": "Date Night — R850 per couple with a complimentary bottle of champagne. Monday and Tuesday evenings only.",
+    "days": "Monday–Tuesday (evenings only)",
+    "howToClaim": "Book a table in advance — this exclusive offer fills quickly on Monday and Tuesday evenings.",
+    "badge": "Date Night",
+    "phone": "010 786 1584",
+    "link": "https://montecasino.kreamrestaurant.co.za/wp-content/uploads/2025/10/Kream-Date-Night-Menu-October-2025.pdf",
+    "active": true
+  }
+]

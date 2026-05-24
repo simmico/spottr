@@ -1,0 +1,11 @@
+{
+  "vitality_dashboard": "https://www.discovery.co.za/vitality/vitality-points-tracker",
+  "claim_points": "https://www.discovery.co.za/portal/logged-in/vitality/claim-points",
+  "healthyfood_activate": "https://www.discovery.co.za/portal/individual/change-primary-partner",
+  "manage_partners": "https://www.discovery.co.za/portal/logged-in/vitality/healthyfood/manage-partners",
+  "gym_activate": "https://www.discovery.co.za/vitality/gym-and-fitness",
+  "movies_activate": "https://www.discovery.co.za/vitality/ster-kinekor",
+  "active_rewards_dashboard": "https://www.discovery.co.za/vitality/active-rewards",
+  "apple_watch_benefit": "https://www.discovery.co.za/vitality/apple-watch",
+  "healthyfood_studio": "https://www.healthyfoodstudio.co.za"
+}

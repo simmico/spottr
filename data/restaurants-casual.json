@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Roco Mamas",
+    "deal": "Southern Fried Chicken Burger — from R69. Check the promos section of the menu.",
+    "days": "Monday–Sunday",
+    "howToClaim": "Visit any Roco Mamas branch and look for the Southern Fried Chicken Burger under the promos section.",
+    "badge": "From R69",
+    "link": "https://rocomamas.com/za/menu#promos",
+    "active": true
+  },
+  {
+    "name": "Papachinos",
+    "deal": "Cake and Cappuccino — a slice of cake with a cappuccino for R70, all day every day",
+    "days": "Monday–Sunday",
+    "howToClaim": "Order the Cake and Cappuccino combo at any Papachinos branch.",
+    "badge": "Everyday Value",
+    "link": "https://www.papachinos.co.za/cake-cappuccino",
+    "active": true
+  },
+  {
+    "name": "Papachinos",
+    "deal": "Mafia Monday — half-price pizza and pasta every Monday from 10am. Not valid on public holidays.",
+    "days": "Monday",
+    "howToClaim": "Visit any Papachinos on a Monday from 10:00. The 50% discount applies automatically at the till.",
+    "badge": "Dine-in Only",
+    "link": "https://www.papachinos.co.za/mafia-monday",
+    "active": true
+  },
+  {
+    "name": "Papachinos",
+    "deal": "Teddy Tuesday — kids eat free when they bring the family",
+    "days": "Tuesday",
+    "howToClaim": "Visit any Papachinos with the family on a Tuesday. Kids meal is complimentary with a paying adult.",
+    "badge": "Kids Free",
+    "link": "https://www.papachinos.co.za/teddy-tuesdays",
+    "active": true
+  },
+  {
+    "name": "The Tasting Room",
+    "deal": "Owner's Breakfast — 2 bacon rashers, 2 eggs, 2 slices of toast and grilled tomato for R35. All day weekdays; 10am–1pm weekends and public holidays.",
+    "days": "Monday–Sunday",
+    "howToClaim": "Visit any Tasting Room branch and order the Owner's Breakfast. See the last page of the menu PDF for the special.",
+    "badge": "Everyday Value",
+    "link": "https://api.thetastingroom.co.za/site_images/20260504195450.pdf",
+    "active": true
+  },
+  {
+    "name": "The Tasting Room",
+    "deal": "Limitless Mimosa — bottomless mimosas for R149pp, Monday to Friday",
+    "days": "Monday–Friday",
+    "howToClaim": "Visit any Tasting Room branch on a weekday and ask for the Limitless Mimosa. See page 4 of the menu PDF for all promos.",
+    "badge": "Weekly Special",
+    "link": "https://api.thetastingroom.co.za/site_images/20260504195450.pdf",
+    "active": true
+  },
+  {
+    "name": "The Tasting Room",
+    "deal": "Burger Wednesday — buy one burger, get one free. R135 all day every Wednesday.",
+    "days": "Wednesday",
+    "howToClaim": "Visit any Tasting Room on a Wednesday. The BOGO burger deal applies all day. See page 4 of the menu PDF.",
+    "badge": "Weekly Special",
+    "link": "https://api.thetastingroom.co.za/site_images/20260504195450.pdf",
+    "active": true
+  },
+  {
+    "name": "Ocean Basket",
+    "deal": "Kids Eat Free Monday — one free kids meal per paying adult meal",
+    "days": "Monday",
+    "howToClaim": "Visit any participating Ocean Basket on a Monday. One free kids meal included per adult meal ordered.",
+    "badge": "Kids Free",
+    "link": "https://za.oceanbasket.com/promo/kids-eat-free/",
+    "active": true
+  },
+  {
+    "name": "Ocean Basket",
+    "deal": "Epic Catch — sit-down or takeaway from R125 to R145. Running 1 May to 30 June.",
+    "days": "Monday–Sunday",
+    "howToClaim": "Order from the Epic Catch menu at any participating Ocean Basket, available for sit-down or takeaway.",
+    "badge": "Limited Time",
+    "link": "https://za.oceanbasket.com/promo/epic-catch/",
+    "active": true
+  },
+  {
+    "name": "Texan Wing Bar (Montecasino)",
+    "deal": "All You Can Eat Bottomless Wings — unlimited wings for R199pp",
+    "days": "Monday–Sunday",
+    "howToClaim": "Visit Texan Wing Bar at Montecasino and order the All You Can Eat bottomless wings deal.",
+    "badge": "All You Can Eat",
+    "link": "https://www.montecasino.co.za/offers/bottomless-wings/",
+    "active": true
+  }
+]

@@ -1,0 +1,134 @@
+/* ─── Reduced Motion ─────────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ─── Keyframes ──────────────────────────────────────────────────────────────── */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); }
+  to   { transform: translateY(0); }
+}
+
+@keyframes countBounce {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(1.06); }
+  70%  { transform: scale(0.97); }
+  100% { transform: scale(1); }
+}
+
+@keyframes pulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes fanOut {
+  from {
+    transform: rotate(0deg) translateX(0);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes drawPath {
+  from { stroke-dashoffset: 1; }
+  to   { stroke-dashoffset: 0; }
+}
+
+/* ─── Entrance Utility Classes ───────────────────────────────────────────────── */
+.animate-ready {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.animate-in {
+  animation: fadeUp 400ms ease-out forwards;
+}
+
+.animate-delay-1 { animation-delay: 80ms; }
+.animate-delay-2 { animation-delay: 160ms; }
+.animate-delay-3 { animation-delay: 240ms; }
+.animate-delay-4 { animation-delay: 320ms; }
+
+/* ─── Card Fan Animation ─────────────────────────────────────────────────────── */
+.card-stack__card {
+  transition: transform 600ms ease, opacity 600ms ease;
+}
+
+.card-stack__card--1 {
+  transform: rotate(0deg) translateX(0);
+}
+
+.card-stack__card--2 {
+  transform: rotate(0deg) translateX(0);
+}
+
+.card-stack__card--3 {
+  transform: rotate(0deg) translateX(0);
+}
+
+.card-stack--animated .card-stack__card--1 {
+  transform: rotate(-8deg) translateX(-20px);
+  transition-delay: 0ms;
+}
+
+.card-stack--animated .card-stack__card--2 {
+  transform: rotate(0deg) translateX(0);
+  transition-delay: 80ms;
+}
+
+.card-stack--animated .card-stack__card--3 {
+  transform: rotate(8deg) translateX(20px);
+  transition-delay: 160ms;
+}
+
+/* ─── Persistent Animation Classes ──────────────────────────────────────────── */
+.anim-pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.anim-bounce {
+  animation: bounce 1.4s ease-in-out infinite;
+}
+
+.anim-count-bounce {
+  animation: countBounce 400ms ease-out;
+}
+
+/* ─── SVG Draw Path (hero gold stroke) ──────────────────────────────────────── */
+.hero__gold-stroke {
+  animation: drawPath 1200ms ease-out 600ms forwards;
+}
+
+/* ─── SVG Card Stack Transform Origin ───────────────────────────────────────── */
+.card-stack__card {
+  transform-box: fill-box;
+  transform-origin: center;
+}

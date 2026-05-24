@@ -1,0 +1,23 @@
+{
+  "name": "Dealr",
+  "short_name": "Dealr",
+  "description": "South Africa's smartest deals platform",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#081B1B",
+  "theme_color": "#081B1B",
+  "orientation": "portrait-primary",
+  "categories": ["shopping", "finance"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/icons/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
