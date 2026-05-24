@@ -53,7 +53,7 @@ function initGoldThread() {
     _goldEl = el;
     _goldLength = len;
   } catch (e) {
-    // getTotalLength not supported — skip animation
+    // getTotalLength not supported: skip animation
   }
 }
 

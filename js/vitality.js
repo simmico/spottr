@@ -133,7 +133,7 @@ function initCalculator() {
     });
   });
 
-  // Product buttons (note only — no calculation change currently)
+  // Product buttons (note only: no calculation change currently)
   [['medical', 'Medical Aid'], ['bank', 'Bank'], ['life', 'Life']].forEach(([key, label]) => {
     const btn = document.getElementById('product-' + key);
     if (!btn) return;

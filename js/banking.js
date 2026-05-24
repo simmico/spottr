@@ -164,8 +164,8 @@ export function buildComparisonTable(banks, containerSelector) {
   <td>${tier.monthly_fee}</td>
   <td>${tier.rewards}</td>
   <td>${tier.key_benefit}</td>
-  <td class="comp-table__check">${tier.entertainer ? '✓' : '—'}</td>
-  <td class="comp-table__check">${tier.vitality_partner ? '✓' : '—'}</td>
+  <td class="comp-table__check">${tier.entertainer ? '✓' : '–'}</td>
+  <td class="comp-table__check">${tier.vitality_partner ? '✓' : '–'}</td>
 </tr>`).join('');
 
     return `
@@ -236,7 +236,7 @@ function initQuiz(banks) {
     resultsPanel?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
-  // Step 1 — multi-select spending (max 3)
+  // Step 1: multi-select spending (max 3)
   const step1Options = document.querySelectorAll('#quiz-step-1 .quiz-option');
   const nextBtn1     = document.getElementById('quiz-next-1');
 

@@ -650,6 +650,38 @@ body.page-explore .results-info {
   color: var(--color-coral);
 }
 
+.activity-card__actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.activity-card__contact {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 200ms ease;
+}
+
+.activity-card__contact--wa {
+  color: #4caf7d;
+}
+
+.activity-card__contact--wa:hover {
+  color: #34c266;
+}
+
+.activity-card__contact--call {
+  color: var(--color-light);
+}
+
+.activity-card__contact--call:hover {
+  color: var(--color-coral);
+}
+
 /* ─── No results message ─────────────────────────────────────────────────────── */
 .no-results-msg {
   text-align: center;

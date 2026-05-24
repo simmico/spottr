@@ -1,32 +1,52 @@
 [
   {
     "name": "The Tasting Room",
-    "deal": "Date Night — Spaghetti and Meatballs for two with a glass of wine each for R215 per couple. All day.",
+    "deal": "Date Night: Spaghetti and Meatballs for two with a glass of wine each for R215 per couple. All day.",
     "days": "Monday–Tuesday",
     "howToClaim": "Visit any Tasting Room branch on a Monday or Tuesday and ask for the Date Night special. See page 4 of the menu PDF for all promos.",
     "badge": "Date Night",
-    "phone": "087 821 7708",
+    "contact": "tel:0878217708",
     "link": "https://api.thetastingroom.co.za/site_images/20260504195450.pdf",
     "active": true
   },
   {
     "name": "Hussar Grill",
-    "deal": "Date Night Set Menu — 2 courses for R499 per couple or 3 courses for R599 per couple. Includes a bottle of wine or two soft drinks.",
+    "deal": "Date Night Set Menu: 2 courses for R499 per couple or 3 courses for R599 per couple. Includes a bottle of wine or two soft drinks.",
     "days": "Monday–Sunday",
     "howToClaim": "Call to book your table. Ask to be transferred to your nearest branch as there are multiple locations.",
     "badge": "Set Menu",
-    "phone": "011 568 4517",
+    "contact": "tel:0115684517",
     "link": "https://hussargrill.co.za/menu/date-night",
     "active": true
   },
   {
     "name": "Kream (Montecasino)",
-    "deal": "Date Night — R850 per couple with a complimentary bottle of champagne. Monday and Tuesday evenings only.",
+    "deal": "Date Night: R850 per couple with a complimentary bottle of champagne. Monday and Tuesday evenings only.",
     "days": "Monday–Tuesday (evenings only)",
-    "howToClaim": "Book a table in advance — this exclusive offer fills quickly on Monday and Tuesday evenings.",
+    "howToClaim": "Book a table in advance – this exclusive offer fills quickly on Monday and Tuesday evenings.",
     "badge": "Date Night",
-    "phone": "010 786 1584",
+    "contact": "tel:0107861584",
     "link": "https://montecasino.kreamrestaurant.co.za/wp-content/uploads/2025/10/Kream-Date-Night-Menu-October-2025.pdf",
+    "active": true
+  },
+  {
+    "name": "Signs Restaurant",
+    "deal": "One of Johannesburg's most acclaimed fine dining establishments. Expect beautifully plated dishes, impeccable attentive service and a stunning interior that makes Signs the natural choice for a special occasion, a milestone celebration or a genuinely memorable date night. This is the sort of place that raises the bar for what an evening out can be.",
+    "days": "Monday–Sunday",
+    "howToClaim": "Booking is essential. Call: 011 202 5020.",
+    "badge": "Luxury Dining",
+    "contact": "tel:0112025020",
+    "link": "https://signsrestaurant.com/",
+    "active": true
+  },
+  {
+    "name": "Nine Lives Speakeasy",
+    "deal": "Tucked inside Hyde Hotels in Rosebank, Nine Lives is a dark, atmospheric speakeasy-style bar and restaurant. Low lighting, intimate seating and expertly crafted cocktails set the scene, while the food is genuinely excellent, making this far more than just a bar. Perfect for a date night where you want the setting to do half the work.",
+    "days": "Monday–Sunday",
+    "howToClaim": "Visit Nine Lives at Hyde Hotels, Rosebank, Johannesburg. Walk-ins welcome but booking recommended for busy evenings. Call: 010 023 2600.",
+    "badge": "Date Night",
+    "contact": "tel:0100232600",
+    "link": "https://hydehotels.com/johannesburg/restaurants-bars/nine-lives/",
     "active": true
   }
 ]
