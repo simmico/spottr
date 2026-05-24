@@ -3,18 +3,17 @@
 /* ─── Custom Properties ─────────────────────────────────────────────────────── */
 :root {
   /* Colour palette */
-  --color-dark:        #0D1B2A;
-  --color-mid:         #1E3A5F;
-  --color-light:       #3A6EA8;
+  --color-dark:        #0D3D3D;
+  --color-mid:         #1A5C5C;
+  --color-light:       #2E8B8B;
   --color-coral:       #E8603A;
   --color-coral-light: #F08060;
   --color-sand:        #F5EDD8;
   --color-sand-dark:   #EAE0C8;
-  --color-white:       #FFFFFF;
-  --color-text-dark:   #0D1520;
-  --color-text-mid:    #1E2D3D;
+  --color-text-dark:   #0D2020;
+  --color-text-mid:    #1A3A3A;
   --color-text-light:  #F5EDD8;
-  --color-text-muted:  #7A9DB8;
+  --color-text-muted:  #7AB8B8;
 
   /* Spacing */
   --space-xs:  8px;

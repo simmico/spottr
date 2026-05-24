@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Regions | Spottr</title>
-  <meta name="description" content="Explore activities by South African city — Johannesburg, Cape Town, Durban and Pretoria.">
-  <meta name="theme-color" content="#0D1B2A">
+  <meta name="description" content="Explore activities by South African city: Johannesburg, Cape Town, Durban and Pretoria.">
+  <meta name="theme-color" content="#0D3D3D">
   <link rel="manifest" href="/manifest.json">
   <link rel="icon" href="/icons/icon-192.svg" type="image/svg+xml">
 
@@ -49,79 +49,40 @@
     <section class="page-inner-hero" aria-label="Explore by region">
       <div style="text-align:center">
         <h1>Regions.</h1>
-        <p class="page-inner-hero__subtitle">Pick a city and see what Spottr has found there.</p>
+        <p class="page-inner-hero__subtitle">South Africa's best cities, each with its own flavour. Pick yours and see what Spottr has found there.</p>
       </div>
     </section>
 
-    <!-- ── City Overview Cards ──────────────────────────────────────────────── -->
-    <section class="section section--mid" aria-label="City overview">
+    <!-- ── City Hub Cards ─────────────────────────────────────────────────────── -->
+    <section class="section section--dark" aria-label="Choose a city">
       <div class="container">
-        <div class="regions-hero-grid" id="city-cards">
-          <div class="region-hero-card">
-            <div class="region-hero-card__city">Johannesburg</div>
-            <p class="region-hero-card__desc">The City of Gold doesn't slow down. Markets, galleries, nature reserves inside the city limits and an arts scene that refuses to be ignored. More going on than most Joburgers realise.</p>
-            <a href="#jhb" class="btn btn--primary" style="margin-top:auto;align-self:flex-start">View JHB activities</a>
-          </div>
-          <div class="region-hero-card">
-            <div class="region-hero-card__city">Cape Town</div>
-            <p class="region-hero-card__desc">Where the mountain meets the ocean and the food matches both. Hikes with views, beaches without the tourist premium, and a food and craft scene that keeps levelling up.</p>
-            <a href="#cpt" class="btn btn--primary" style="margin-top:auto;align-self:flex-start">View CPT activities</a>
-          </div>
-          <div class="region-hero-card">
-            <div class="region-hero-card__city">Durban</div>
-            <p class="region-hero-card__desc">The warmest city in the country with the most underrated food scene in Africa. Indian Ocean sunsets, coastal nature reserves and a harbour front that's finally getting the recognition it deserves.</p>
-            <a href="#dbn" class="btn btn--primary" style="margin-top:auto;align-self:flex-start">View DBN activities</a>
-          </div>
-          <div class="region-hero-card">
-            <div class="region-hero-card__city">Pretoria</div>
-            <p class="region-hero-card__desc">The administrative capital with a surprisingly rich cultural scene. Botanical gardens, heritage sites, weekend markets and a diamond mine day trip that most South Africans have never done.</p>
-            <a href="#pta" class="btn btn--primary" style="margin-top:auto;align-self:flex-start">View PTA activities</a>
-          </div>
-        </div>
-      </div>
-    </section>
+        <div class="hub-cards" id="city-cards">
 
-    <!-- ── JHB Section ────────────────────────────────────────────────────────── -->
-    <section class="section section--beige region-section" id="jhb" aria-label="Johannesburg activities">
-      <div class="container">
-        <div class="region-section__header">
-          <h2 class="region-section__title">Johannesburg</h2>
-          <span class="region-section__count" id="jhb-count"></span>
-        </div>
-        <div class="grid grid--3" id="jhb-grid" aria-label="Johannesburg activity cards"></div>
-      </div>
-    </section>
+          <a href="jhb.html" class="hub-card animate-ready">
+            <div class="hub-card__title">Johannesburg</div>
+            <p class="hub-card__desc">The City of Gold: galleries, markets, nature reserves and a relentless arts scene. More to do than most Joburgers realise.</p>
+            <span class="hub-card__arrow">Explore City →</span>
+          </a>
 
-    <!-- ── CPT Section ────────────────────────────────────────────────────────── -->
-    <section class="section section--mid region-section" id="cpt" aria-label="Cape Town activities">
-      <div class="container">
-        <div class="region-section__header">
-          <h2 class="region-section__title">Cape Town</h2>
-          <span class="region-section__count" id="cpt-count"></span>
-        </div>
-        <div class="grid grid--3" id="cpt-grid" aria-label="Cape Town activity cards"></div>
-      </div>
-    </section>
+          <a href="cpt.html" class="hub-card animate-ready">
+            <div class="hub-card__title">Cape Town</div>
+            <p class="hub-card__desc">Mountain meets ocean. World-class hikes, beaches, restaurants and a food and craft scene that never sits still.</p>
+            <span class="hub-card__arrow">Explore City →</span>
+          </a>
 
-    <!-- ── DBN Section ────────────────────────────────────────────────────────── -->
-    <section class="section section--beige region-section" id="dbn" aria-label="Durban activities">
-      <div class="container">
-        <div class="region-section__header">
-          <h2 class="region-section__title">Durban</h2>
-          <span class="region-section__count" id="dbn-count"></span>
-        </div>
-        <div class="grid grid--3" id="dbn-grid" aria-label="Durban activity cards"></div>
-      </div>
-    </section>
+          <a href="dbn.html" class="hub-card animate-ready">
+            <div class="hub-card__title">Durban</div>
+            <p class="hub-card__desc">Warm weather, Indian Ocean sunrises, the country's most underrated food scene and a harbour front finally getting its due.</p>
+            <span class="hub-card__arrow">Explore City →</span>
+          </a>
 
-    <!-- ── PTA Section ────────────────────────────────────────────────────────── -->
-    <section class="section section--mid region-section" id="pta" aria-label="Pretoria activities">
-      <div class="container">
-        <div class="region-section__header">
-          <h2 class="region-section__title">Pretoria</h2>
-          <span class="region-section__count" id="pta-count"></span>
+          <a href="pta.html" class="hub-card animate-ready">
+            <div class="hub-card__title">Pretoria</div>
+            <p class="hub-card__desc">The administrative capital with a richer cultural scene than most expect: botanical gardens, heritage sites and weekend markets.</p>
+            <span class="hub-card__arrow">Explore City →</span>
+          </a>
+
         </div>
-        <div class="grid grid--3" id="pta-grid" aria-label="Pretoria activity cards"></div>
       </div>
     </section>
 
@@ -213,43 +174,8 @@
 </script>
 
   <script type="module">
-    import activities from './data/activities.js';
     import { addAnimationClasses } from './js/utils.js';
-
-    const REGION_LABELS = { jhb: 'Johannesburg', cpt: 'Cape Town', dbn: 'Durban', pta: 'Pretoria' };
-    const CAT_LABELS = { outdoor: 'Outdoor', food: 'Food', arts: 'Arts', family: 'Family', 'hidden-gem': 'Hidden Gem' };
-
-    function buildCard(a) {
-      const cat = CAT_LABELS[a.category] || a.category;
-      const costClass = `activity-card__cost-badge--${a.cost}`;
-      const costLabel = a.cost.charAt(0).toUpperCase() + a.cost.slice(1);
-      return `<article class="activity-card animate-ready">
-  <div class="activity-card__header">
-    <span class="activity-card__region">${cat}</span>
-    <div class="activity-card__badges">
-      <span class="activity-card__cost-badge ${costClass}">${costLabel}</span>
-    </div>
-  </div>
-  <h3 class="activity-card__name">${a.name}</h3>
-  <p class="activity-card__desc">${a.description}</p>
-  <div class="activity-card__meta">
-    <span class="activity-card__duration">${a.duration}</span>
-    <a href="${a.url}" class="activity-card__link" target="_blank" rel="noopener noreferrer">Find out more →</a>
-  </div>
-</article>`;
-    }
-
-    function renderRegion(region) {
-      const grid = document.getElementById(`${region}-grid`);
-      const count = document.getElementById(`${region}-count`);
-      if (!grid) return;
-      const list = activities.filter(a => a.region === region);
-      grid.innerHTML = list.map(buildCard).join('');
-      if (count) count.textContent = `${list.length} activit${list.length !== 1 ? 'ies' : 'y'}`;
-      addAnimationClasses(grid.querySelectorAll('.animate-ready'));
-    }
-
-    ['jhb', 'cpt', 'dbn', 'pta'].forEach(renderRegion);
+    addAnimationClasses(document.querySelectorAll('.animate-ready'));
   </script>
 
   <script type="module" src="js/scroll.js"></script>

@@ -13,7 +13,7 @@
 
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(13, 27, 42, 0.18);
+  box-shadow: 0 12px 32px rgba(13, 61, 61, 0.18);
 }
 
 .card__top-row {
@@ -40,7 +40,7 @@
   letter-spacing: 0.06em;
   padding: 3px 10px;
   border-radius: 20px;
-  background: rgba(58, 110, 168, 0.15);
+  background: rgba(46, 139, 139, 0.15);
   color: var(--color-light);
   white-space: nowrap;
 }
@@ -81,7 +81,7 @@
   font-family: 'Space Grotesk', sans-serif;
   font-size: 0.9rem;
   font-variant-numeric: tabular-nums;
-  color: rgba(58, 110, 168, 0.65);
+  color: rgba(46, 139, 139, 0.65);
   text-decoration: line-through;
 }
 
@@ -96,7 +96,7 @@
 }
 
 .card__tip {
-  background: rgba(58, 110, 168, 0.12);
+  background: rgba(46, 139, 139, 0.12);
   border-left: 3px solid var(--color-light);
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
   padding: var(--space-xs) var(--space-sm);
@@ -125,7 +125,7 @@
   justify-content: space-between;
   margin-top: auto;
   padding-top: var(--space-xs);
-  border-top: 1px solid rgba(58, 110, 168, 0.2);
+  border-top: 1px solid rgba(46, 139, 139, 0.2);
 }
 
 .card__expiry {
@@ -257,14 +257,14 @@
 }
 
 .filter-btn:hover {
-  background: rgba(58, 110, 168, 0.2);
+  background: rgba(46, 139, 139, 0.2);
 }
 
 .filter-btn--active {
   background: var(--color-mid) !important;
   border-color: var(--color-mid) !important;
   color: var(--color-text-light) !important;
-  box-shadow: 0 0 0 2px rgba(58, 110, 168, 0.35);
+  box-shadow: 0 0 0 2px rgba(46, 139, 139, 0.35);
 }
 
 @media (max-width: 768px) {
@@ -311,7 +311,7 @@
 
 /* ─── Accordions ─────────────────────────────────────────────────────────────── */
 .accordion {
-  border: 1px solid rgba(58, 110, 168, 0.3);
+  border: 1px solid rgba(46, 139, 139, 0.3);
   border-radius: var(--radius-md);
   overflow: hidden;
   margin-bottom: var(--space-sm);
@@ -333,7 +333,7 @@
 }
 
 .accordion__trigger:hover {
-  background: rgba(58, 110, 168, 0.08);
+  background: rgba(46, 139, 139, 0.08);
 }
 
 .accordion__icon {
@@ -400,7 +400,7 @@
 }
 
 .badge--light {
-  background: rgba(58, 110, 168, 0.2);
+  background: rgba(46, 139, 139, 0.2);
   color: var(--color-mid);
 }
 
@@ -452,7 +452,7 @@
   width: 360px;
   height: 480px;
   background: var(--color-dark);
-  border: 1px solid rgba(58, 110, 168, 0.3);
+  border: 1px solid rgba(46, 139, 139, 0.3);
   border-radius: 16px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
   display: flex;
@@ -472,7 +472,7 @@
 
 .bot-header {
   padding: 16px 20px;
-  border-bottom: 1px solid rgba(58, 110, 168, 0.2);
+  border-bottom: 1px solid rgba(46, 139, 139, 0.2);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -568,7 +568,7 @@
 .bot-message--bot {
   margin-right: auto;
   max-width: 85%;
-  background: rgba(58, 110, 168, 0.15);
+  background: rgba(46, 139, 139, 0.15);
   border-radius: 12px 12px 12px 2px;
   line-height: 1.6;
 }
@@ -597,7 +597,7 @@
 }
 
 .bot-input-area {
-  border-top: 1px solid rgba(58, 110, 168, 0.2);
+  border-top: 1px solid rgba(46, 139, 139, 0.2);
   padding: 12px 16px;
   display: flex;
   gap: 8px;
@@ -608,7 +608,7 @@
 .bot-input {
   flex: 1;
   background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(58, 110, 168, 0.3);
+  border: 1px solid rgba(46, 139, 139, 0.3);
   border-radius: 8px;
   padding: 10px 14px;
   font-family: 'DM Sans', sans-serif;

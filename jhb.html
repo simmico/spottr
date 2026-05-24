@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Explore | Spottr</title>
-  <meta name="description" content="Browse all activities across Johannesburg, Cape Town, Durban and Pretoria. Filter by region, category and cost.">
+  <title>Johannesburg | Spottr</title>
+  <meta name="description" content="Things to do in Johannesburg: galleries, markets, nature reserves and more. Curated by Spottr.">
   <meta name="theme-color" content="#0D3D3D">
   <link rel="manifest" href="/manifest.json">
   <link rel="icon" href="/icons/icon-192.svg" type="image/svg+xml">
 
-  <meta property="og:title" content="Explore | Spottr">
-  <meta property="og:description" content="Browse activities across SA cities. Filter by region, category and cost.">
-  <meta property="og:url" content="https://spottr.simmico.co.za/explore.html">
+  <meta property="og:title" content="Johannesburg | Spottr">
+  <meta property="og:description" content="Things to do in Johannesburg, curated by Spottr.">
+  <meta property="og:url" content="https://spottr.simmico.co.za/jhb.html">
   <meta property="og:type" content="website">
 
   <link rel="stylesheet" href="css/base.css">
@@ -28,9 +28,9 @@
       <a href="index.html" class="nav__wordmark">Spottr</a>
       <ul class="nav__links" role="list">
         <li><a href="index.html" class="nav__link">Home</a></li>
-        <li><a href="explore.html" class="nav__link nav__link--active">Explore</a></li>
+        <li><a href="explore.html" class="nav__link">Explore</a></li>
         <li><a href="escape.html" class="nav__link">Escape</a></li>
-        <li><a href="regions.html" class="nav__link">Regions</a></li>
+        <li><a href="regions.html" class="nav__link nav__link--active">Regions</a></li>
         <li><a href="about.html" class="nav__link">About</a></li>
       </ul>
     </div>
@@ -45,48 +45,34 @@
 
   <main>
 
-    <!-- ── Inner Hero ────────────────────────────────────────────────────────── -->
-    <section class="page-inner-hero" aria-label="Explore activities">
+    <!-- ── Hero ──────────────────────────────────────────────────────────────── -->
+    <section class="page-inner-hero" aria-label="Johannesburg activities">
       <div style="text-align:center">
-        <h1>Explore.</h1>
-        <p class="page-inner-hero__subtitle">Browse everything Spottr has on offer. Filter by city and category with no page reload needed.</p>
+        <h1>Johannesburg.</h1>
+        <p class="page-inner-hero__subtitle">The City of Gold: galleries, markets, nature reserves and a relentless arts scene. More to do than most Joburgers realise.</p>
       </div>
     </section>
 
-    <!-- ── Filter + Grid ──────────────────────────────────────────────────────── -->
-    <section class="section section--beige" aria-label="Activity feed">
+    <!-- ── Filter + Grid ─────────────────────────────────────────────────────── -->
+    <section class="section section--beige" aria-label="Johannesburg activity feed">
       <div class="container">
 
-        <div class="explore-filters" role="group" aria-label="Filter activities">
-
-          <div class="explore-filters__row" role="group" aria-label="Filter by region">
-            <span class="explore-filters__label">City</span>
-            <div class="filter-bar" id="region-filter">
-              <button class="filter-btn filter-btn--active" data-region="all">All</button>
-              <button class="filter-btn" data-region="jhb">JHB</button>
-              <button class="filter-btn" data-region="cpt">CPT</button>
-              <button class="filter-btn" data-region="dbn">DBN</button>
-              <button class="filter-btn" data-region="pta">PTA</button>
-            </div>
-          </div>
-
-          <div class="explore-filters__row" role="group" aria-label="Filter by category">
-            <span class="explore-filters__label">Category</span>
-            <div class="filter-bar" id="category-filter">
-              <button class="filter-btn filter-btn--active" data-category="all">All</button>
-              <button class="filter-btn" data-category="outdoor">Outdoor</button>
-              <button class="filter-btn" data-category="food">Food</button>
-              <button class="filter-btn" data-category="arts">Arts</button>
-              <button class="filter-btn" data-category="family">Family</button>
-              <button class="filter-btn" data-category="hidden-gem">Hidden Gem</button>
-            </div>
-          </div>
-
+        <div class="filter-bar" id="category-filter" role="group" aria-label="Filter by category" style="margin-bottom:var(--space-lg)">
+          <button class="filter-btn filter-btn--active" data-category="all">All</button>
+          <button class="filter-btn" data-category="outdoor">Outdoor</button>
+          <button class="filter-btn" data-category="food">Food</button>
+          <button class="filter-btn" data-category="arts">Arts</button>
+          <button class="filter-btn" data-category="family">Family</button>
+          <button class="filter-btn" data-category="hidden-gem">Hidden Gem</button>
         </div>
 
         <p class="results-info" id="results-info" aria-live="polite"></p>
 
-        <div class="grid grid--3" id="activities-grid" aria-live="polite" aria-label="Activity cards"></div>
+        <div class="grid grid--3" id="activities-grid" aria-live="polite" aria-label="Johannesburg activity cards"></div>
+
+        <div style="margin-top:var(--space-xl);text-align:center">
+          <a href="regions.html" style="font-family:'DM Sans',sans-serif;font-weight:500;font-size:0.9rem;color:var(--color-text-muted);transition:color 200ms ease" onmouseover="this.style.color='var(--color-coral)'" onmouseout="this.style.color='var(--color-text-muted)'">← Back to Regions</a>
+        </div>
 
       </div>
     </section>
@@ -150,7 +136,7 @@
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
       <span>Home</span>
     </a>
-    <a href="explore.html" class="mobile-nav__tab mobile-nav__tab--active">
+    <a href="explore.html" class="mobile-nav__tab">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
       <span>Explore</span>
     </a>
@@ -160,7 +146,7 @@
       </span>
       <span>Escape</span>
     </a>
-    <a href="regions.html" class="mobile-nav__tab">
+    <a href="regions.html" class="mobile-nav__tab mobile-nav__tab--active">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
       <span>Regions</span>
     </a>
@@ -182,22 +168,19 @@
     import activities from './data/activities.js';
     import { addAnimationClasses } from './js/utils.js';
 
-    const REGION_LABELS = { jhb: 'Johannesburg', cpt: 'Cape Town', dbn: 'Durban', pta: 'Pretoria' };
+    const REGION = 'jhb';
     const CAT_LABELS = { outdoor: 'Outdoor', food: 'Food', arts: 'Arts', family: 'Family', 'hidden-gem': 'Hidden Gem' };
 
-    let activeRegion = 'all';
     let activeCategory = 'all';
 
     function buildCard(a) {
-      const region = REGION_LABELS[a.region] || a.region.toUpperCase();
       const cat = CAT_LABELS[a.category] || a.category;
       const costClass = `activity-card__cost-badge--${a.cost}`;
       const costLabel = a.cost.charAt(0).toUpperCase() + a.cost.slice(1);
       return `<article class="activity-card animate-ready">
   <div class="activity-card__header">
-    <span class="activity-card__region">${region}</span>
+    <span class="activity-card__region">${cat}</span>
     <div class="activity-card__badges">
-      <span class="activity-card__cat-badge">${cat}</span>
       <span class="activity-card__cost-badge ${costClass}">${costLabel}</span>
     </div>
   </div>
@@ -216,13 +199,11 @@
       if (!grid) return;
 
       const filtered = activities.filter(a => {
-        const regionMatch = activeRegion === 'all' || a.region === activeRegion;
-        const catMatch = activeCategory === 'all' || a.category === activeCategory;
-        return regionMatch && catMatch;
+        return a.region === REGION && (activeCategory === 'all' || a.category === activeCategory);
       });
 
       if (!filtered.length) {
-        grid.innerHTML = '<p class="no-results-msg">No activities match those filters. Try a different combination.</p>';
+        grid.innerHTML = '<p class="no-results-msg">No activities match that filter. Try another category.</p>';
         if (info) info.textContent = 'No results';
         return;
       }
@@ -232,21 +213,18 @@
       addAnimationClasses(grid.querySelectorAll('.animate-ready'));
     }
 
-    function initFilterBar(barId, dataAttr, setter) {
-      const bar = document.getElementById(barId);
-      if (!bar) return;
+    const bar = document.getElementById('category-filter');
+    if (bar) {
       bar.addEventListener('click', e => {
         const btn = e.target.closest('.filter-btn');
         if (!btn) return;
         bar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('filter-btn--active'));
         btn.classList.add('filter-btn--active');
-        setter(btn.dataset[dataAttr]);
+        activeCategory = btn.dataset.category;
         render();
       });
     }
 
-    initFilterBar('region-filter', 'region', v => { activeRegion = v; });
-    initFilterBar('category-filter', 'category', v => { activeCategory = v; });
     render();
   </script>
 

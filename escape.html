@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Escape | Spottr</title>
-  <meta name="description" content="You have been staring at this screen long enough. Hit Escape — Spottr picks an activity for you.">
-  <meta name="theme-color" content="#0D1B2A">
+  <meta name="description" content="You have been staring at this screen long enough. Hit Escape and Spottr picks an activity for you.">
+  <meta name="theme-color" content="#0D3D3D">
   <link rel="manifest" href="/manifest.json">
   <link rel="icon" href="/icons/icon-192.svg" type="image/svg+xml">
 
@@ -53,7 +53,7 @@
       <div class="escape-hero__content">
         <span class="escape-hero__eyebrow">The antidote to doomscrolling</span>
         <h1 class="escape-hero__h1">You have been staring at this screen long enough.</h1>
-        <p class="escape-hero__sub">Hit Escape. Spottr picks something for you to go and do. No algorithm, no ads — just a random activity worth having.</p>
+        <p class="escape-hero__sub">Hit Escape. Spottr picks something for you to go and do. No algorithm, no ads. Just a random activity worth having.</p>
       </div>
     </section>
 
@@ -94,7 +94,7 @@
           </svg>
           <span class="escape-key__label">Escape</span>
         </button>
-        <p class="escape-key-hint">Press the key above, or press <kbd style="font-family:'DM Sans',sans-serif;font-size:0.75rem;background:var(--color-mid);color:var(--color-light);padding:2px 6px;border-radius:4px;border:1px solid rgba(58,110,168,0.3)">Esc</kbd> on your keyboard</p>
+        <p class="escape-key-hint">Press the key above, or press <kbd style="font-family:'DM Sans',sans-serif;font-size:0.75rem;background:var(--color-mid);color:var(--color-light);padding:2px 6px;border-radius:4px;border:1px solid rgba(46,139,139,0.3)">Esc</kbd> on your keyboard</p>
       </div>
 
       <!-- Animation stage -->
@@ -200,7 +200,7 @@
 
     const REGION_LABELS = { jhb: 'Johannesburg', cpt: 'Cape Town', dbn: 'Durban', pta: 'Pretoria' };
     const CAT_LABELS = { outdoor: 'Outdoor', food: 'Food', arts: 'Arts', family: 'Family', 'hidden-gem': 'Hidden Gem' };
-    const CONFETTI_COLORS = ['#E8603A', '#F08060', '#3A6EA8', '#1E3A5F', '#F5EDD8', '#EAE0C8'];
+    const CONFETTI_COLORS = ['#E8603A', '#F08060', '#2E8B8B', '#1A5C5C', '#F5EDD8', '#EAE0C8'];
 
     const escapeBtn = document.getElementById('escape-btn');
     const againBtn  = document.getElementById('escape-again-btn');
@@ -287,7 +287,7 @@
       escapeBtn.classList.add('is-pressed');
       setTimeout(() => escapeBtn.classList.remove('is-pressed'), 200);
 
-      // Shuffle phase — cycle rapidly for 2s
+      // Shuffle phase: cycle rapidly for 2s
       let shuffleCount = 0;
       const shuffleInterval = 100;
       const shuffleDuration = 2000;
