@@ -254,7 +254,7 @@ const activities = [
   {
     id: 22,
     name: "Meet the Minis PTA",
-    description: "A magical family day out on a working mini horse farm in Pretoria. Children can get up close with ponies, friendly bunnies and goats, and try horse riding under expert guidance. The on-site restaurant serves affordable snacks and meals to keep everyone fuelled throughout the day. Walk-ins are not accepted, so booking is absolutely essential. WhatsApp: +27 81 477 9348.",
+    description: "A magical family day out on a working mini horse farm in Pretoria. Children can get up close with ponies, friendly bunnies and goats, and try horse riding under expert guidance. The on-site restaurant serves affordable snacks and meals to keep everyone fuelled throughout the day. Walk-ins are not accepted, so booking is absolutely essential.",
     region: "pta",
     category: "family",
     vibe: ["outdoors", "animals", "kids"],
@@ -267,7 +267,7 @@ const activities = [
   {
     id: 23,
     name: "Prime View: Aqua Park",
-    description: "Beat the heat at Prime View's thrilling aqua park near Johannesburg. Water slides, splash zones and open swim areas make it an excellent full-day family outing. Part of a larger adventure estate that also offers canoeing, hiking trails, fishing and paintball if you want to make a full day of it. Contact: 012 065 0315.",
+    description: "Beat the heat at Prime View's thrilling aqua park near Johannesburg. Water slides, splash zones and open swim areas make it an excellent full-day family outing. Part of a larger adventure estate that also offers canoeing, hiking trails, fishing and paintball if you want to make a full day of it.",
     region: "jhb",
     category: "family",
     vibe: ["water", "family", "summer"],
@@ -280,7 +280,7 @@ const activities = [
   {
     id: 34,
     name: "Prime View: Canoeing",
-    description: "Paddle through the scenic waterways at Prime View's adventure estate near Johannesburg. Canoeing here is a relaxed, enjoyable way to spend a few hours on the water, suitable for all experience levels. The estate also has an aqua park, hiking trails, fishing and paintball if you fancy extending your visit. Contact: 012 065 0315.",
+    description: "Paddle through the scenic waterways at Prime View's adventure estate near Johannesburg. Canoeing here is a relaxed, enjoyable way to spend a few hours on the water, suitable for all experience levels. The estate also has an aqua park, hiking trails, fishing and paintball if you fancy extending your visit.",
     region: "jhb",
     category: "outdoor",
     vibe: ["water", "active", "nature"],
@@ -293,7 +293,7 @@ const activities = [
   {
     id: 35,
     name: "Prime View: Hiking Trails",
-    description: "Stretch your legs on the well-marked hiking trails at Prime View's adventure estate near Midrand. The paths wind through open countryside with great views across the highveld, making for a refreshing morning walk away from the city. Combine it with the aqua park, fishing or paintball to turn it into a full day out. Contact: 012 065 0315.",
+    description: "Stretch your legs on the well-marked hiking trails at Prime View's adventure estate near Midrand. The paths wind through open countryside with great views across the highveld, making for a refreshing morning walk away from the city. Combine it with the aqua park, fishing or paintball to turn it into a full day out.",
     region: "jhb",
     category: "outdoor",
     vibe: ["nature", "active", "scenic"],
@@ -306,7 +306,7 @@ const activities = [
   {
     id: 36,
     name: "Prime View: Fishing",
-    description: "Enjoy a relaxed fishing session at Prime View's well-stocked dams near Johannesburg. Whether you are an experienced angler or simply after a quiet few hours by the water, it is a genuinely peaceful way to spend the day. Tackle is available on site. The estate also offers an aqua park, canoeing, hiking and paintball for those who want more action. Contact: 012 065 0315.",
+    description: "Enjoy a relaxed fishing session at Prime View's well-stocked dams near Johannesburg. Whether you are an experienced angler or simply after a quiet few hours by the water, it is a genuinely peaceful way to spend the day. Tackle is available on site. The estate also offers an aqua park, canoeing, hiking and paintball for those who want more action.",
     region: "jhb",
     category: "outdoor",
     vibe: ["relaxed", "nature", "quiet"],
@@ -319,7 +319,7 @@ const activities = [
   {
     id: 37,
     name: "Prime View: Paintball",
-    description: "Get the adrenaline pumping with a competitive paintball session at Prime View's purpose-built arena near Johannesburg. Great fun for groups, team outings, birthday parties or anyone who wants an excuse to run around and outshoot their friends. Part of a larger adventure estate with an aqua park, canoeing, hiking and fishing. Contact: 012 065 0315.",
+    description: "Get the adrenaline pumping with a competitive paintball session at Prime View's purpose-built arena near Johannesburg. Great fun for groups, team outings, birthday parties or anyone who wants an excuse to run around and outshoot their friends. Part of a larger adventure estate with an aqua park, canoeing, hiking and fishing.",
     region: "jhb",
     category: "outdoor",
     vibe: ["adventure", "group", "competitive"],
@@ -332,7 +332,7 @@ const activities = [
   {
     id: 24,
     name: "Mzansi Theme Park (Happy Island)",
-    description: "Johannesburg's biggest water park experience, set in the lush surrounds of Muldersdrift. Multiple waterslides, wave pools and splash zones make for a brilliant full-day family outing. Entrance is R200 per person. There are several on-site restaurants so no need to worry about food. Important: do not book online as the booking system is unreliable. Rather buy your tickets at the gate on arrival. WhatsApp: 083 633 8888.",
+    description: "Johannesburg's biggest water park experience, set in the lush surrounds of Muldersdrift. Multiple waterslides, wave pools and splash zones make for a brilliant full-day family outing. Entrance is R200 per person. There are several on-site restaurants so no need to worry about food. Important: do not book online as the booking system is unreliable. Rather buy your tickets at the gate on arrival.",
     region: "jhb",
     category: "family",
     vibe: ["fun", "water", "summer"],
@@ -357,7 +357,7 @@ const activities = [
   {
     id: 26,
     name: "Egrek Cinema",
-    description: "Johannesburg's cosiest independent cinema, tucked away in the leafy suburb of Parkhurst. Hire the entire screen for a private showing and pick any film you like, including films currently showing in mainstream cinemas. Your booking includes gourmet pizza, popcorn and soft drinks. Perfect for date nights, film clubs and kids' birthday parties. Individual tickets are also available for their regular public screenings. WhatsApp: 066 138 2772.",
+    description: "Johannesburg's cosiest independent cinema, tucked away in the leafy suburb of Parkhurst. Hire the entire screen for a private showing and pick any film you like, including films currently showing in mainstream cinemas. Your booking includes gourmet pizza, popcorn and soft drinks. Perfect for date nights, film clubs and kids' birthday parties. Individual tickets are also available for their regular public screenings.",
     region: "jhb",
     category: "arts",
     vibe: ["cosy", "date-night", "unique"],
@@ -382,7 +382,7 @@ const activities = [
   {
     id: 28,
     name: "Ice Cream Co",
-    description: "A genuinely unforgettable hands-on experience in Johannesburg where you make your own ice cream from scratch using liquid nitrogen. Choose your base, flavourings and mix-ins, then watch the science happen right in front of you. R375 per person, with children under 12 attending for free. Perfect for a birthday, a unique date or a special family treat. Booking is absolutely essential as sessions fill up fast. Call: 011 791 0637.",
+    description: "A genuinely unforgettable hands-on experience in Johannesburg where you make your own ice cream from scratch using liquid nitrogen. Choose your base, flavourings and mix-ins, then watch the science happen right in front of you. R375 per person, with children under 12 attending for free. Perfect for a birthday, a unique date or a special family treat. Booking is absolutely essential as sessions fill up fast.",
     region: "jhb",
     category: "food",
     vibe: ["creative", "sweet", "fun"],
@@ -395,7 +395,7 @@ const activities = [
   {
     id: 29,
     name: "Tea and Antique",
-    description: "One of Johannesburg's best-kept secrets. This enchanting hidden restaurant is tucked deep inside a beautiful antique shop, where you dine and take tea surrounded by vintage furniture, gilded mirrors and fascinating collectibles at every turn. The atmosphere is entirely unique and the sort of place you could happily spend an entire slow afternoon. Follow their Instagram for current menus and special events. Call to book: 078 652 5533.",
+    description: "One of Johannesburg's best-kept secrets. This enchanting hidden restaurant is tucked deep inside a beautiful antique shop, where you dine and take tea surrounded by vintage furniture, gilded mirrors and fascinating collectibles at every turn. The atmosphere is entirely unique and the sort of place you could happily spend an entire slow afternoon. Follow their Instagram for current menus and special events.",
     region: "jhb",
     category: "hidden-gem",
     vibe: ["vintage", "quiet", "unique"],
@@ -408,7 +408,7 @@ const activities = [
   {
     id: 30,
     name: "Sedgars Home Pretoria",
-    description: "A jaw-dropping luxury lifestyle destination in Pretoria, designed to evoke the grandeur of Dubai Airport. Under one expansive roof you will find a gourmet patisserie, an upscale restaurant, a hair and nail salon, a sweet store and a Spar. The architecture and interior design are genuinely stunning and unlike anything else in the capital. Less a shopping centre, more a lifestyle destination worth making a special trip for. WhatsApp: 071 896 0822.",
+    description: "A jaw-dropping luxury lifestyle destination in Pretoria, designed to evoke the grandeur of Dubai Airport. Under one expansive roof you will find a gourmet patisserie, an upscale restaurant, a hair and nail salon, a sweet store and a Spar. The architecture and interior design are genuinely stunning and unlike anything else in the capital. Less a shopping centre, more a lifestyle destination worth making a special trip for.",
     region: "pta",
     category: "hidden-gem",
     vibe: ["luxury", "shopping", "glamour"],
@@ -421,7 +421,7 @@ const activities = [
   {
     id: 31,
     name: "Wild Cafe PTA",
-    description: "A wildly popular tasting cafe in Pretoria where you can sample a rotating menu of iced coffees, hot chocolates, milkshakes and cocktails at very reasonable prices. The tasting format is brilliant for those who want to try a little of everything without committing to a single drink. Hugely in demand, so booking ahead is strongly recommended as walk-ins cannot be guaranteed. WhatsApp to secure your spot: 066 510 6667.",
+    description: "A wildly popular tasting cafe in Pretoria where you can sample a rotating menu of iced coffees, hot chocolates, milkshakes and cocktails at very reasonable prices. The tasting format is brilliant for those who want to try a little of everything without committing to a single drink. Hugely in demand, so booking ahead is strongly recommended as walk-ins cannot be guaranteed.",
     region: "pta",
     category: "food",
     vibe: ["trendy", "social", "budget"],
@@ -446,7 +446,7 @@ const activities = [
   {
     id: 33,
     name: "Fig Leaf Coffee Bar",
-    description: "A warm and welcoming coffee bar in Boksburg serving excellent brews in a relaxed, unhurried setting. Perfect for a slow morning catch-up or an afternoon break away from the usual chain cafes. There is no website, so reach out directly via WhatsApp to enquire about the menu and opening hours. WhatsApp: +27 72 272 9173.",
+    description: "A warm and welcoming coffee bar in Boksburg serving excellent brews in a relaxed, unhurried setting. Perfect for a slow morning catch-up or an afternoon break away from the usual chain cafes. There is no website, so reach out directly via WhatsApp to enquire about the menu and opening hours.",
     region: "jhb",
     category: "food",
     vibe: ["relaxed", "local", "cosy"],
@@ -483,7 +483,7 @@ const activities = [
   {
     id: 40,
     name: "The Cork Tree",
-    description: "A stunning restaurant and coffee shop perched amongst beautiful trees in Johannesburg, with sweeping views and a genuinely relaxed, romantic atmosphere. Excellent food, a lovely setting and the kind of vibe that makes every visit feel like a proper occasion. Booking is strongly recommended. Call: 066 239 9580.",
+    description: "A stunning restaurant and coffee shop perched amongst beautiful trees in Johannesburg, with sweeping views and a genuinely relaxed, romantic atmosphere. Excellent food, a lovely setting and the kind of vibe that makes every visit feel like a proper occasion. Booking is strongly recommended.",
     region: "jhb",
     category: "food",
     vibe: ["views", "romantic", "scenic"],
@@ -496,7 +496,7 @@ const activities = [
   {
     id: 41,
     name: "The Wisemen Restaurant",
-    description: "A much-loved Johannesburg restaurant known for bold, distinctive cooking and a warm, lively atmosphere. The kind of spot that earns regulars quickly and keeps them coming back time and again. WhatsApp to book: 066 239 9580.",
+    description: "A much-loved Johannesburg restaurant known for bold, distinctive cooking and a warm, lively atmosphere. The kind of spot that earns regulars quickly and keeps them coming back time and again.",
     region: "jhb",
     category: "food",
     vibe: ["vibrant", "bold", "social"],
@@ -509,7 +509,7 @@ const activities = [
   {
     id: 42,
     name: "Signs Restaurant",
-    description: "One of Johannesburg's most acclaimed fine dining establishments. Expect beautifully plated dishes, impeccable service and a stunning interior that makes Signs the natural choice for a special occasion or a genuinely memorable date night. This is the sort of place that raises the bar for what an evening out can be. Call to book: 011 202 5020.",
+    description: "One of Johannesburg's most acclaimed fine dining establishments. Expect beautifully plated dishes, impeccable service and a stunning interior that makes Signs the natural choice for a special occasion or a genuinely memorable date night. This is the sort of place that raises the bar for what an evening out can be.",
     region: "jhb",
     category: "food",
     vibe: ["luxury", "date-night", "fine-dining"],
@@ -522,7 +522,7 @@ const activities = [
   {
     id: 43,
     name: "Nine Lives Speakeasy",
-    description: "Tucked inside Hyde Hotels in Rosebank, Nine Lives is a dark, atmospheric speakeasy-style bar and restaurant. Low lighting, intimate seating and expertly crafted cocktails set the scene, while the food is genuinely excellent. Perfect for a date night where you want the setting to do half the work. Call: 010 023 2600.",
+    description: "Tucked inside Hyde Hotels in Rosebank, Nine Lives is a dark, atmospheric speakeasy-style bar and restaurant. Low lighting, intimate seating and expertly crafted cocktails set the scene, while the food is genuinely excellent. Perfect for a date night where you want the setting to do half the work.",
     region: "jhb",
     category: "food",
     vibe: ["date-night", "moody", "intimate"],
@@ -535,7 +535,7 @@ const activities = [
   {
     id: 44,
     name: "Kawali Restaurant",
-    description: "A beautifully designed restaurant with thoughtful interiors, vibrant energy and food that matches the setting. Whether you are marking an occasion or simply want a memorable meal out, Kawali consistently delivers on atmosphere and flavour. Call ahead to book: 077 378 6000.",
+    description: "A beautifully designed restaurant with thoughtful interiors, vibrant energy and food that matches the setting. Whether you are marking an occasion or simply want a memorable meal out, Kawali consistently delivers on atmosphere and flavour.",
     region: "jhb",
     category: "food",
     vibe: ["beautiful", "vibrant", "occasion"],

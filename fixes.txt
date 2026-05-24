@@ -1,17 +1,6 @@
-The palette has two dark options to work with from that same image — #0B282A is the deep teal-black. Instead of going near-black, let's just lean fully into the teal side and make the dark base a deep teal rather than almost-black. That keeps the warmth of the gold accent without the heavy black dragging it down.
-
-Proposed fix — swap #17110D out entirely and make #0B282A the darkest base, then build the mid tones up from there:
-
-- --color-dark: #0B282A (deep teal, dark but not black)
-- --color-mid: #0F3D3E (slightly lighter teal)
-- --color-light: #148A88 (bright teal accent, stays)
-- --color-coral: #D5891B (molten gold, stays)
-- --color-coral-light: #E8A030 (stays)
-- --color-sand: #F5EDD8 (stays)
-- --color-sand-dark: #EAE0C8 (stays)
-- --color-text-dark: #0B282A
-- --color-text-mid: #0F3D3E
-- --color-text-light: #F5EDD8
-- --color-text-muted: #148A88
-
-So the whole site lives in that teal-to-gold world from the image, no near-black at all. The hero is deep teal, mid sections are slightly lighter teal, gold does the accent work, sand does the light content sections. Much more alive.
+The nav bar at the bottom on mobile. I want the escape button to be filled with a colour. find a suitable colour based on the theme and do it. update the colour to the escape button on the tbe escape page.
+The escape page, I am not a fan of the drop down I feel its ugly and cluncky. Fix or replace it with something suitable
+THe landing page, the part where it says "20 activities" needs to actually pull and count from the same file so if any new ones are added, the numbers go up/down
+The landing page where the scroll animation is on the landing page on the left of the text that says less scrolling more doing, the bubble thing is blending in with the background. bubble thing cant be seen.
+THe favicon icon or whatever its called is showing the one for dealr not spottr (A d as the sign)
+in the descriptions of the data for the things to do, if there is a button for WhatsApp or call etc remove it from the text describing the place. E.g if there is a WhatsApp button on the card, remove the text that says WhatsApp and the nuber from the description

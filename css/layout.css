@@ -499,27 +499,27 @@ a.footer__meta:hover {
   width: 52px;
   height: 52px;
   border-radius: 14px;
-  background: transparent;
-  border: 1.5px solid rgba(20, 138, 136, 0.45);
+  background: var(--color-coral);
+  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: none;
-  transition: transform 150ms ease, border-color 150ms ease;
+  box-shadow: 0 4px 12px rgba(213, 137, 27, 0.4);
+  transition: transform 150ms ease, box-shadow 150ms ease;
 }
 
 .mobile-nav__tab--escape:hover .mobile-nav__escape-btn,
 .mobile-nav__tab--escape.mobile-nav__tab--active .mobile-nav__escape-btn {
   transform: translateY(-2px);
-  border-color: var(--color-light);
+  box-shadow: 0 6px 16px rgba(213, 137, 27, 0.55);
 }
 
 .mobile-nav__tab--escape svg {
-  color: var(--color-light);
+  color: #fff;
 }
 
 .mobile-nav__tab--escape span {
-  color: var(--color-light);
+  color: var(--color-coral);
   margin-top: 2px;
 }
 

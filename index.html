@@ -67,7 +67,7 @@
                C 610 100 750 160 840 260
                C 910 340 930 450 900 570
                C 875 660 820 710 760 700 Z"
-            fill="#0B282A"
+            fill="#0F3D3E"
           />
           <path
             class="hero__gold-stroke"
@@ -112,7 +112,7 @@
           </a>
 
           <div class="hero__stats" aria-label="Platform stats">
-            <span class="hero__stat">20 activities</span>
+            <span class="hero__stat" id="hero-activities-count">20 activities</span>
             <div class="hero__stat-divider" aria-hidden="true"></div>
             <span class="hero__stat">4 cities</span>
             <div class="hero__stat-divider" aria-hidden="true"></div>
@@ -338,6 +338,9 @@
       }
       return a;
     }
+
+    const countEl = document.getElementById('hero-activities-count');
+    if (countEl) countEl.textContent = `${activities.length} activities`;
 
     const grid = document.getElementById('featured-grid');
     if (grid) {

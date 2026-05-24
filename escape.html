@@ -63,25 +63,25 @@
       <!-- Filters -->
       <div class="escape-filters" role="group" aria-label="Filter the escape pool">
         <div class="escape-filter-group">
-          <label class="escape-filter-label" for="escape-region">City</label>
-          <select class="escape-filter-select" id="escape-region" name="region">
-            <option value="all">All cities</option>
-            <option value="jhb">Johannesburg</option>
-            <option value="cpt">Cape Town</option>
-            <option value="dbn">Durban</option>
-            <option value="pta">Pretoria</option>
-          </select>
+          <span class="escape-filter-label">City</span>
+          <div class="filter-bar" id="escape-region" role="group" aria-label="Filter by city">
+            <button class="filter-btn filter-btn--active" data-region="all">All</button>
+            <button class="filter-btn" data-region="jhb">JHB</button>
+            <button class="filter-btn" data-region="cpt">CPT</button>
+            <button class="filter-btn" data-region="dbn">DBN</button>
+            <button class="filter-btn" data-region="pta">PTA</button>
+          </div>
         </div>
         <div class="escape-filter-group">
-          <label class="escape-filter-label" for="escape-category">Category</label>
-          <select class="escape-filter-select" id="escape-category" name="category">
-            <option value="all">All categories</option>
-            <option value="outdoor">Outdoor</option>
-            <option value="food">Food</option>
-            <option value="arts">Arts</option>
-            <option value="family">Family</option>
-            <option value="hidden-gem">Hidden Gem</option>
-          </select>
+          <span class="escape-filter-label">Category</span>
+          <div class="filter-bar" id="escape-category" role="group" aria-label="Filter by category">
+            <button class="filter-btn filter-btn--active" data-category="all">All</button>
+            <button class="filter-btn" data-category="outdoor">Outdoor</button>
+            <button class="filter-btn" data-category="food">Food</button>
+            <button class="filter-btn" data-category="arts">Arts</button>
+            <button class="filter-btn" data-category="family">Family</button>
+            <button class="filter-btn" data-category="hidden-gem">Hidden Gem</button>
+          </div>
         </div>
       </div>
 
@@ -206,17 +206,30 @@
     const againBtn  = document.getElementById('escape-again-btn');
     const stage     = document.getElementById('escape-stage');
     const actions   = document.getElementById('escape-actions');
-    const regionSel = document.getElementById('escape-region');
-    const catSel    = document.getElementById('escape-category');
 
     let isRunning = false;
+    let activeRegion = 'all';
+    let activeCategory = 'all';
+
+    function initFilterGroup(barId, dataAttr, setter) {
+      const bar = document.getElementById(barId);
+      if (!bar) return;
+      bar.addEventListener('click', e => {
+        const btn = e.target.closest('.filter-btn');
+        if (!btn) return;
+        bar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('filter-btn--active'));
+        btn.classList.add('filter-btn--active');
+        setter(btn.dataset[dataAttr]);
+      });
+    }
+
+    initFilterGroup('escape-region', 'region', v => { activeRegion = v; });
+    initFilterGroup('escape-category', 'category', v => { activeCategory = v; });
 
     function getPool() {
-      const region = regionSel.value;
-      const cat = catSel.value;
       return activities.filter(a => {
-        return (region === 'all' || a.region === region) &&
-               (cat === 'all' || a.category === cat);
+        return (activeRegion === 'all' || a.region === activeRegion) &&
+               (activeCategory === 'all' || a.category === activeCategory);
       });
     }
 

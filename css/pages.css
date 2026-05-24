@@ -829,16 +829,17 @@ body.page-escape .escape-controls {
 
 body.page-escape .escape-filters {
   display: flex;
+  flex-direction: column;
   gap: var(--space-md);
-  flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 body.page-escape .escape-filter-group {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 body.page-escape .escape-filter-label {
@@ -850,29 +851,6 @@ body.page-escape .escape-filter-label {
   color: var(--color-text-muted);
 }
 
-body.page-escape .escape-filter-select {
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 500;
-  font-size: 0.9rem;
-  padding: 10px 16px;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--color-light);
-  background: var(--color-dark);
-  color: var(--color-text-light);
-  cursor: pointer;
-  outline: none;
-  appearance: none;
-  -webkit-appearance: none;
-  padding-right: 36px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23148A88' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 12px center;
-  transition: border-color 200ms ease;
-}
-
-body.page-escape .escape-filter-select:focus {
-  border-color: var(--color-coral);
-}
 
 /* ─── The Escape Key button ──────────────────────────────────────────────────── */
 body.page-escape .escape-key-wrap {
