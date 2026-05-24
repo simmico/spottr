@@ -3,17 +3,20 @@
 /* ─── Custom Properties ─────────────────────────────────────────────────────── */
 :root {
   /* Colour palette */
-  --color-dark:        #0B282A;
-  --color-mid:         #0F3D3E;
-  --color-light:       #148A88;
-  --color-coral:       #D5891B;
-  --color-coral-light: #E8A030;
-  --color-sand:        #F5EDD8;
-  --color-sand-dark:   #EAE0C8;
-  --color-text-dark:   #0B282A;
-  --color-text-mid:    #0F3D3E;
-  --color-text-light:  #F5EDD8;
-  --color-text-muted:  #148A88;
+  --color-dark:        #082628;
+  --color-mid:         #0D3F40;
+  --color-light:       #0FADA9;
+  --color-coral:       #E8651A;
+  --color-coral-light: #F5832E;
+  --color-coral-deep:  #C44E0E;
+  --color-sand:        #F7EFD8;
+  --color-sand-dark:   #EDE3C8;
+  --color-yellow:      #F5C842;
+  --color-yellow-light: #FAD96A;
+  --color-text-dark:   #082628;
+  --color-text-mid:    #0D3F40;
+  --color-text-light:  #F7EFD8;
+  --color-text-muted:  #0FADA9;
 
   /* Spacing */
   --space-xs:  8px;
@@ -123,7 +126,7 @@ main td a:not([class]) {
   color: var(--color-coral);
   text-decoration: underline;
   text-underline-offset: 2px;
-  text-decoration-color: rgba(213, 137, 27, 0.45);
+  text-decoration-color: rgba(232, 101, 26, 0.45);
 }
 
 main p a:not([class]):hover,

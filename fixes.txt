@@ -1,6 +1,29 @@
-The escape button on the website of the escape page (the button above where it says "press the key above") the size is too big. reduce it a bit.
-On mobile, for the escape nav bar menu, lets get rid of the neon glow but keep the colour.
+Here's the prompt:
 
-THe colours of the numbers in the landing page where it says Browse, filter exscape, lets make that a more solid colour and not so transparent
+---
 
-On the landing page after the "touch grass" the the hit escape button needs to be a bit lower than the text as its almost sitting right under the text where it says for you at random.
+The design system for this site needs a colour refresh. The site is a things-to-do platform for South Africa and the current palette reads too formal and corporate. The new palette should feel vibrant, warm, and energetic while keeping the deep teal as the structural base.
+
+Update the CSS custom properties in css/base.css to use these new values:
+
+--color-dark: #082628
+--color-mid: #0D3F40
+--color-light: #0FADA9
+--color-coral: #E8651A
+--color-coral-light: #F5832E
+--color-sand: #F7EFD8
+--color-sand-dark: #EDE3C8
+--color-text-dark: #082628
+--color-text-mid: #0D3F40
+--color-text-light: #F7EFD8
+--color-text-muted: #0FADA9
+
+Add these three new variables to the palette:
+
+--color-yellow: #F5C842
+--color-yellow-light: #FAD96A
+--color-coral-deep: #C44E0E
+
+Anywhere in the codebase where category badges, tags, pill labels, or highlight chips currently use the coral or teal accent, use --color-yellow instead so they pop against both dark and light backgrounds. CTAs and primary buttons should use --color-coral. Hover states on those buttons should use --color-coral-deep. Active nav items and focus indicators should use --color-light.
+
+-

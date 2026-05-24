@@ -577,8 +577,8 @@ body.page-explore .results-info {
   letter-spacing: 0.05em;
   padding: 3px 8px;
   border-radius: 20px;
-  background: rgba(20, 138, 136, 0.2);
-  color: var(--color-light);
+  background: rgba(245, 200, 66, 0.18);
+  color: var(--color-yellow);
   white-space: nowrap;
 }
 
@@ -599,13 +599,13 @@ body.page-explore .results-info {
 }
 
 .activity-card__cost-badge--budget {
-  background: rgba(213, 137, 27, 0.12);
-  color: var(--color-coral);
+  background: rgba(245, 200, 66, 0.15);
+  color: var(--color-yellow);
 }
 
 .activity-card__cost-badge--splurge {
-  background: rgba(213, 137, 27, 0.22);
-  color: var(--color-coral-light);
+  background: rgba(245, 200, 66, 0.22);
+  color: var(--color-yellow);
 }
 
 .activity-card__name {

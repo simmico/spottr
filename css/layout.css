@@ -143,8 +143,8 @@
 }
 
 .nav__link--active {
-  color: var(--color-coral);
-  border-bottom: 2px solid var(--color-coral);
+  color: var(--color-light);
+  border-bottom: 2px solid var(--color-light);
 }
 
 .nav__hamburger {
@@ -486,7 +486,7 @@ a.footer__meta:hover {
 }
 
 .mobile-nav__tab--active {
-  color: var(--color-coral);
+  color: var(--color-light);
 }
 
 /* Escape centre elevated button */
