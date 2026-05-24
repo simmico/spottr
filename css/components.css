@@ -269,10 +269,10 @@
 
 @media (max-width: 768px) {
   .filter-btn--active {
-    background: var(--color-coral) !important;
-    color: var(--color-dark) !important;
-    border-color: var(--color-coral) !important;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    background: var(--color-mid) !important;
+    color: var(--color-text-light) !important;
+    border-color: var(--color-light) !important;
+    box-shadow: 0 0 0 2px rgba(20, 138, 136, 0.35);
   }
 }
 

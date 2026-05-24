@@ -59,7 +59,7 @@ body.page-home .hero__h1 {
 }
 
 body.page-home .hero__h1 span {
-  color: var(--color-coral);
+  color: var(--color-light);
 }
 
 body.page-home .hero__subheading {
@@ -121,8 +121,8 @@ body.page-home .hero__escape-teaser {
   gap: 12px;
   margin-top: 28px;
   padding: 14px 24px;
-  background: rgba(213, 137, 27, 0.1);
-  border: 1px solid rgba(213, 137, 27, 0.35);
+  background: rgba(20, 138, 136, 0.08);
+  border: 1px solid rgba(20, 138, 136, 0.3);
   border-radius: var(--radius-md);
   transition: background 200ms ease, border-color 200ms ease;
   cursor: pointer;
@@ -130,8 +130,8 @@ body.page-home .hero__escape-teaser {
 }
 
 body.page-home .hero__escape-teaser:hover {
-  background: rgba(213, 137, 27, 0.18);
-  border-color: var(--color-coral);
+  background: rgba(20, 138, 136, 0.15);
+  border-color: var(--color-light);
 }
 
 body.page-home .hero__escape-key {
@@ -140,15 +140,16 @@ body.page-home .hero__escape-key {
   justify-content: center;
   width: 36px;
   height: 36px;
-  background: var(--color-coral);
-  color: #fff;
+  background: transparent;
+  color: var(--color-light);
   border-radius: 6px;
   font-family: 'DM Sans', sans-serif;
   font-weight: 600;
   font-size: 0.65rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  box-shadow: 0 3px 0 rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.2);
+  border: 1.5px solid rgba(20, 138, 136, 0.5);
+  box-shadow: 0 2px 0 rgba(0,0,0,0.25);
   flex-shrink: 0;
 }
 
@@ -863,8 +864,7 @@ body.page-escape .escape-key {
   user-select: none;
   box-shadow:
     0 8px 0 rgba(0, 0, 0, 0.35),
-    inset 0 2px 0 rgba(255, 255, 255, 0.25),
-    0 12px 32px rgba(213, 137, 27, 0.4);
+    inset 0 2px 0 rgba(255, 255, 255, 0.25);
   transition: transform 120ms ease, box-shadow 120ms ease;
   border: none;
   position: relative;
@@ -883,8 +883,7 @@ body.page-escape .escape-key:hover {
   transform: translateY(-3px);
   box-shadow:
     0 11px 0 rgba(0, 0, 0, 0.35),
-    inset 0 2px 0 rgba(255, 255, 255, 0.25),
-    0 16px 40px rgba(213, 137, 27, 0.5);
+    inset 0 2px 0 rgba(255, 255, 255, 0.25);
 }
 
 body.page-escape .escape-key:active,
@@ -892,8 +891,7 @@ body.page-escape .escape-key.is-pressed {
   transform: translateY(6px);
   box-shadow:
     0 2px 0 rgba(0, 0, 0, 0.35),
-    inset 0 2px 0 rgba(255, 255, 255, 0.15),
-    0 4px 12px rgba(213, 137, 27, 0.3);
+    inset 0 2px 0 rgba(255, 255, 255, 0.15);
 }
 
 body.page-escape .escape-key__icon {
