@@ -236,7 +236,7 @@ body.page-home .how-it-works__number {
   font-size: 5rem;
   font-variant-numeric: tabular-nums;
   color: var(--color-coral);
-  opacity: 0.35;
+  opacity: 0.75;
   line-height: 1;
   margin-bottom: 16px;
 }
@@ -825,6 +825,7 @@ body.page-escape .escape-controls {
   gap: var(--space-lg);
   padding: var(--space-2xl) var(--space-md);
   background: var(--color-sand);
+  overflow-x: hidden;
 }
 
 body.page-escape .escape-filters {
@@ -840,6 +841,7 @@ body.page-escape .escape-filter-group {
   flex-direction: column;
   align-items: center;
   gap: 8px;
+  width: 100%;
 }
 
 body.page-escape .escape-filter-label {
@@ -861,8 +863,8 @@ body.page-escape .escape-key-wrap {
 }
 
 body.page-escape .escape-key {
-  width: 120px;
-  height: 120px;
+  width: 96px;
+  height: 96px;
   background: var(--color-coral);
   border-radius: 16px;
   display: flex;
