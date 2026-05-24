@@ -246,7 +246,8 @@
         const isWA = a.contact.startsWith('https://wa.me');
         contactEl = `<a href="${a.contact}" class="activity-card__contact activity-card__contact--${isWA ? 'wa' : 'call'}"${isWA ? ' target="_blank" rel="noopener noreferrer"' : ''}>${isWA ? WA_ICON : PHONE_ICON} ${isWA ? 'WhatsApp' : 'Call'}</a>`;
       }
-      const findMoreEl = a.url ? `<a href="${a.url}" class="escape-result-link" target="_blank" rel="noopener noreferrer">Find out more →</a>` : '';
+      const findMoreEl = a.url ? `<a href="${a.url}" class="activity-card__link" target="_blank" rel="noopener noreferrer">Find out more →</a>` : '';
+      const metaLeft = `<div>${a.duration ? `<span class="activity-card__duration">${a.duration}</span>` : ''}${a.address ? `<span style="display:block;font-family:'DM Sans',sans-serif;font-size:0.8rem;color:var(--color-text-muted);margin-top:2px">${a.address}</span>` : ''}</div>`;
       return `<div class="escape-shuffle-card is-revealing">
   <div class="activity-card__header" style="margin-bottom:10px">
     <span class="activity-card__region">${region}</span>
@@ -257,11 +258,10 @@
   </div>
   <div class="escape-result-name">${a.name}</div>
   <p class="escape-result-desc">${a.description}</p>
-  <div class="escape-result-meta">
-    <span class="activity-card__duration" style="font-family:'DM Sans',sans-serif;font-size:0.8rem;color:var(--color-text-muted)">${a.duration}</span>
-    ${a.address ? `<span style="font-family:'DM Sans',sans-serif;font-size:0.8rem;color:var(--color-text-muted)">${a.address}</span>` : ''}
+  <div class="activity-card__meta">
+    ${metaLeft}
+    <div class="activity-card__actions">${contactEl}${findMoreEl}</div>
   </div>
-  <div class="activity-card__actions">${contactEl}${findMoreEl}</div>
 </div>`;
     }
 
