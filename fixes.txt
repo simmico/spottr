@@ -1,23 +1,17 @@
-Here is how I'd map it to the design system:
+The palette has two dark options to work with from that same image — #0B282A is the deep teal-black. Instead of going near-black, let's just lean fully into the teal side and make the dark base a deep teal rather than almost-black. That keeps the warmth of the gold accent without the heavy black dragging it down.
 
-- --color-dark: #17110D (hero backgrounds, darkest sections)
-- --color-mid: #0B282A (mid dark sections, nav)
-- --color-light: #148A88 (teal accent, links, highlights)
-- --color-coral: #D5891B (primary accent, replaces coral — this is now molten gold-orange)
-- --color-coral-light: #E8A030 (lighter hover state)
-- --color-sand: #F5EDD8 (light content sections, keep as is)
-- --color-sand-dark: #EAE0C8 (keep as is)
-- --color-text-dark: #17110D
-- --color-text-mid: #542409
+Proposed fix — swap #17110D out entirely and make #0B282A the darkest base, then build the mid tones up from there:
+
+- --color-dark: #0B282A (deep teal, dark but not black)
+- --color-mid: #0F3D3E (slightly lighter teal)
+- --color-light: #148A88 (bright teal accent, stays)
+- --color-coral: #D5891B (molten gold, stays)
+- --color-coral-light: #E8A030 (stays)
+- --color-sand: #F5EDD8 (stays)
+- --color-sand-dark: #EAE0C8 (stays)
+- --color-text-dark: #0B282A
+- --color-text-mid: #0F3D3E
 - --color-text-light: #F5EDD8
 - --color-text-muted: #148A88
 
-The dark hero will now feel like cracked earth and deep water. The gold accent gives it that molten premium feel. Teal as the supporting accent ties the two halves together beautifully.
-
-Here is the updated colour fix prompt:
-
----
-
-PROMPT 1 — COLOUR FIX
-
-Read every CSS file in the project. Replace the entire colour scheme with the following new variables. Remove all existing colour variables completely and replace with these: --color-dark: #17110D, --color-mid: #0B282A, --color-light: #148A88, --color-coral: #D5891B, --color-coral-light: #E8A030, --color-sand: #F5EDD8, --color-sand-dark: #EAE0C8, --color-text-dark: #17110D, --color-text-mid: #542409, --color-text-light: #F5EDD8, --color-text-muted: #148A88. Anywhere the old teal or blue variables were used replace with the corresponding new variable. The dark hero sections must use --color-dark as the base which is a near black with warm undertone. Mid sections use --color-mid which is a deep teal-black. The teal accent --color-light is used for links, highlights, and supporting accents. The primary accent --color-coral is a molten gold-orange used anywhere coral or gold was previously used. The transition from dark hero to light sand content sections must still work cleanly. Check every single HTML and CSS file and make sure no old hex values remain anywhere including inline styles. Do not change any layout, structure, animations, fonts, or content. Colour variables and hex values only.
+So the whole site lives in that teal-to-gold world from the image, no near-black at all. The hero is deep teal, mid sections are slightly lighter teal, gold does the accent work, sand does the light content sections. Much more alive.
