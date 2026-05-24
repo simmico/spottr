@@ -1,21 +1,23 @@
+Here is how I'd map it to the design system:
+
+- --color-dark: #17110D (hero backgrounds, darkest sections)
+- --color-mid: #0B282A (mid dark sections, nav)
+- --color-light: #148A88 (teal accent, links, highlights)
+- --color-coral: #D5891B (primary accent, replaces coral — this is now molten gold-orange)
+- --color-coral-light: #E8A030 (lighter hover state)
+- --color-sand: #F5EDD8 (light content sections, keep as is)
+- --color-sand-dark: #EAE0C8 (keep as is)
+- --color-text-dark: #17110D
+- --color-text-mid: #542409
+- --color-text-light: #F5EDD8
+- --color-text-muted: #148A88
+
+The dark hero will now feel like cracked earth and deep water. The gold accent gives it that molten premium feel. Teal as the supporting accent ties the two halves together beautifully.
+
+Here is the updated colour fix prompt:
+
+---
+
 PROMPT 1 — COLOUR FIX
 
-Read every CSS file in the project. Replace the entire colour scheme with the following new variables. Remove all existing colour variables completely and replace with these: --color-dark: #0D3D3D, --color-mid: #1A5C5C, --color-light: #2E8B8B, --color-coral: #E8603A, --color-coral-light: #F08060, --color-sand: #F5EDD8, --color-sand-dark: #EAE0C8, --color-text-dark: #0D2020, --color-text-mid: #1A3A3A, --color-text-light: #F5EDD8, --color-text-muted: #7AB8B8. Anywhere the old midnight blue variables were used, replace with the corresponding teal variable. The dark hero sections must now use --color-dark as the base which is a deep teal, not blue or black. The transition from dark hero to light sand content sections must still work cleanly. Check every single HTML and CSS file and make sure no old blue hex values remain anywhere, including inline styles. Do not change any layout, structure, animations, fonts, or content. Colour variables and hex values only.
-
----
-
-PROMPT 2 — REGIONS HUB PAGE FIX
-
-Got it. Here is the corrected prompt 2:
-
----
-
-PROMPT 2 — REGIONS HUB PAGE AND CITY PAGES FIX
-
-Read regions.html, activities.js, explore.html, and all existing page files carefully before making any changes. Understand the card rendering pattern, nav structure, footer, scroll animations, and mobile bottom nav used across the site.
-
-First, rebuild regions.html as a proper hub page only. It must have a hero section with a heading and short intro about exploring South African cities. Below the hero, four large city cards in a grid: Johannesburg, Cape Town, Durban, Pretoria. Each city card has the city name, a one line description of what that city offers for things to do, and an Explore City button that links to that city's own HTML page: jhb.html, cpt.html, dbn.html, pta.html. No activity cards on regions.html itself. It is a hub and nothing more. Use the same nav, footer, scroll animations, and mobile bottom nav as all other pages.
-
-Second, create four new pages: jhb.html, cpt.html, dbn.html, pta.html. Each page must follow the exact same structure. At the top, a hero section with the city name as the heading and a short description of what that city offers for things to do. Below the hero, a category filter row with chips for All, Outdoor, Food, Arts, Family, Hidden Gem. Below the filters, a card grid that reads from activities.js and renders only activities where region matches that city's code. The filtering by category must work live in the browser using vanilla JS with no page reload, same pattern as explore.html. Each activity card must match the exact same card style used on explore.html. At the bottom of the activity grid, a back to regions link pointing to regions.html. Each city page must use the same nav, footer, scroll animations, and mobile bottom nav as all other pages.
-
-Update the nav on every existing page so that the Regions link points to regions.html. Update the mobile bottom nav Regions item on every page to also point to regions.html. Do not change activities.js, escape.html, explore.html, about.html, or index.html content. Do not change any colours, fonts, or animation code.
+Read every CSS file in the project. Replace the entire colour scheme with the following new variables. Remove all existing colour variables completely and replace with these: --color-dark: #17110D, --color-mid: #0B282A, --color-light: #148A88, --color-coral: #D5891B, --color-coral-light: #E8A030, --color-sand: #F5EDD8, --color-sand-dark: #EAE0C8, --color-text-dark: #17110D, --color-text-mid: #542409, --color-text-light: #F5EDD8, --color-text-muted: #148A88. Anywhere the old teal or blue variables were used replace with the corresponding new variable. The dark hero sections must use --color-dark as the base which is a near black with warm undertone. Mid sections use --color-mid which is a deep teal-black. The teal accent --color-light is used for links, highlights, and supporting accents. The primary accent --color-coral is a molten gold-orange used anywhere coral or gold was previously used. The transition from dark hero to light sand content sections must still work cleanly. Check every single HTML and CSS file and make sure no old hex values remain anywhere including inline styles. Do not change any layout, structure, animations, fonts, or content. Colour variables and hex values only.
